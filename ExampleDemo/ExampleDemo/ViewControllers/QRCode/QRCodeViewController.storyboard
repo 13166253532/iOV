@@ -10,22 +10,22 @@
     </dependencies>
     <scenes>
         <!--Code View Controller-->
-        <scene sceneID="733-KK-WrH">
+        <scene sceneID="AwY-rE-hzr">
             <objects>
-                <viewController storyboardIdentifier="QRCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kz9-ed-NYH" customClass="QRCodeViewController" customModule="SHYTB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uwa-tA-9Wb" customClass="QRCodeViewController" customModule="ExampleDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rrh-Y3-upY"/>
-                        <viewControllerLayoutGuide type="bottom" id="aEI-7j-C7X"/>
+                        <viewControllerLayoutGuide type="top" id="L1O-kF-R6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="zvK-dJ-dha"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IST-o5-6jt">
+                    <view key="view" contentMode="scaleToFill" id="HER-0J-Mwj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Kd-qF-t40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7A-fp-7qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="-44"/>
+            <point key="canvasLocation" x="209" y="-89"/>
         </scene>
     </scenes>
 </document>

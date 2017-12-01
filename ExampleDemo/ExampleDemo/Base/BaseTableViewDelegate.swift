@@ -115,11 +115,11 @@ class BaseOneTableViewDelegate: NSObject,UITableViewDelegate,UITableViewDataSour
         return 44
     }
   
-//        func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-//            view.backgroundColor = UIColor.clearColor()
-//        }
-//        func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//            view.tintColor=UIColor.clearColor()
-//        }
+    func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        view.backgroundColor = UIColor.clear
+    }
+    private func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor=UIColor.clear
+    }
     
 }

@@ -20,6 +20,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white;
+        
         //self.navigationController!.navigationBar.barStyle = UIBarStyle.black
         //UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
         //UIApplication.shared.statusBarOrientation = UIInterfaceOrientation.portrait
@@ -29,6 +30,9 @@ class BaseViewController: UIViewController {
             UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: false)
         }
         // Do any additional setup after loading the view.
+    }
+    func isNavigationBarObstructed(){
+        self.edgesForExtendedLayout = UIRectEdge.bottom
     }
     // 设置状态栏颜色
     func initSetStatusBarColor(){
