@@ -6,3 +6,7 @@
 #import "UIView+Additions.h"
 #import "MBProgressHUD.h"
 #import "QRCodeAVCaptureDevice.h"
+#import "QRCodeTwoViewController.h"
+#import "AccountInfoOC.h"
+
+

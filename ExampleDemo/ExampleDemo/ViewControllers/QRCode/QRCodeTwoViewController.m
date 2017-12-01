@@ -26,7 +26,7 @@
 #import <AVFoundation/AVMediaFormat.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreLocation/CoreLocation.h>
-#import "WebViewController.h"
+//#import "WebViewController.h"
 #import "AccountInfoOC.h"
 #import "UIView+Additions.h"
 
@@ -86,7 +86,7 @@
     [self initTitleBarColor];
 }
 -(void)viewWillDisappear:(BOOL)animated{
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //[self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 -(void)initTitleBarColor{
     NSDictionary *dict = @{ NSUnderlineColorAttributeName: [UIColor whiteColor],NSFontAttributeName: [UIFont systemFontOfSize:20] };
@@ -242,17 +242,17 @@
         }
         
         
-//        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"扫描结果" message:stringValue preferredStyle:UIAlertControllerStyleAlert];
-//        [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            if (_session != nil && timer != nil) {
-//                [_session startRunning];
-//                [timer setFireDate:[NSDate date]];
-//            }
-//
-//        }]];
-        WebViewController *web = [[WebViewController alloc]init];
-        web.pushClass = @"0";
-        [self.navigationController pushViewController:web animated:YES];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"扫描结果" message:stringValue preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if (_session != nil && timer != nil) {
+                [_session startRunning];
+                [timer setFireDate:[NSDate date]];
+            }
+
+        }]];
+//        WebViewController *web = [[WebViewController alloc]init];
+//        web.pushClass = @"0";
+//        [self.navigationController pushViewController:web animated:YES];
 
         
     } else {

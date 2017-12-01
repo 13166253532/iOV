@@ -33,6 +33,9 @@
 		1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9839B1FD0F29E00A8480D /* QRCodeViewController.swift */; };
 		1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983991FD0F29E00A8480D /* ScannerBackgroundView.swift */; };
 		1757FE5F1FD134F1004B3D8E /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE5E1FD134F1004B3D8E /* QRCodeViewController.storyboard */; };
+		1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */; };
+		1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE631FD138EA004B3D8E /* AccountInfoOC.m */; };
+		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
 		17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */; };
 		17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9839E1FD0F30400A8480D /* QuartzCore.framework */; };
 		17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E983A01FD0F30F00A8480D /* AVFoundation.framework */; };
@@ -146,9 +149,12 @@
 		1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		1757FE5A1FD12D54004B3D8E /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		1757FE5E1FD134F1004B3D8E /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		1757FE611FD138EA004B3D8E /* AccountInfoOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountInfoOC.h; sourceTree = "<group>"; };
+		1757FE621FD138EA004B3D8E /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		1757FE631FD138EA004B3D8E /* AccountInfoOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountInfoOC.m; sourceTree = "<group>"; };
+		1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeTwoViewController.storyboard; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
-		17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeTwoViewController.storyboard; sourceTree = "<group>"; };
 		17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeTwoViewController.m; sourceTree = "<group>"; };
 		17E983991FD0F29E00A8480D /* ScannerBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerBackgroundView.swift; sourceTree = "<group>"; };
 		17E9839A1FD0F29E00A8480D /* QRCodeAVCaptureDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeAVCaptureDevice.h; sourceTree = "<group>"; };
@@ -325,6 +331,9 @@
 		172078D51FD00CDF00DBC647 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1757FE621FD138EA004B3D8E /* AccountInfo.swift */,
+				1757FE611FD138EA004B3D8E /* AccountInfoOC.h */,
+				1757FE631FD138EA004B3D8E /* AccountInfoOC.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,9 +464,9 @@
 				17E9839A1FD0F29E00A8480D /* QRCodeAVCaptureDevice.h */,
 				17E9839B1FD0F29E00A8480D /* QRCodeViewController.swift */,
 				1757FE5E1FD134F1004B3D8E /* QRCodeViewController.storyboard */,
-				17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */,
 				17E9839C1FD0F29E00A8480D /* QRCodeTwoViewController.h */,
-				17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */,
+				17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */,
+				1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -661,6 +670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
@@ -843,6 +853,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
+				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,

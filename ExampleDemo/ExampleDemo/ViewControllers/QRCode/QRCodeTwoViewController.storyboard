@@ -10,22 +10,22 @@
     </dependencies>
     <scenes>
         <!--Code Two View Controller-->
-        <scene sceneID="0sB-Qr-tRb">
+        <scene sceneID="rnE-Mc-dEO">
             <objects>
-                <viewController storyboardIdentifier="QRCodeTwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TG5-v2-Fsm" customClass="QRCodeTwoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRCodeTwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9q3-iY-hKB" customClass="QRCodeTwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MmC-bN-Srm"/>
-                        <viewControllerLayoutGuide type="bottom" id="1Og-1f-V5t"/>
+                        <viewControllerLayoutGuide type="top" id="VYc-z9-k3o"/>
+                        <viewControllerLayoutGuide type="bottom" id="mBj-ME-p9H"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PY6-Dm-Gxi">
+                    <view key="view" contentMode="scaleToFill" id="qUB-D4-jpS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IYy-z4-sRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rka-kc-zf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="218"/>
+            <point key="canvasLocation" x="230" y="100"/>
         </scene>
     </scenes>
 </document>

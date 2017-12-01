@@ -59,7 +59,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码"]
+        let titleArray = ["swift二维码","swift条码"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -73,10 +73,17 @@ class MainViewController: BaseViewController {
     func gotoVC(str:String){
         if str == "swift二维码" {
             gotoQRVC()
+        }else if str == "swift条码" {
+            gotoQRTwoVC()
         }
+        
     }
     func gotoQRVC() {
         let vc:QRCodeViewController=QRCodeViewController.createViewController(createArgs: nil) as! QRCodeViewController
+        self.pushViewController(viewController: vc, animated: true)
+    }
+    func gotoQRTwoVC() {
+        let vc:QRCodeTwoViewController = QRCodeTwoViewController.createViewController() as! QRCodeTwoViewController
         self.pushViewController(viewController: vc, animated: true)
     }
 }
