@@ -5,13 +5,7 @@
 //  Created by xiejiangbo on 2017/11/23.
 //  Copyright © 2017年 yin chen. All rights reserved.
 //
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 
-#define HEIGHT_RATIO [UIScreen mainScreen].bounds.size.height/736
-#define WHIDTH_RATIO  [UIScreen mainScreen].bounds.size.width/414
-
-#define UICOLORFROMRGB(hexColor) [UIColor colorWithRed:((float)((hexColor & 0xFF0000) >> 16))/255.0 green:((float)((hexColor & 0xFF00) >> 8))/255.0 blue:((float)(hexColor & 0xFF))/255.0 alpha:1.0]
 #import "BaseOCViewController.h"
 
 @interface BaseOCViewController ()
