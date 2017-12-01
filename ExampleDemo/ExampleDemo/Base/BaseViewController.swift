@@ -168,5 +168,13 @@ class BaseViewController: UIViewController {
         hud.show(true)
         hud.hide(true, afterDelay: 1.5)
     }
-
+    //指定字符 指定颜色并加上下划线
+    func getNSAttributedString(str:String) -> NSAttributedString {
+        let myMutableString = NSMutableAttributedString(string: str)
+        let range2 = NSMakeRange(12, 4)
+        myMutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.green, range: range2)
+        myMutableString.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleNone.rawValue, range: NSMakeRange(0, 12))
+        myMutableString.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleSingle.rawValue, range: range2)
+        return myMutableString
+    }
 }

@@ -29,6 +29,7 @@
 		17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */; };
 		17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9839E1FD0F30400A8480D /* QuartzCore.framework */; };
 		17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E983A01FD0F30F00A8480D /* AVFoundation.framework */; };
+		17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
 		25D7DE411DD2253481ADADD9 /* Pods_ExampleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF150D02D753C575F453BEE /* Pods_ExampleDemoTests.framework */; };
 		C9C5A080750DA7CBD2C6638B /* Pods_ExampleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */; };
@@ -142,6 +143,12 @@
 		17E9839C1FD0F29E00A8480D /* QRCodeTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeTwoViewController.h; sourceTree = "<group>"; };
 		17E9839E1FD0F30400A8480D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		17E983A01FD0F30F00A8480D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		17E983A31FD0F4A700A8480D /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		17E983A41FD0F4A700A8480D /* ScannerBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerBackgroundView.swift; sourceTree = "<group>"; };
+		17E983A61FD0F4A700A8480D /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		17E983A71FD0F4A700A8480D /* BarcodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarcodeViewController.storyboard; sourceTree = "<group>"; };
+		17E983A81FD0F4A700A8480D /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDFGuideViewController.swift; sourceTree = "<group>"; };
 		1A2E5E6869C8A7F6CA185CBD /* Pods-ExampleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		261D793693B4C3D48B449316 /* Pods-ExampleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemoUITests/Pods-ExampleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +223,7 @@
 				172078D21FD00CDE00DBC647 /* ThirdParty */,
 				172078D61FD00CDF00DBC647 /* ViewControllers */,
 				172078A31FCFE6FE00DBC647 /* AppDelegate.swift */,
+				17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */,
 				172078A51FCFE6FE00DBC647 /* ViewController.swift */,
 				172078A71FCFE6FE00DBC647 /* Main.storyboard */,
 				172078AA1FCFE6FE00DBC647 /* Assets.xcassets */,
@@ -411,6 +419,7 @@
 		17E983941FD0F29E00A8480D /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				17E983A21FD0F4A700A8480D /* QRCode */,
 				17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */,
 				17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */,
 				17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */,
@@ -421,6 +430,26 @@
 				17E9839C1FD0F29E00A8480D /* QRCodeTwoViewController.h */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		17E983A21FD0F4A700A8480D /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				17E983A51FD0F4A700A8480D /* Barcode */,
+				17E983A41FD0F4A700A8480D /* ScannerBackgroundView.swift */,
+				17E983A31FD0F4A700A8480D /* QRCodeViewController.storyboard */,
+				17E983A81FD0F4A700A8480D /* QRCodeViewController.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		17E983A51FD0F4A700A8480D /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				17E983A61FD0F4A700A8480D /* BarcodeViewController.swift */,
+				17E983A71FD0F4A700A8480D /* BarcodeViewController.storyboard */,
+			);
+			path = Barcode;
 			sourceTree = "<group>";
 		};
 		B63D77DB8D35F498328ADD53 /* Pods */ = {
@@ -755,6 +784,7 @@
 				172078E71FD0151A00DBC647 /* BaseTableViewDelegate.swift in Sources */,
 				172078E61FD0151000DBC647 /* BaseTableViewCell.swift in Sources */,
 				172078E41FD0150600DBC647 /* BaseOCViewController.m in Sources */,
+				17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */,
 				172078E31FD0150200DBC647 /* BaseConfigFounction.swift in Sources */,
 				172078E21FD014FD00DBC647 /* BaseCellModel.swift in Sources */,
 				172078A61FCFE6FE00DBC647 /* ViewController.swift in Sources */,
