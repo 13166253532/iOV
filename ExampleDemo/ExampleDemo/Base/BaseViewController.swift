@@ -177,4 +177,13 @@ class BaseViewController: UIViewController {
         myMutableString.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleSingle.rawValue, range: range2)
         return myMutableString
     }
+    //MARK:判断是否有汉字
+    func isIncludeChineseIn(string: String) -> Bool {
+        for (_, value) in string.characters.enumerated() {
+            if ("\u{4E00}" <= value  && value <= "\u{9FA5}") {
+                return true
+            }
+        }
+        return false
+    }
 }

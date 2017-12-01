@@ -7,9 +7,15 @@
 //
 
 import UIKit
-
+enum DataType: Int{   //区分搜索界面历史记录
+    case ProjectData = 1        //项目
+    case InvestorsData = 2      //个人投资
+    case ParkData = 3           //园区
+    case InvestorAgencyData = 4 //投资机构
+}
 class ViewController: UIViewController {
-
+    var dataType:DataType = .ParkData
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
