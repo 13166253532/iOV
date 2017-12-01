@@ -26,6 +26,8 @@
 		172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */; };
 		172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F61FD0157F00DBC647 /* UIView+Additions.m */; };
 		172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079061FD0177000DBC647 /* MBProgressHUD.m */; };
+		1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE541FD12953004B3D8E /* MainViewController.swift */; };
+		1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE561FD12960004B3D8E /* MainViewController.storyboard */; };
 		17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */; };
 		17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9839E1FD0F30400A8480D /* QuartzCore.framework */; };
 		17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E983A01FD0F30F00A8480D /* AVFoundation.framework */; };
@@ -134,6 +136,8 @@
 		1720792B1FD0177000DBC647 /* UIImage+GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		1757FE541FD12953004B3D8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1757FE561FD12960004B3D8E /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
 		17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeTwoViewController.storyboard; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				172078A31FCFE6FE00DBC647 /* AppDelegate.swift */,
 				17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */,
 				172078A51FCFE6FE00DBC647 /* ViewController.swift */,
+				1757FE541FD12953004B3D8E /* MainViewController.swift */,
+				1757FE561FD12960004B3D8E /* MainViewController.storyboard */,
 				172078A71FCFE6FE00DBC647 /* Main.storyboard */,
 				172078AA1FCFE6FE00DBC647 /* Assets.xcassets */,
 				172078AC1FCFE6FE00DBC647 /* LaunchScreen.storyboard */,
@@ -441,14 +447,14 @@
 			isa = PBXGroup;
 			children = (
 				17E983A21FD0F4A700A8480D /* QRCode */,
-				17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */,
-				17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */,
-				17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */,
-				17E983981FD0F29E00A8480D /* QRCodeViewController.storyboard */,
 				17E983991FD0F29E00A8480D /* ScannerBackgroundView.swift */,
+				17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */,
 				17E9839A1FD0F29E00A8480D /* QRCodeAVCaptureDevice.h */,
 				17E9839B1FD0F29E00A8480D /* QRCodeViewController.swift */,
+				17E983981FD0F29E00A8480D /* QRCodeViewController.storyboard */,
+				17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */,
 				17E9839C1FD0F29E00A8480D /* QRCodeTwoViewController.h */,
+				17E983961FD0F29E00A8480D /* QRCodeTwoViewController.storyboard */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -672,6 +678,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
@@ -856,6 +863,7 @@
 				17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */,
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,
 				172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */,
+				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,

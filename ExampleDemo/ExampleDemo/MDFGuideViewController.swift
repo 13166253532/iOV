@@ -65,7 +65,7 @@ class MDFGuideViewController: UIViewController ,UIScrollViewDelegate
         return true
     }
     
-    func btnClick() {
+    @objc func btnClick() {
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
         //MDFAccount.sharedInstance.firstLoad = "true"
         appdelegate.gotoTabBar()
