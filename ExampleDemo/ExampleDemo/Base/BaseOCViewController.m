@@ -41,24 +41,25 @@
     //View controller-based status bar appearance 设置为 NO
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
-
+// 设置导航栏 透明
 -(void)hideNavigationBar{
     [self.navigationController navigationBar].shadowImage = [[UIImage alloc]init];
     [[self.navigationController navigationBar] lt_setBackgroundColor:[UIColor clearColor]];
 }
+//恢复导航栏 透明
 -(void)displayNavigationBar{
     [[self.navigationController navigationBar] lt_reset];
 }
-
+// 设置导航栏
 -(void)initTitleBar{
+    [self initReturnBtn];
     [self defaultBackButtonItem];
     [self initTitleBarColor];
-    [self initReturnBtn];
 }
 
 -(void)initTitleBarColor{
-    NSDictionary *dict = @{ NSUnderlineColorAttributeName: [UIColor whiteColor],NSFontAttributeName: [UIFont systemFontOfSize:20] };
-    self.navigationController.navigationBar.titleTextAttributes = dict;
+    NSDictionary *dict = @{NSForegroundColorAttributeName: [UIColor whiteColor],NSFontAttributeName: [UIFont systemFontOfSize:20] };
+    [self.navigationController.navigationBar setTitleTextAttributes:dict];
 }
 -(void)initReturnBtn{
     UIBarButtonItem *leftN = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"return_image"] style:UIBarButtonItemStylePlain target:self action:@selector(arrowResponse)];

@@ -53,6 +53,10 @@
 		17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5B61FD52FC300A1C3BF /* WebViewController.m */; };
 		17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */; };
 		17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */ = {isa = PBXBuildFile; fileRef = 172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */; };
+		17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5BD1FD53F3400A1C3BF /* UITextField+HTPlaceholderColor.m */; };
+		17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5BE1FD53F3400A1C3BF /* UITabBar+HTBage.m */; };
+		17EFC5C71FD53F3700A1C3BF /* UISearchBar+LeftPlacehold.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5C31FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.m */; };
+		17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5C41FD53F3600A1C3BF /* UITabBar+HTBageNum.m */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
 		25D7DE411DD2253481ADADD9 /* Pods_ExampleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF150D02D753C575F453BEE /* Pods_ExampleDemoTests.framework */; };
 		C9C5A080750DA7CBD2C6638B /* Pods_ExampleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */; };
@@ -219,6 +223,14 @@
 		17EFC5B51FD52FC300A1C3BF /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		17EFC5B61FD52FC300A1C3BF /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		17EFC5BD1FD53F3400A1C3BF /* UITextField+HTPlaceholderColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HTPlaceholderColor.m"; sourceTree = "<group>"; };
+		17EFC5BE1FD53F3400A1C3BF /* UITabBar+HTBage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+HTBage.m"; sourceTree = "<group>"; };
+		17EFC5BF1FD53F3500A1C3BF /* UITextField+HTPlaceholderColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+HTPlaceholderColor.h"; sourceTree = "<group>"; };
+		17EFC5C01FD53F3500A1C3BF /* UITabBar+HTBage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+HTBage.h"; sourceTree = "<group>"; };
+		17EFC5C11FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+LeftPlacehold.h"; sourceTree = "<group>"; };
+		17EFC5C21FD53F3600A1C3BF /* UITabBar+HTBageNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+HTBageNum.h"; sourceTree = "<group>"; };
+		17EFC5C31FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+LeftPlacehold.m"; sourceTree = "<group>"; };
+		17EFC5C41FD53F3600A1C3BF /* UITabBar+HTBageNum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+HTBageNum.m"; sourceTree = "<group>"; };
 		1A2E5E6869C8A7F6CA185CBD /* Pods-ExampleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		261D793693B4C3D48B449316 /* Pods-ExampleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemoUITests/Pods-ExampleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,6 +425,14 @@
 			children = (
 				172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */,
 				172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */,
+				17EFC5C11FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.h */,
+				17EFC5C31FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.m */,
+				17EFC5C01FD53F3500A1C3BF /* UITabBar+HTBage.h */,
+				17EFC5BE1FD53F3400A1C3BF /* UITabBar+HTBage.m */,
+				17EFC5C21FD53F3600A1C3BF /* UITabBar+HTBageNum.h */,
+				17EFC5C41FD53F3600A1C3BF /* UITabBar+HTBageNum.m */,
+				17EFC5BF1FD53F3500A1C3BF /* UITextField+HTPlaceholderColor.h */,
+				17EFC5BD1FD53F3400A1C3BF /* UITextField+HTPlaceholderColor.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -969,9 +989,12 @@
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
+				17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */,
+				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
 				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
 				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
+				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
 				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
@@ -997,6 +1020,7 @@
 				172078E31FD0150200DBC647 /* BaseConfigFounction.swift in Sources */,
 				1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */,
 				172078E21FD014FD00DBC647 /* BaseCellModel.swift in Sources */,
+				17EFC5C71FD53F3700A1C3BF /* UISearchBar+LeftPlacehold.m in Sources */,
 				172078A61FCFE6FE00DBC647 /* ViewController.swift in Sources */,
 				172078A41FCFE6FE00DBC647 /* AppDelegate.swift in Sources */,
 			);
