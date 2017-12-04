@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseOCViewController : UIViewController
-+(UIViewController *)createViewController;
+//+(UIViewController *)createViewController;
 @end

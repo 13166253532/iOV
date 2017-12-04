@@ -50,6 +50,9 @@
 		17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */; };
 		17E983C61FD1044100A8480D /* SMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983AF1FD1041400A8480D /* SMToastView.m */; };
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
+		17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5B61FD52FC300A1C3BF /* WebViewController.m */; };
+		17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */; };
+		17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */ = {isa = PBXBuildFile; fileRef = 172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
 		25D7DE411DD2253481ADADD9 /* Pods_ExampleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF150D02D753C575F453BEE /* Pods_ExampleDemoTests.framework */; };
 		C9C5A080750DA7CBD2C6638B /* Pods_ExampleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */; };
@@ -213,6 +216,9 @@
 		17E983BE1FD1041400A8480D /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
 		17E983C01FD1041400A8480D /* SMAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAlertView.h; sourceTree = "<group>"; };
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
+		17EFC5B51FD52FC300A1C3BF /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		17EFC5B61FD52FC300A1C3BF /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
 		1A2E5E6869C8A7F6CA185CBD /* Pods-ExampleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		261D793693B4C3D48B449316 /* Pods-ExampleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemoUITests/Pods-ExampleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +381,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EFC5B41FD52FB200A1C3BF /* WebVC */,
 				1757FE801FD14DB9004B3D8E /* LKDBHelper */,
 				17E983941FD0F29E00A8480D /* QRCode */,
 			);
@@ -548,8 +555,8 @@
 			isa = PBXGroup;
 			children = (
 				17E983991FD0F29E00A8480D /* ScannerBackgroundView.swift */,
-				17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */,
 				17E9839A1FD0F29E00A8480D /* QRCodeAVCaptureDevice.h */,
+				17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */,
 				17E9839B1FD0F29E00A8480D /* QRCodeViewController.swift */,
 				1757FE5E1FD134F1004B3D8E /* QRCodeViewController.storyboard */,
 				17E9839C1FD0F29E00A8480D /* QRCodeTwoViewController.h */,
@@ -614,6 +621,16 @@
 				17E983C31FD1041400A8480D /* SMAlertView.m */,
 			);
 			path = AlertView;
+			sourceTree = "<group>";
+		};
+		17EFC5B41FD52FB200A1C3BF /* WebVC */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5B51FD52FC300A1C3BF /* WebViewController.h */,
+				17EFC5B61FD52FC300A1C3BF /* WebViewController.m */,
+				17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */,
+			);
+			path = WebVC;
 			sourceTree = "<group>";
 		};
 		B63D77DB8D35F498328ADD53 /* Pods */ = {
@@ -758,6 +775,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
@@ -948,6 +966,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
@@ -959,6 +978,7 @@
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,
+				17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */,
 				17E983C61FD1044100A8480D /* SMToastView.m in Sources */,
 				17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */,
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,

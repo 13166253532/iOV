@@ -26,10 +26,10 @@ func SCREEN_HEIGHT()->CGFloat{
     return UIScreen.main.bounds.size.height
 }
 func WHIDTH_RATIO()->CGFloat{
-    return UIScreen.main.bounds.size.width/375
+    return UIScreen.main.bounds.size.width/414
 }
 func HEIGHT_RATIO()->CGFloat{
-    return UIScreen.main.bounds.size.height/667
+    return UIScreen.main.bounds.size.height/736
 }
 func showAlert(title:String,message:String,titleCancelBtn:String,titleSecondBtn:String,blockOtherBtn:@escaping selectBlock){
     let alertController = UIAlertController(title: title,
