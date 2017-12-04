@@ -57,6 +57,15 @@
 		17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5BE1FD53F3400A1C3BF /* UITabBar+HTBage.m */; };
 		17EFC5C71FD53F3700A1C3BF /* UISearchBar+LeftPlacehold.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5C31FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.m */; };
 		17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5C41FD53F3600A1C3BF /* UITabBar+HTBageNum.m */; };
+		17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5CA1FD5543200A1C3BF /* RootTabBarViewController.swift */; };
+		17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5D01FD555A100A1C3BF /* HomeViewController.swift */; };
+		17EFC5D31FD555B800A1C3BF /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5D21FD555B800A1C3BF /* HomeViewController.storyboard */; };
+		17EFC5D51FD555DE00A1C3BF /* InvewtorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5D41FD555DE00A1C3BF /* InvewtorsViewController.swift */; };
+		17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5D61FD555E800A1C3BF /* InvewtorsViewController.storyboard */; };
+		17EFC5D91FD5560500A1C3BF /* ParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5D81FD5560500A1C3BF /* ParkViewController.swift */; };
+		17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */; };
+		17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */; };
+		17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
 		25D7DE411DD2253481ADADD9 /* Pods_ExampleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF150D02D753C575F453BEE /* Pods_ExampleDemoTests.framework */; };
 		C9C5A080750DA7CBD2C6638B /* Pods_ExampleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */; };
@@ -231,6 +240,15 @@
 		17EFC5C21FD53F3600A1C3BF /* UITabBar+HTBageNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+HTBageNum.h"; sourceTree = "<group>"; };
 		17EFC5C31FD53F3600A1C3BF /* UISearchBar+LeftPlacehold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+LeftPlacehold.m"; sourceTree = "<group>"; };
 		17EFC5C41FD53F3600A1C3BF /* UITabBar+HTBageNum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+HTBageNum.m"; sourceTree = "<group>"; };
+		17EFC5CA1FD5543200A1C3BF /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		17EFC5D01FD555A100A1C3BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17EFC5D21FD555B800A1C3BF /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		17EFC5D41FD555DE00A1C3BF /* InvewtorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvewtorsViewController.swift; sourceTree = "<group>"; };
+		17EFC5D61FD555E800A1C3BF /* InvewtorsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InvewtorsViewController.storyboard; sourceTree = "<group>"; };
+		17EFC5D81FD5560500A1C3BF /* ParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkViewController.swift; sourceTree = "<group>"; };
+		17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParkViewController.storyboard; sourceTree = "<group>"; };
+		17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectViewController.storyboard; sourceTree = "<group>"; };
 		1A2E5E6869C8A7F6CA185CBD /* Pods-ExampleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		261D793693B4C3D48B449316 /* Pods-ExampleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemoUITests/Pods-ExampleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -393,6 +411,11 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EFC5CF1FD5558700A1C3BF /* Home */,
+				17EFC5CE1FD5558700A1C3BF /* Invewtors */,
+				17EFC5CC1FD5558600A1C3BF /* Park */,
+				17EFC5CD1FD5558600A1C3BF /* Project */,
+				17EFC5C91FD5540F00A1C3BF /* RootTabBarViewController */,
 				17EFC5B41FD52FB200A1C3BF /* WebVC */,
 				1757FE801FD14DB9004B3D8E /* LKDBHelper */,
 				17E983941FD0F29E00A8480D /* QRCode */,
@@ -653,6 +676,50 @@
 			path = WebVC;
 			sourceTree = "<group>";
 		};
+		17EFC5C91FD5540F00A1C3BF /* RootTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5CA1FD5543200A1C3BF /* RootTabBarViewController.swift */,
+			);
+			path = RootTabBarViewController;
+			sourceTree = "<group>";
+		};
+		17EFC5CC1FD5558600A1C3BF /* Park */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5D81FD5560500A1C3BF /* ParkViewController.swift */,
+				17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */,
+			);
+			path = Park;
+			sourceTree = "<group>";
+		};
+		17EFC5CD1FD5558600A1C3BF /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */,
+				17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		17EFC5CE1FD5558700A1C3BF /* Invewtors */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5D41FD555DE00A1C3BF /* InvewtorsViewController.swift */,
+				17EFC5D61FD555E800A1C3BF /* InvewtorsViewController.storyboard */,
+			);
+			path = Invewtors;
+			sourceTree = "<group>";
+		};
+		17EFC5CF1FD5558700A1C3BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC5D01FD555A100A1C3BF /* HomeViewController.swift */,
+				17EFC5D21FD555B800A1C3BF /* HomeViewController.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B63D77DB8D35F498328ADD53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -795,13 +862,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EFC5D31FD555B800A1C3BF /* HomeViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
+				17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */,
+				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
+				17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */,
 				1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */,
 				1757FE5F1FD134F1004B3D8E /* QRCodeViewController.storyboard in Resources */,
 			);
@@ -988,14 +1059,17 @@
 			files = (
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
+				17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
 				17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */,
 				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
 				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
+				17EFC5D51FD555DE00A1C3BF /* InvewtorsViewController.swift in Sources */,
 				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
 				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
 				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
+				17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
@@ -1009,9 +1083,11 @@
 				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
+				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
 				172079001FD0159900DBC647 /* ConfigColor.swift in Sources */,
 				172078E81FD0151E00DBC647 /* BaseViewController.swift in Sources */,
+				17EFC5D91FD5560500A1C3BF /* ParkViewController.swift in Sources */,
 				172078E71FD0151A00DBC647 /* BaseTableViewDelegate.swift in Sources */,
 				172078E61FD0151000DBC647 /* BaseTableViewCell.swift in Sources */,
 				172078E41FD0150600DBC647 /* BaseOCViewController.m in Sources */,

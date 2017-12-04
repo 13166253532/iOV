@@ -25,12 +25,13 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTitleBar()
-        self.title = "选择"
+        self.title = "我的"
         self.view.backgroundColor = loginBg_Color
         initReturnBtn()
         isNavigationBarObstructed()
         initMyTableView()
     }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         displayNavigationBar()
@@ -84,18 +85,22 @@ class MainViewController: BaseViewController {
     }
     func gotoQRVC() {
         let vc:QRCodeViewController=QRCodeViewController.createViewController(createArgs: nil) as! QRCodeViewController
+        vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
     func gotoQRTwoVC() {
         let vc:QRCodeTwoViewController = QRCodeTwoViewController.createViewController() as! QRCodeTwoViewController
+        vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
     func gotoLKDBHelper() {
         let vc:LKDBHelperViewController=LKDBHelperViewController.createViewController(createArgs: nil) as! LKDBHelperViewController
+        vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
     func gotoWebVC(){
         let vc:WebViewController = WebViewController.createViewController() as! WebViewController
+        vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
 }

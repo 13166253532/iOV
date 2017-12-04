@@ -30,8 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     func gotoTabBar() {
-        let vc:MainViewController=MainViewController.createViewController(createArgs: nil) as! MainViewController
-        let nav = UINavigationController.init(rootViewController: vc)
+//        let vc:MainViewController=MainViewController.createViewController(createArgs: nil) as! MainViewController
+//        let nav = UINavigationController.init(rootViewController: vc)
+        let nav = RootTabBarViewController.init()
         self.window?.rootViewController = nav
     }
     func applicationWillResignActive(_ application: UIApplication) {
