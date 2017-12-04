@@ -8,5 +8,5 @@
 #import "QRCodeAVCaptureDevice.h"
 #import "QRCodeTwoViewController.h"
 #import "AccountInfoOC.h"
-
-
+#import "HTMessageInfo.h"
+#import "FGDBHelper.h"

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Helper View Controller-->
+        <scene sceneID="ycT-4m-wkn">
+            <objects>
+                <viewController storyboardIdentifier="LKDBHelperViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ofi-Xe-yNn" customClass="LKDBHelperViewController" customModule="ExampleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AGI-cl-BT0"/>
+                        <viewControllerLayoutGuide type="bottom" id="muj-jB-6K9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VGl-EN-prB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzv-cc-ezV">
+                                <rect key="frame" x="7" y="73" width="368" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Vy-2p-JwZ"/>
+                                </constraints>
+                                <state key="normal" title="存储"/>
+                                <connections>
+                                    <action selector="storageAction:" destination="Ofi-Xe-yNn" eventType="touchUpInside" id="cJe-YO-h2g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY3-hL-Do4">
+                                <rect key="frame" x="0.0" y="123" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PXD-Ym-54G"/>
+                                </constraints>
+                                <state key="normal" title="获取"/>
+                                <connections>
+                                    <action selector="getAction:" destination="Ofi-Xe-yNn" eventType="touchUpInside" id="vnr-dU-M8p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-Hi-PJ7">
+                                <rect key="frame" x="16" y="200" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QK4-t6-ZUN"/>
+                                </constraints>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deletAction:" destination="Ofi-Xe-yNn" eventType="touchUpInside" id="4f9-fQ-eDn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AY3-hL-Do4" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leading" id="9kp-5L-sbF"/>
+                            <constraint firstAttribute="trailing" secondItem="AY3-hL-Do4" secondAttribute="trailing" id="CWN-o8-I0g"/>
+                            <constraint firstItem="kzv-cc-ezV" firstAttribute="top" secondItem="AGI-cl-BT0" secondAttribute="bottom" constant="53" id="J5r-2e-eDY"/>
+                            <constraint firstItem="kzv-cc-ezV" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leading" constant="7" id="MTj-MC-RrC"/>
+                            <constraint firstAttribute="trailing" secondItem="kzv-cc-ezV" secondAttribute="trailing" id="Qwb-b1-co7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AlG-Hi-PJ7" secondAttribute="trailing" id="S47-kY-fUT"/>
+                            <constraint firstItem="AlG-Hi-PJ7" firstAttribute="top" secondItem="AY3-hL-Do4" secondAttribute="bottom" constant="47" id="V0q-rv-Xf3"/>
+                            <constraint firstItem="AY3-hL-Do4" firstAttribute="top" secondItem="kzv-cc-ezV" secondAttribute="bottom" constant="20" id="fBs-Fv-0vb"/>
+                            <constraint firstItem="AlG-Hi-PJ7" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leadingMargin" id="ydJ-HV-3AL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKG-Ex-dyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>

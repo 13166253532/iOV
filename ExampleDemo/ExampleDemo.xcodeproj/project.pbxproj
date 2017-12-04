@@ -36,6 +36,14 @@
 		1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */; };
 		1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE631FD138EA004B3D8E /* AccountInfoOC.m */; };
 		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
+		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
+		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
+		17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE6F1FD14D20004B3D8E /* FGDBHelper.m */; };
+		17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE701FD14D20004B3D8E /* HTMessageInfo.m */; };
+		17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE721FD14D20004B3D8E /* HTCalendarOrdersInfo.m */; };
+		17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE6E1FD14D20004B3D8E /* HTCountryListInfo.m */; };
+		17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE6A1FD14D20004B3D8E /* HTCitiesListInfo.m */; };
+		17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE731FD14D20004B3D8E /* EPHistorySearchInfo.m */; };
 		17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */; };
 		17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E9839E1FD0F30400A8480D /* QuartzCore.framework */; };
 		17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E983A01FD0F30F00A8480D /* AVFoundation.framework */; };
@@ -153,6 +161,30 @@
 		1757FE621FD138EA004B3D8E /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
 		1757FE631FD138EA004B3D8E /* AccountInfoOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountInfoOC.m; sourceTree = "<group>"; };
 		1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodeTwoViewController.storyboard; sourceTree = "<group>"; };
+		1757FE681FD14D20004B3D8E /* HTCountryListInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTCountryListInfo.h; sourceTree = "<group>"; };
+		1757FE691FD14D20004B3D8E /* FGDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGDBHelper.h; sourceTree = "<group>"; };
+		1757FE6A1FD14D20004B3D8E /* HTCitiesListInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTCitiesListInfo.m; sourceTree = "<group>"; };
+		1757FE6B1FD14D20004B3D8E /* HTMessageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMessageInfo.h; sourceTree = "<group>"; };
+		1757FE6C1FD14D20004B3D8E /* EPHistorySearchInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPHistorySearchInfo.h; sourceTree = "<group>"; };
+		1757FE6D1FD14D20004B3D8E /* HTCalendarOrdersInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTCalendarOrdersInfo.h; sourceTree = "<group>"; };
+		1757FE6E1FD14D20004B3D8E /* HTCountryListInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTCountryListInfo.m; sourceTree = "<group>"; };
+		1757FE6F1FD14D20004B3D8E /* FGDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGDBHelper.m; sourceTree = "<group>"; };
+		1757FE701FD14D20004B3D8E /* HTMessageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMessageInfo.m; sourceTree = "<group>"; };
+		1757FE711FD14D20004B3D8E /* HTCitiesListInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTCitiesListInfo.h; sourceTree = "<group>"; };
+		1757FE721FD14D20004B3D8E /* HTCalendarOrdersInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTCalendarOrdersInfo.m; sourceTree = "<group>"; };
+		1757FE731FD14D20004B3D8E /* EPHistorySearchInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPHistorySearchInfo.m; sourceTree = "<group>"; };
+		1757FE761FD14D20004B3D8E /* LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDBHelper.h; sourceTree = "<group>"; };
+		1757FE771FD14D20004B3D8E /* LKDBUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDBUtils.h; sourceTree = "<group>"; };
+		1757FE781FD14D20004B3D8E /* NSObject+LKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKModel.m"; sourceTree = "<group>"; };
+		1757FE791FD14D20004B3D8E /* LKDB+Mapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKDB+Mapping.h"; sourceTree = "<group>"; };
+		1757FE7A1FD14D20004B3D8E /* NSObject+LKDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKDBHelper.m"; sourceTree = "<group>"; };
+		1757FE7B1FD14D20004B3D8E /* LKDBUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDBUtils.m; sourceTree = "<group>"; };
+		1757FE7C1FD14D20004B3D8E /* LKDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDBHelper.m; sourceTree = "<group>"; };
+		1757FE7D1FD14D20004B3D8E /* LKDB+Mapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LKDB+Mapping.m"; sourceTree = "<group>"; };
+		1757FE7E1FD14D20004B3D8E /* NSObject+LKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKModel.h"; sourceTree = "<group>"; };
+		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
+		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
+		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
 		17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeTwoViewController.m; sourceTree = "<group>"; };
@@ -300,6 +332,8 @@
 		172078D21FD00CDE00DBC647 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				1757FE671FD14D20004B3D8E /* DBHelper */,
+				1757FE741FD14D20004B3D8E /* LKDBHelper */,
 				1720792C1FD0177000DBC647 /* BRPlaceholderTextView */,
 				172079051FD0177000DBC647 /* MBProgressHUD */,
 				1720790A1FD0177000DBC647 /* SDWebImage */,
@@ -341,6 +375,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1757FE801FD14DB9004B3D8E /* LKDBHelper */,
 				17E983941FD0F29E00A8480D /* QRCode */,
 			);
 			path = ViewControllers;
@@ -454,6 +489,59 @@
 				1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */,
 			);
 			path = BRPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		1757FE671FD14D20004B3D8E /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1757FE691FD14D20004B3D8E /* FGDBHelper.h */,
+				1757FE6F1FD14D20004B3D8E /* FGDBHelper.m */,
+				1757FE6B1FD14D20004B3D8E /* HTMessageInfo.h */,
+				1757FE701FD14D20004B3D8E /* HTMessageInfo.m */,
+				1757FE6C1FD14D20004B3D8E /* EPHistorySearchInfo.h */,
+				1757FE731FD14D20004B3D8E /* EPHistorySearchInfo.m */,
+				1757FE681FD14D20004B3D8E /* HTCountryListInfo.h */,
+				1757FE6E1FD14D20004B3D8E /* HTCountryListInfo.m */,
+				1757FE711FD14D20004B3D8E /* HTCitiesListInfo.h */,
+				1757FE6A1FD14D20004B3D8E /* HTCitiesListInfo.m */,
+				1757FE6D1FD14D20004B3D8E /* HTCalendarOrdersInfo.h */,
+				1757FE721FD14D20004B3D8E /* HTCalendarOrdersInfo.m */,
+			);
+			path = DBHelper;
+			sourceTree = "<group>";
+		};
+		1757FE741FD14D20004B3D8E /* LKDBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1757FE751FD14D20004B3D8E /* Helper */,
+			);
+			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		1757FE751FD14D20004B3D8E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1757FE761FD14D20004B3D8E /* LKDBHelper.h */,
+				1757FE771FD14D20004B3D8E /* LKDBUtils.h */,
+				1757FE781FD14D20004B3D8E /* NSObject+LKModel.m */,
+				1757FE791FD14D20004B3D8E /* LKDB+Mapping.h */,
+				1757FE7A1FD14D20004B3D8E /* NSObject+LKDBHelper.m */,
+				1757FE7B1FD14D20004B3D8E /* LKDBUtils.m */,
+				1757FE7C1FD14D20004B3D8E /* LKDBHelper.m */,
+				1757FE7D1FD14D20004B3D8E /* LKDB+Mapping.m */,
+				1757FE7E1FD14D20004B3D8E /* NSObject+LKModel.h */,
+				1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1757FE801FD14DB9004B3D8E /* LKDBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */,
+				1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */,
+			);
+			path = LKDBHelper;
 			sourceTree = "<group>";
 		};
 		17E983941FD0F29E00A8480D /* QRCode */ = {
@@ -676,6 +764,7 @@
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
+				1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */,
 				1757FE5F1FD134F1004B3D8E /* QRCodeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,12 +887,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -853,6 +948,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
+				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
+				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
+				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
+				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
+				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
@@ -874,6 +975,7 @@
 				1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */,
 				17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */,
 				172078E31FD0150200DBC647 /* BaseConfigFounction.swift in Sources */,
+				1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */,
 				172078E21FD014FD00DBC647 /* BaseCellModel.swift in Sources */,
 				172078A61FCFE6FE00DBC647 /* ViewController.swift in Sources */,
 				172078A41FCFE6FE00DBC647 /* AppDelegate.swift in Sources */,
