@@ -20,14 +20,22 @@
 //    return sharedView;
 //}
 
-+(void)showMessage:(UIView *)parentView withMessage:(NSString *)msg
-{
-    [parentView makeToast:msg];
-}
+//+(void)showMessage:(UIView *)parentView withMessage:(NSString *)msg
+//{
+//    [parentView makeToast:msg];
+//}
+//
+//+(void)showMessageCenter:(UIView *)parentView withMessage:(NSString *)msg
+//{
+//    [parentView makeToast:msg duration:2 position:CSToastPositionCenter];
+//}
 
-+(void)showMessageCenter:(UIView *)parentView withMessage:(NSString *)msg
++(void)showMessage:(NSString *)msg
 {
-    [parentView makeToast:msg duration:2 position:CSToastPositionCenter];
+    [[[UIApplication sharedApplication] delegate].window makeToast:msg];
 }
-
++(void)showMessageCenterMessage:(NSString *)msg
+{
+    [[[UIApplication sharedApplication] delegate].window makeToast:msg duration:2 position:CSToastPositionCenter];
+}
 @end

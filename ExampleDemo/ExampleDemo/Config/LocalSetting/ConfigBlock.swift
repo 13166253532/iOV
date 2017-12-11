@@ -16,7 +16,7 @@ typealias returnParameterBlock = ()->(AnyObject)
 
 typealias passTwoParameterBlock = (AnyObject,AnyObject)->()
 
-//typealias httpBlock = (RequestResult?,AnyObject?)->()
+typealias httpBlock = (RequestResult?,AnyObject?)->()
 
 
 typealias signUpBlock = ()->(String)

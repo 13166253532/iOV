@@ -26,6 +26,20 @@
 		172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */; };
 		172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F61FD0157F00DBC647 /* UIView+Additions.m */; };
 		172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079061FD0177000DBC647 /* MBProgressHUD.m */; };
+		174852B61FDE6CF300FC159C /* RequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1A1FDE62F000D9F535 /* RequestResult.m */; };
+		174852B71FDE6CF800FC159C /* SNHttpRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC121FDE62F000D9F535 /* SNHttpRequestResult.m */; };
+		174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC341FDE639400D9F535 /* DSHttpMessageListCmd.m */; };
+		174852B91FDE6D2E00FC159C /* SMBaseHttpComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC201FDE62F000D9F535 /* SMBaseHttpComplete.m */; };
+		174852BA1FDE6DDE00FC159C /* HTHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC111FDE62F000D9F535 /* HTHttpConfig.m */; };
+		174852BB1FDE6DF000FC159C /* HttpConfigGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1B1FDE62F000D9F535 /* HttpConfigGroup.m */; };
+		174852BC1FDE6E2700FC159C /* PVHttpVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC291FDE62F000D9F535 /* PVHttpVersion.m */; };
+		174852BD1FDE6E3900FC159C /* SNHttpBaseGetCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */; };
+		174852BE1FDE6ECA00FC159C /* SNHttpBaseCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC0C1FDE62F000D9F535 /* SNHttpBaseCmd.m */; };
+		174852BF1FDE6F4200FC159C /* HttpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1E1FDE62F000D9F535 /* HttpCommand.m */; };
+		174852C01FDE6F5600FC159C /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC151FDE62F000D9F535 /* CommonFunc.m */; };
+		174852C11FDE6F6900FC159C /* HttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1F1FDE62F000D9F535 /* HttpConfig.m */; };
+		174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC271FDE62F000D9F535 /* ProjectConfigGroup.m */; };
+		174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC331FDE639400D9F535 /* DSHttpMessageListCmd+Response.m */; };
 		1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE541FD12953004B3D8E /* MainViewController.swift */; };
 		1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE561FD12960004B3D8E /* MainViewController.storyboard */; };
 		1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */; };
@@ -38,6 +52,10 @@
 		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
 		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
 		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
+		17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC361FDE642B00D9F535 /* HttpViewController.swift */; };
+		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
+		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
+		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
 		17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE6F1FD14D20004B3D8E /* FGDBHelper.m */; };
 		17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE701FD14D20004B3D8E /* HTMessageInfo.m */; };
 		17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE721FD14D20004B3D8E /* HTCalendarOrdersInfo.m */; };
@@ -168,6 +186,7 @@
 		1720792B1FD0177000DBC647 /* UIImage+GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		174852C71FDE716400FC159C /* DSHttpMessageListResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSHttpMessageListResult.h; sourceTree = "<group>"; };
 		1757FE541FD12953004B3D8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1757FE561FD12960004B3D8E /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -201,6 +220,45 @@
 		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
 		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
+		17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseGetCmd.m; sourceTree = "<group>"; };
+		17A5DC0C1FDE62F000D9F535 /* SNHttpBaseCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseCmd.m; sourceTree = "<group>"; };
+		17A5DC0D1FDE62F000D9F535 /* SNHttpBasePutCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBasePutCmd.m; sourceTree = "<group>"; };
+		17A5DC0E1FDE62F000D9F535 /* ProjectConfigGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectConfigGroup.h; sourceTree = "<group>"; };
+		17A5DC0F1FDE62F000D9F535 /* SNHttpBasePostCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpBasePostCmd.h; sourceTree = "<group>"; };
+		17A5DC101FDE62F000D9F535 /* SNHttpBaseDeleteCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseDeleteCmd.m; sourceTree = "<group>"; };
+		17A5DC111FDE62F000D9F535 /* HTHttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTHttpConfig.m; sourceTree = "<group>"; };
+		17A5DC121FDE62F000D9F535 /* SNHttpRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpRequestResult.m; sourceTree = "<group>"; };
+		17A5DC131FDE62F000D9F535 /* PVHttpVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVHttpVersion.h; sourceTree = "<group>"; };
+		17A5DC151FDE62F000D9F535 /* CommonFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonFunc.m; sourceTree = "<group>"; };
+		17A5DC161FDE62F000D9F535 /* CommonFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonFunc.h; sourceTree = "<group>"; };
+		17A5DC171FDE62F000D9F535 /* SNHttpBaseCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpBaseCmd.h; sourceTree = "<group>"; };
+		17A5DC181FDE62F000D9F535 /* SNHttpBaseGetCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpBaseGetCmd.h; sourceTree = "<group>"; };
+		17A5DC1A1FDE62F000D9F535 /* RequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestResult.m; sourceTree = "<group>"; };
+		17A5DC1B1FDE62F000D9F535 /* HttpConfigGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpConfigGroup.m; sourceTree = "<group>"; };
+		17A5DC1C1FDE62F000D9F535 /* SMBaseHttpComplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBaseHttpComplete.h; sourceTree = "<group>"; };
+		17A5DC1D1FDE62F000D9F535 /* HttpCommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpCommandProtocol.h; sourceTree = "<group>"; };
+		17A5DC1E1FDE62F000D9F535 /* HttpCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpCommand.m; sourceTree = "<group>"; };
+		17A5DC1F1FDE62F000D9F535 /* HttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpConfig.m; sourceTree = "<group>"; };
+		17A5DC201FDE62F000D9F535 /* SMBaseHttpComplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBaseHttpComplete.m; sourceTree = "<group>"; };
+		17A5DC211FDE62F000D9F535 /* RequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestResult.h; sourceTree = "<group>"; };
+		17A5DC221FDE62F000D9F535 /* HttpConfigGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpConfigGroup.h; sourceTree = "<group>"; };
+		17A5DC231FDE62F000D9F535 /* HttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpConfig.h; sourceTree = "<group>"; };
+		17A5DC241FDE62F000D9F535 /* HttpCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpCommand.h; sourceTree = "<group>"; };
+		17A5DC251FDE62F000D9F535 /* SMHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHttp.h; sourceTree = "<group>"; };
+		17A5DC261FDE62F000D9F535 /* SNHttpBasePostCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBasePostCmd.m; sourceTree = "<group>"; };
+		17A5DC271FDE62F000D9F535 /* ProjectConfigGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectConfigGroup.m; sourceTree = "<group>"; };
+		17A5DC281FDE62F000D9F535 /* SNHttpBasePutCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpBasePutCmd.h; sourceTree = "<group>"; };
+		17A5DC291FDE62F000D9F535 /* PVHttpVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVHttpVersion.m; sourceTree = "<group>"; };
+		17A5DC2A1FDE62F000D9F535 /* SNHttpRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpRequestResult.h; sourceTree = "<group>"; };
+		17A5DC2B1FDE62F000D9F535 /* HTHttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTHttpConfig.h; sourceTree = "<group>"; };
+		17A5DC2C1FDE62F000D9F535 /* SNHttpBaseDeleteCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNHttpBaseDeleteCmd.h; sourceTree = "<group>"; };
+		17A5DC2F1FDE639400D9F535 /* DSHttpMessageListCmd+Response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSHttpMessageListCmd+Response.h"; sourceTree = "<group>"; };
+		17A5DC311FDE639400D9F535 /* DSHttpMessageListCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSHttpMessageListCmd.h; sourceTree = "<group>"; };
+		17A5DC331FDE639400D9F535 /* DSHttpMessageListCmd+Response.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DSHttpMessageListCmd+Response.m"; sourceTree = "<group>"; };
+		17A5DC341FDE639400D9F535 /* DSHttpMessageListCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSHttpMessageListCmd.m; sourceTree = "<group>"; };
+		17A5DC361FDE642B00D9F535 /* HttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
+		17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HttpViewController.storyboard; sourceTree = "<group>"; };
+		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
 		17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeTwoViewController.m; sourceTree = "<group>"; };
@@ -380,6 +438,8 @@
 		172078D31FD00CDF00DBC647 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				17A5DC2D1FDE639400D9F535 /* LoginHttp */,
+				17A5DC0A1FDE62F000D9F535 /* BaseHttp */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -401,6 +461,7 @@
 		172078D51FD00CDF00DBC647 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */,
 				1757FE621FD138EA004B3D8E /* AccountInfo.swift */,
 				1757FE611FD138EA004B3D8E /* AccountInfoOC.h */,
 				1757FE631FD138EA004B3D8E /* AccountInfoOC.m */,
@@ -411,6 +472,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17A5DC351FDE63FF00D9F535 /* Http */,
 				17EFC5CF1FD5558700A1C3BF /* Home */,
 				17EFC5CE1FD5558700A1C3BF /* Invewtors */,
 				17EFC5CC1FD5558600A1C3BF /* Park */,
@@ -592,6 +654,82 @@
 				1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */,
 			);
 			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		17A5DC0A1FDE62F000D9F535 /* BaseHttp */ = {
+			isa = PBXGroup;
+			children = (
+				17A5DC191FDE62F000D9F535 /* Http */,
+				17A5DC141FDE62F000D9F535 /* CommonFunc */,
+				17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */,
+				17A5DC0C1FDE62F000D9F535 /* SNHttpBaseCmd.m */,
+				17A5DC0D1FDE62F000D9F535 /* SNHttpBasePutCmd.m */,
+				17A5DC0E1FDE62F000D9F535 /* ProjectConfigGroup.h */,
+				17A5DC0F1FDE62F000D9F535 /* SNHttpBasePostCmd.h */,
+				17A5DC101FDE62F000D9F535 /* SNHttpBaseDeleteCmd.m */,
+				17A5DC111FDE62F000D9F535 /* HTHttpConfig.m */,
+				17A5DC121FDE62F000D9F535 /* SNHttpRequestResult.m */,
+				17A5DC131FDE62F000D9F535 /* PVHttpVersion.h */,
+				17A5DC171FDE62F000D9F535 /* SNHttpBaseCmd.h */,
+				17A5DC181FDE62F000D9F535 /* SNHttpBaseGetCmd.h */,
+				17A5DC261FDE62F000D9F535 /* SNHttpBasePostCmd.m */,
+				17A5DC271FDE62F000D9F535 /* ProjectConfigGroup.m */,
+				17A5DC281FDE62F000D9F535 /* SNHttpBasePutCmd.h */,
+				17A5DC291FDE62F000D9F535 /* PVHttpVersion.m */,
+				17A5DC2A1FDE62F000D9F535 /* SNHttpRequestResult.h */,
+				17A5DC2B1FDE62F000D9F535 /* HTHttpConfig.h */,
+				17A5DC2C1FDE62F000D9F535 /* SNHttpBaseDeleteCmd.h */,
+			);
+			path = BaseHttp;
+			sourceTree = "<group>";
+		};
+		17A5DC141FDE62F000D9F535 /* CommonFunc */ = {
+			isa = PBXGroup;
+			children = (
+				17A5DC151FDE62F000D9F535 /* CommonFunc.m */,
+				17A5DC161FDE62F000D9F535 /* CommonFunc.h */,
+			);
+			path = CommonFunc;
+			sourceTree = "<group>";
+		};
+		17A5DC191FDE62F000D9F535 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				17A5DC1A1FDE62F000D9F535 /* RequestResult.m */,
+				17A5DC1B1FDE62F000D9F535 /* HttpConfigGroup.m */,
+				17A5DC1C1FDE62F000D9F535 /* SMBaseHttpComplete.h */,
+				17A5DC1D1FDE62F000D9F535 /* HttpCommandProtocol.h */,
+				17A5DC1E1FDE62F000D9F535 /* HttpCommand.m */,
+				17A5DC1F1FDE62F000D9F535 /* HttpConfig.m */,
+				17A5DC201FDE62F000D9F535 /* SMBaseHttpComplete.m */,
+				17A5DC211FDE62F000D9F535 /* RequestResult.h */,
+				17A5DC221FDE62F000D9F535 /* HttpConfigGroup.h */,
+				17A5DC231FDE62F000D9F535 /* HttpConfig.h */,
+				17A5DC241FDE62F000D9F535 /* HttpCommand.h */,
+				17A5DC251FDE62F000D9F535 /* SMHttp.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		17A5DC2D1FDE639400D9F535 /* LoginHttp */ = {
+			isa = PBXGroup;
+			children = (
+				17A5DC311FDE639400D9F535 /* DSHttpMessageListCmd.h */,
+				17A5DC341FDE639400D9F535 /* DSHttpMessageListCmd.m */,
+				17A5DC2F1FDE639400D9F535 /* DSHttpMessageListCmd+Response.h */,
+				17A5DC331FDE639400D9F535 /* DSHttpMessageListCmd+Response.m */,
+				174852C71FDE716400FC159C /* DSHttpMessageListResult.h */,
+			);
+			path = LoginHttp;
+			sourceTree = "<group>";
+		};
+		17A5DC351FDE63FF00D9F535 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				17A5DC361FDE642B00D9F535 /* HttpViewController.swift */,
+				17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		17E983941FD0F29E00A8480D /* QRCode */ = {
@@ -873,6 +1011,7 @@
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
 				17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */,
+				17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */,
 				1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */,
 				1757FE5F1FD134F1004B3D8E /* QRCodeViewController.storyboard in Resources */,
 			);
@@ -1057,10 +1196,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */,
+				174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */,
+				174852C11FDE6F6900FC159C /* HttpConfig.m in Sources */,
+				174852C01FDE6F5600FC159C /* CommonFunc.m in Sources */,
+				174852BF1FDE6F4200FC159C /* HttpCommand.m in Sources */,
+				174852BE1FDE6ECA00FC159C /* SNHttpBaseCmd.m in Sources */,
+				174852BD1FDE6E3900FC159C /* SNHttpBaseGetCmd.m in Sources */,
+				174852BC1FDE6E2700FC159C /* PVHttpVersion.m in Sources */,
+				174852BB1FDE6DF000FC159C /* HttpConfigGroup.m in Sources */,
+				174852BA1FDE6DDE00FC159C /* HTHttpConfig.m in Sources */,
+				174852B91FDE6D2E00FC159C /* SMBaseHttpComplete.m in Sources */,
+				174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */,
+				174852B71FDE6CF800FC159C /* SNHttpRequestResult.m in Sources */,
+				174852B61FDE6CF300FC159C /* RequestResult.m in Sources */,
+				17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */,
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
 				17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
+				17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */,
 				17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */,
 				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
@@ -1086,6 +1241,7 @@
 				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
 				172079001FD0159900DBC647 /* ConfigColor.swift in Sources */,
+				17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */,
 				172078E81FD0151E00DBC647 /* BaseViewController.swift in Sources */,
 				17EFC5D91FD5560500A1C3BF /* ParkViewController.swift in Sources */,
 				172078E71FD0151A00DBC647 /* BaseTableViewDelegate.swift in Sources */,
@@ -1276,7 +1432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1296,7 +1452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shangyao.SHYTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

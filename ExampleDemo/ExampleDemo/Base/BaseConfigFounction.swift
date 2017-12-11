@@ -61,7 +61,7 @@ func setExtraCellLineHidden(tableView:UITableView){
 }
 //MARK: - 获取字符长度
 func getTextRectSize(text:NSString,font:UIFont,size:CGSize) -> CGRect {
-    let attributes = [NSAttributedStringKey.font: font]
+    let attributes = [NSFontAttributeName: font]
     let option = NSStringDrawingOptions.usesLineFragmentOrigin
     let rect:CGRect = text.boundingRect(with: size, options: option, attributes: attributes, context: nil)
     

@@ -60,7 +60,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -80,6 +80,8 @@ class MainViewController: BaseViewController {
             gotoLKDBHelper()
         }else if str == "web页面"{
             gotoWebVC()
+        }else if str == "http"{
+            gotoHttpVC()
         }
         
     }
@@ -100,6 +102,11 @@ class MainViewController: BaseViewController {
     }
     func gotoWebVC(){
         let vc:WebViewController = WebViewController.createViewController() as! WebViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
+    func gotoHttpVC(){
+        let vc:HttpViewController = HttpViewController.createViewController(createArgs: nil) as! HttpViewController
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }

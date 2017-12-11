@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SMToastView : UIView
-+(void)showMessage:(UIView *)parentView withMessage:(NSString *)msg;
-+(void)showMessageCenter:(UIView *)parentView withMessage:(NSString *)msg;
+//+(void)showMessage:(UIView *)parentView withMessage:(NSString *)msg;
+//+(void)showMessageCenter:(UIView *)parentView withMessage:(NSString *)msg;
++(void)showMessageCenterMessage:(NSString *)msg;
++(void)showMessage:(NSString *)msg;
 @end

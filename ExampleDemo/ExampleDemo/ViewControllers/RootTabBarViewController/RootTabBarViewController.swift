@@ -26,8 +26,8 @@ class RootTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         
         markNavgation = rootBarViewControllers[0] as? UINavigationController
         self.setViewControllers(rootBarViewControllers as? [UIViewController], animated: true)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:grayTabbarColor,NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 12)], for: UIControlState.normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:navigationColor,NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 12)], for: UIControlState.selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:navigationColor,NSFontAttributeName:UIFont.boldSystemFont(ofSize: 12)], for:UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:navigationColor,NSFontAttributeName:UIFont.boldSystemFont(ofSize: 12)], for: UIControlState.selected)
         
         self.tabBar.tintColor=grayTabbarColor
         let bgView:UIView=UIView.init(frame: self.tabBar.bounds)

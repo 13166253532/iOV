@@ -46,15 +46,16 @@ class QRCodeViewController: BaseViewController,AVCaptureMetadataOutputObjectsDel
         //captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         self.captureDevice = QRCodeAVCaptureDevice.getAVCaptureDevice()
         //QRCodeAVCaptureDevice.getAVCaptureVideoPreviewLayer(self, queue: DispatchQueue.main, andView: cameraView)
-        self.captureDevice = AVCaptureDevice.default(for: .video)
-        //let input :AVCaptureDeviceInput
+        
+        //初始化捕捉设备（AVCaptureDevice），类型AVMdeiaTypeVideo
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let input :AVCaptureDeviceInput
         //创建媒体数据输出流
         let output = AVCaptureMetadataOutput()
         //捕捉异常
         do{
             //创建输入流
-           let input = try AVCaptureDeviceInput.init(device: captureDevice)
-            captureSession.canSetSessionPreset(.high)
+            input = try AVCaptureDeviceInput(device: captureDevice)
             //把输入流添加到会话
             captureSession.addInput(input)
             //把输出流添加到会话
@@ -63,19 +64,19 @@ class QRCodeViewController: BaseViewController,AVCaptureMetadataOutputObjectsDel
             print("异常")
         }
         //创建串行队列
-        //let dispatchQueue = DispatchQueue(label: "queue", attributes: [])
+        let dispatchQueue = DispatchQueue(label: "queue", attributes: [])
         //设置输出流的代理
-        output.setMetadataObjectsDelegate(self as AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue.main)
+        output.setMetadataObjectsDelegate(self as AVCaptureMetadataOutputObjectsDelegate, queue: dispatchQueue)
         //设置输出媒体的数据类型
-        output.metadataObjectTypes = NSArray(array: [AVMetadataObject.ObjectType.qr,AVMetadataObject.ObjectType.ean13,AVMetadataObject.ObjectType.ean8, AVMetadataObject.ObjectType.code128]) as! [AVMetadataObject.ObjectType]
+        output.metadataObjectTypes = NSArray(array: [AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN13Code,AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code]) as [AnyObject]
         //创建预览图层
         let videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         //设置预览图层的填充方式
-        videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         //设置预览图层的frame
-        videoPreviewLayer.frame = cameraView.bounds
+        videoPreviewLayer?.frame = cameraView.bounds
         //将预览图层添加到预览视图上
-        cameraView.layer.insertSublayer(videoPreviewLayer, at: 0)
+        cameraView.layer.insertSublayer(videoPreviewLayer!, at: 0)
         //设置扫描范围
         output.rectOfInterest = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
        

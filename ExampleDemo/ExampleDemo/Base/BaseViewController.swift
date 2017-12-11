@@ -69,8 +69,10 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.subviews[0].backgroundColor=navigationColor
     }
     private func initTitleBarColor(){
-        let dict:[NSAttributedStringKey:AnyObject]=[NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue):UIColor.white, NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue):UIFont.systemFont(ofSize: 17.0)]
-        self.navigationController!.navigationBar.titleTextAttributes = dict
+        //let dict:[NSAttributedStringKey:AnyObject]=[NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue):UIColor.white, NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue):UIFont.systemFont(ofSize: 17.0)]
+        
+        let dict:[String:AnyObject]=[NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:UIFont.systemFont(ofSize: 17.0)]
+        self.navigationController!.navigationBar.titleTextAttributes = dict as [String : Any]
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -176,9 +178,9 @@ class BaseViewController: UIViewController {
     func getNSAttributedString(str:String) -> NSAttributedString {
         let myMutableString = NSMutableAttributedString(string: str)
         let range2 = NSMakeRange(12, 4)
-        myMutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.green, range: range2)
-        myMutableString.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleNone.rawValue, range: NSMakeRange(0, 12))
-        myMutableString.addAttribute(NSAttributedStringKey.underlineStyle , value: NSUnderlineStyle.styleSingle.rawValue, range: range2)
+        myMutableString.addAttribute(NSForegroundColorAttributeName, value: footBlueColor, range: range2)
+        myMutableString.addAttribute(NSUnderlineStyleAttributeName , value: NSUnderlineStyle.styleNone.rawValue, range: NSMakeRange(0, 12))
+        myMutableString.addAttribute(NSUnderlineStyleAttributeName , value: NSUnderlineStyle.styleSingle.rawValue, range: range2)
         return myMutableString
     }
     //MARK:判断是否有汉字
