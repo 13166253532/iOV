@@ -40,6 +40,8 @@
 		174852C11FDE6F6900FC159C /* HttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1F1FDE62F000D9F535 /* HttpConfig.m */; };
 		174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC271FDE62F000D9F535 /* ProjectConfigGroup.m */; };
 		174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC331FDE639400D9F535 /* DSHttpMessageListCmd+Response.m */; };
+		174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */; };
+		174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */; };
 		1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE541FD12953004B3D8E /* MainViewController.swift */; };
 		1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE561FD12960004B3D8E /* MainViewController.storyboard */; };
 		1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */; };
@@ -84,6 +86,7 @@
 		17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */; };
 		17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */; };
 		17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */; };
+		17FDBD5C1FDFAD9600A13252 /* PickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDBD5B1FDFAD9600A13252 /* PickView.swift */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
 		25D7DE411DD2253481ADADD9 /* Pods_ExampleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF150D02D753C575F453BEE /* Pods_ExampleDemoTests.framework */; };
 		C9C5A080750DA7CBD2C6638B /* Pods_ExampleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */; };
@@ -187,6 +190,19 @@
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
 		174852C71FDE716400FC159C /* DSHttpMessageListResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSHttpMessageListResult.h; sourceTree = "<group>"; };
+		174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumViewController.swift; sourceTree = "<group>"; };
+		174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetAlbumViewController.storyboard; sourceTree = "<group>"; };
+		174852D51FDE911F00FC159C /* FGLanguageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGLanguageTool.h; sourceTree = "<group>"; };
+		174852D61FDE911F00FC159C /* FGLanguageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGLanguageTool.m; sourceTree = "<group>"; };
+		174852D81FDE911F00FC159C /* MDFStringHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFStringHandle.m; sourceTree = "<group>"; };
+		174852D91FDE911F00FC159C /* MDFStringHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFStringHandle.h; sourceTree = "<group>"; };
+		174852DB1FDE911F00FC159C /* AttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedString.m; sourceTree = "<group>"; };
+		174852DC1FDE911F00FC159C /* AttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedString.h; sourceTree = "<group>"; };
+		174852DE1FDE911F00FC159C /* MySearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySearchBar.h; sourceTree = "<group>"; };
+		174852DF1FDE911F00FC159C /* MySearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySearchBar.m; sourceTree = "<group>"; };
+		174852E41FDE911F00FC159C /* DSSegmentedDic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSSegmentedDic.h; sourceTree = "<group>"; };
+		174852E51FDE911F00FC159C /* DSSegmentedDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSSegmentedDic.m; sourceTree = "<group>"; };
+		174852E71FDE911F00FC159C /* DSCatsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCatsArray.swift; sourceTree = "<group>"; };
 		1757FE541FD12953004B3D8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1757FE561FD12960004B3D8E /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -307,6 +323,7 @@
 		17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParkViewController.storyboard; sourceTree = "<group>"; };
 		17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectViewController.storyboard; sourceTree = "<group>"; };
+		17FDBD5B1FDFAD9600A13252 /* PickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickView.swift; sourceTree = "<group>"; };
 		1A2E5E6869C8A7F6CA185CBD /* Pods-ExampleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		261D793693B4C3D48B449316 /* Pods-ExampleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleDemoUITests/Pods-ExampleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		344E1A4B4EBC59C924710930 /* Pods_ExampleDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -472,6 +489,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				174852CC1FDE8F2900FC159C /* GetAlbum */,
 				17A5DC351FDE63FF00D9F535 /* Http */,
 				17EFC5CF1FD5558700A1C3BF /* Home */,
 				17EFC5CE1FD5558700A1C3BF /* Invewtors */,
@@ -488,6 +506,7 @@
 		172078E91FD0157F00DBC647 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				174852D11FDE911F00FC159C /* Tools */,
 				172078EA1FD0157F00DBC647 /* LocalSetting */,
 				172078EE1FD0157F00DBC647 /* Extension */,
 				172078F11FD0157F00DBC647 /* Categories */,
@@ -601,6 +620,90 @@
 				1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */,
 			);
 			path = BRPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		174852CC1FDE8F2900FC159C /* GetAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */,
+				174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */,
+			);
+			path = GetAlbum;
+			sourceTree = "<group>";
+		};
+		174852D11FDE911F00FC159C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				174852D21FDE911F00FC159C /* PickerTool */,
+				174852D41FDE911F00FC159C /* LanguageTool */,
+				174852D71FDE911F00FC159C /* StringTool */,
+				174852DA1FDE911F00FC159C /* Attributed */,
+				174852DD1FDE911F00FC159C /* MySearchBar */,
+				174852E31FDE911F00FC159C /* SegmentedDic */,
+				174852E61FDE911F00FC159C /* CatsArray */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		174852D21FDE911F00FC159C /* PickerTool */ = {
+			isa = PBXGroup;
+			children = (
+				17FDBD5B1FDFAD9600A13252 /* PickView.swift */,
+			);
+			path = PickerTool;
+			sourceTree = "<group>";
+		};
+		174852D41FDE911F00FC159C /* LanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				174852D51FDE911F00FC159C /* FGLanguageTool.h */,
+				174852D61FDE911F00FC159C /* FGLanguageTool.m */,
+			);
+			path = LanguageTool;
+			sourceTree = "<group>";
+		};
+		174852D71FDE911F00FC159C /* StringTool */ = {
+			isa = PBXGroup;
+			children = (
+				174852D81FDE911F00FC159C /* MDFStringHandle.m */,
+				174852D91FDE911F00FC159C /* MDFStringHandle.h */,
+			);
+			path = StringTool;
+			sourceTree = "<group>";
+		};
+		174852DA1FDE911F00FC159C /* Attributed */ = {
+			isa = PBXGroup;
+			children = (
+				174852DB1FDE911F00FC159C /* AttributedString.m */,
+				174852DC1FDE911F00FC159C /* AttributedString.h */,
+			);
+			path = Attributed;
+			sourceTree = "<group>";
+		};
+		174852DD1FDE911F00FC159C /* MySearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				174852DE1FDE911F00FC159C /* MySearchBar.h */,
+				174852DF1FDE911F00FC159C /* MySearchBar.m */,
+			);
+			path = MySearchBar;
+			sourceTree = "<group>";
+		};
+		174852E31FDE911F00FC159C /* SegmentedDic */ = {
+			isa = PBXGroup;
+			children = (
+				174852E41FDE911F00FC159C /* DSSegmentedDic.h */,
+				174852E51FDE911F00FC159C /* DSSegmentedDic.m */,
+			);
+			path = SegmentedDic;
+			sourceTree = "<group>";
+		};
+		174852E61FDE911F00FC159C /* CatsArray */ = {
+			isa = PBXGroup;
+			children = (
+				174852E71FDE911F00FC159C /* DSCatsArray.swift */,
+			);
+			path = CatsArray;
 			sourceTree = "<group>";
 		};
 		1757FE671FD14D20004B3D8E /* DBHelper */ = {
@@ -1008,6 +1111,7 @@
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
+				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
 				17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */,
@@ -1220,6 +1324,7 @@
 				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
 				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
+				17FDBD5C1FDFAD9600A13252 /* PickView.swift in Sources */,
 				17EFC5D51FD555DE00A1C3BF /* InvewtorsViewController.swift in Sources */,
 				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
 				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
@@ -1227,6 +1332,7 @@
 				17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
+				174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,
