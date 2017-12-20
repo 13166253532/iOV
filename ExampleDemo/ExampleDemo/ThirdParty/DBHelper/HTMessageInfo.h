@@ -25,8 +25,8 @@ typedef NS_ENUM(NSInteger,MessageType) {
 @property NSString *id;
 @property NSString *reason;
 @property NSString *accountId;
+@property NSString *messageId;
 @property NSString *title;
-@property NSString *mId;
 @property NSString *isRead; //1已读，0未读
 @end
 

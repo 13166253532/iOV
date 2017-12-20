@@ -36,7 +36,9 @@
 
 //消息详情
 -(void)saveMessage:(HTMessageInfo *)messageInfo callBack:(void (^)(BOOL))block;
--(void)deleteMessage:(NSString *)mid callBack:(void (^)(BOOL))block;
+-(void)deleteAllMessageList:(NSString *)accountId callBack:(void (^)(BOOL))block;
+-(void)deleteSingleMessage:(NSString *)messageId andAccountId:(NSString *)accountId callBack:(void (^)(BOOL))block;
+
 
 -(NSMutableArray *)queryAllMessage:(NSString *)userId;
 -(BOOL)hasUnReaMessage:(NSString *)userId;

@@ -52,17 +52,30 @@
                                     <action selector="deletAction:" destination="Ofi-Xe-yNn" eventType="touchUpInside" id="4f9-fQ-eDn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-jc-A0b">
+                                <rect key="frame" x="0.0" y="271" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dC0-RR-7fk"/>
+                                </constraints>
+                                <state key="normal" title="更改"/>
+                                <connections>
+                                    <action selector="upAction:" destination="Ofi-Xe-yNn" eventType="touchUpInside" id="Ffi-CP-G5j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AY3-hL-Do4" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leading" id="9kp-5L-sbF"/>
                             <constraint firstAttribute="trailing" secondItem="AY3-hL-Do4" secondAttribute="trailing" id="CWN-o8-I0g"/>
+                            <constraint firstItem="BSe-jc-A0b" firstAttribute="top" secondItem="AlG-Hi-PJ7" secondAttribute="bottom" constant="41" id="GIR-su-X8x"/>
                             <constraint firstItem="kzv-cc-ezV" firstAttribute="top" secondItem="AGI-cl-BT0" secondAttribute="bottom" constant="53" id="J5r-2e-eDY"/>
+                            <constraint firstAttribute="trailing" secondItem="BSe-jc-A0b" secondAttribute="trailing" id="K3w-0C-cnP"/>
                             <constraint firstItem="kzv-cc-ezV" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leading" constant="7" id="MTj-MC-RrC"/>
                             <constraint firstAttribute="trailing" secondItem="kzv-cc-ezV" secondAttribute="trailing" id="Qwb-b1-co7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AlG-Hi-PJ7" secondAttribute="trailing" id="S47-kY-fUT"/>
                             <constraint firstItem="AlG-Hi-PJ7" firstAttribute="top" secondItem="AY3-hL-Do4" secondAttribute="bottom" constant="47" id="V0q-rv-Xf3"/>
                             <constraint firstItem="AY3-hL-Do4" firstAttribute="top" secondItem="kzv-cc-ezV" secondAttribute="bottom" constant="20" id="fBs-Fv-0vb"/>
+                            <constraint firstItem="BSe-jc-A0b" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leading" id="fyc-Qp-cX6"/>
                             <constraint firstItem="AlG-Hi-PJ7" firstAttribute="leading" secondItem="VGl-EN-prB" secondAttribute="leadingMargin" id="ydJ-HV-3AL"/>
                         </constraints>
                     </view>

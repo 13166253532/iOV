@@ -257,21 +257,28 @@
 -(BOOL)updateMessagePush:(HTMessageInfo *)messagePush
 {
     LKDBHelper* dbHelper = [HTMessageInfo getUsingLKDBHelper];
-//    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:messagePush.id ,@"id",messagePush.type,@"type",messagePush.reason,@"reason",messagePush.title,@"title",messagePush.isRead,@"isRead",nil];
-    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:messagePush.mId,@"accountId",nil];
+    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:messagePush.messageId,@"messageId",nil];
     return [dbHelper updateToDB:messagePush where:where];
 }
 
--(void)deleteMessage:(NSString *)mid callBack:(void (^)(BOOL))block{
+-(void)deleteAllMessageList:(NSString *)accountId callBack:(void (^)(BOOL))block{
     LKDBHelper *dbHelper = [HTMessageInfo getUsingLKDBHelper];
     BOOL __block tranResult = YES;
-    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:mid,@"accountId",nil];
+    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:accountId,@"accountId",nil];
     [dbHelper deleteWithClass:[HTMessageInfo class] where:where callback:^(BOOL result){
         tranResult = result;
     }];
     block(tranResult);
 }
-
+-(void)deleteSingleMessage:(NSString *)messageId andAccountId:(NSString *)accountId callBack:(void (^)(BOOL))block{
+    LKDBHelper *dbHelper = [HTMessageInfo getUsingLKDBHelper];
+    BOOL __block tranResult = YES;
+    NSDictionary *where = [NSDictionary dictionaryWithObjectsAndKeys:messageId,@"messageId",accountId,@"accountId",nil];
+    [dbHelper deleteWithClass:[HTMessageInfo class] where:where callback:^(BOOL result){
+        tranResult = result;
+    }];
+    block(tranResult);
+}
 
 
 @end
