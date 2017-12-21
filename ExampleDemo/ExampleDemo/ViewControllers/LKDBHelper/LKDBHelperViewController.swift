@@ -58,24 +58,24 @@ class LKDBHelperViewController: BaseViewController {
     
     //删除
     @IBAction func deletAction(_ sender: UIButton) {
-//        FGDBHelper.sharedInstance().deleteAllMessageList("111111111") { (isSuccess:Bool) in
-//            if isSuccess {
-//                print("1")
-//            }else{
-//                print("2")
-//            }
-//        }
-        FGDBHelper.sharedInstance().deleteSingleMessage("2", andAccountId: "111111111") { (isSuccess:Bool) in
+        FGDBHelper.sharedInstance().deleteAllMessageList("111111111") { (isSuccess:Bool) in
             if isSuccess {
                 print("1")
             }else{
                 print("2")
             }
         }
+//        FGDBHelper.sharedInstance().deleteSingleMessage("2", andAccountId: "111111111") { (isSuccess:Bool) in
+//            if isSuccess {
+//                print("1")
+//            }else{
+//                print("2")
+//            }
+//        }
       
     }
     
-    
+    //修改
     @IBAction func upAction(_ sender: UIButton) {
         let messageInfo:HTMessageInfo = HTMessageInfo.init()
         messageInfo.isRead = "1"

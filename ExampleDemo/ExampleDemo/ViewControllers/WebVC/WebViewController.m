@@ -30,6 +30,7 @@
     //[self.view addSubview:label];
     [self isNavigationBarObstructed];
     [self initTitleBar];
+    [self addSetWebView];
     self.title = @"webVC";
 }
 #pragma mark ----- 添加UIWebView
@@ -102,7 +103,7 @@
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"common" withExtension:@"html" subdirectory:@"review/list/view/"];
         NSLog(@"%@",url);
         NSString *urlStr=[NSString stringWithFormat:@"%@?traceBackCode=%@",url,[AccountInfoOC ShareAccountInfoOC].qrCodeData];
-        NSURL *url2 = [NSURL URLWithString:urlStr];
+        NSURL *url2 = [NSURL URLWithString:@"https://www.baidu.com"];
         NSLog(@"%@",url2);
         
         NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url2]; // url的位置
@@ -133,12 +134,12 @@
             //if ([[ModelJudgeFunc deviceModelName]isEqualToString:@"iPhoneX"]) {
             //self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, -48, SCREEN_WHIDTH, SCREEN_HEIGHT+48) configuration:config];
             //}else{
-            self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, -20, SCREEN_WHIDTH, SCREEN_HEIGHT+20) configuration:config];
+            //self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, -20, SCREEN_WHIDTH, SCREEN_HEIGHT+20) configuration:config];
             //}
         } else {
-            self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WHIDTH, SCREEN_HEIGHT) configuration:config];
+            //self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WHIDTH, SCREEN_HEIGHT) configuration:config];
         }
-        //self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) configuration:config];
+        self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WHIDTH, SCREEN_HEIGHT) configuration:config];
         self.webView.UIDelegate=self;
         self.webView.navigationDelegate=self;
         [self.webView loadRequest:urlRequest];
