@@ -192,4 +192,15 @@ class BaseViewController: UIViewController {
         }
         return false
     }
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let offsetY : CGFloat = scrollView.contentOffset.y
+        //print("offsetY==",offsetY)
+        if offsetY > 100{
+            let alpha = min(1, 1 - ((100 + 64 - offsetY) / 64));
+            self.navigationController!.navigationBar.lt_setBackgroundColor(navigationColor.withAlphaComponent(alpha))
+
+        }else {
+            self.navigationController!.navigationBar.lt_setBackgroundColor(navigationColor.withAlphaComponent(0))
+        }
+    }
 }

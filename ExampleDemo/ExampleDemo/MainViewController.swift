@@ -27,8 +27,10 @@ class MainViewController: BaseViewController {
         initTitleBar()
         self.title = "我的"
         self.view.backgroundColor = loginBg_Color
+        self.navigationController?.navigationBar.lt_setBackgroundColor(UIColor.clear)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         initReturnBtn()
-        isNavigationBarObstructed()
+        //isNavigationBarObstructed()
         initMyTableView()
         if #available(iOS 11.0, *) {
             self.myTableView.contentInsetAdjustmentBehavior = .never
@@ -36,10 +38,12 @@ class MainViewController: BaseViewController {
             self.myTableView.scrollIndicatorInsets = self.myTableView.contentInset
         }
         self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)
+        self.scrollViewDidScroll(scrollView: self.myTableView)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        self.delegate.slidingBlock = nil
         displayNavigationBar()
     }
     override func didReceiveMemoryWarning() {
@@ -57,6 +61,9 @@ class MainViewController: BaseViewController {
     func initMyTableView() {
         initdataSource()
         self.delegate = MainViewControllerDelegate()
+        self.delegate.slidingBlock = {[weak self] in
+            self?.scrollViewDidScroll(scrollView: (self?.myTableView)!)
+        }
         self.delegate.dataSource=self.dataSource
         registerCell(self.myTableView, cell: MainTableViewCell.self)
         self.myTableView.delegate = self.delegate
@@ -66,7 +73,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","swift条码","数据库","web页面","http"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -119,7 +126,11 @@ class MainViewController: BaseViewController {
 }
 class MainViewControllerDelegate: BaseOneTableViewDelegate {
     var selecCompany:String!
+    var slidingBlock:selectBlock!
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.slidingBlock()
+    }
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0
     }
