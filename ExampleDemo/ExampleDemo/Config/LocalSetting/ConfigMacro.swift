@@ -31,6 +31,16 @@ func WHIDTH_RATIO()->CGFloat{
 func HEIGHT_RATIO()->CGFloat{
     return UIScreen.main.bounds.size.height/736
 }
+func HEIGHT_BOTTOM_MARGIN()->CGFloat{
+    if SCREEN_HEIGHT() == 812 {
+        return 83
+    }
+    return 0
+}
+func HEIGHT_TAB_BAR()->CGFloat{
+    
+    return 49*HEIGHT_RATIO()
+}
 func showAlert(title:String,message:String,titleCancelBtn:String,titleSecondBtn:String,blockOtherBtn:@escaping selectBlock){
     let alertController = UIAlertController(title: title,
                                             message: message, preferredStyle: .alert)

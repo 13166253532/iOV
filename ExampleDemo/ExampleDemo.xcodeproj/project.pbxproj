@@ -276,6 +276,8 @@
 		17A5DC361FDE642B00D9F535 /* HttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
 		17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HttpViewController.storyboard; sourceTree = "<group>"; };
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
+		17C5E0D41FF4CD6100C0C0FE /* BaseTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarView.h; sourceTree = "<group>"; };
+		17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarView.m; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
 		17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeTwoViewController.m; sourceTree = "<group>"; };
@@ -970,6 +972,8 @@
 		17F97F6F1FEB5A0C00C33EE7 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
+				17C5E0D41FF4CD6100C0C0FE /* BaseTabBarView.h */,
+				17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */,
 				17F97F701FEB5A0C00C33EE7 /* TabBarView.h */,
 				17F97F711FEB5A0C00C33EE7 /* TabBarView.m */,
 			);

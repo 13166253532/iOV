@@ -20,3 +20,5 @@
 
 #import "DSHttpMessageListCmd.h"
 #import "DSHttpMessageListResult.h"
+
+#import "BaseTabBarView.h"

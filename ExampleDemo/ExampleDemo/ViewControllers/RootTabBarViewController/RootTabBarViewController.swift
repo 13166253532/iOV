@@ -8,8 +8,9 @@
 
 import UIKit
 
-class RootTabBarViewController: UITabBarController,UITabBarControllerDelegate {
+class RootTabBarViewController: UITabBarController,UITabBarControllerDelegate,BaseTabBarViewDelegate {
    var markNavgation :UINavigationController!
+     var imageView:UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -26,15 +27,36 @@ class RootTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         
         markNavgation = rootBarViewControllers[0] as? UINavigationController
         self.setViewControllers(rootBarViewControllers as? [UIViewController], animated: true)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:navigationColor,NSFontAttributeName:UIFont.boldSystemFont(ofSize: 12)], for:UIControlState.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.boldSystemFont(ofSize: 12)], for:UIControlState.normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:navigationColor,NSFontAttributeName:UIFont.boldSystemFont(ofSize: 12)], for: UIControlState.selected)
         
         self.tabBar.tintColor=grayTabbarColor
-        let bgView:UIView=UIView.init(frame: self.tabBar.bounds)
+        //let bgView:UIView=UIView.init(frame: self.tabBar.bounds)
+        let bgView:UIView=UIView.init(frame: CGRect(x:0, y: SCREEN_HEIGHT()-HEIGHT_TAB_BAR()-HEIGHT_BOTTOM_MARGIN(), width:SCREEN_WHIDTH() , height:HEIGHT_TAB_BAR()+HEIGHT_BOTTOM_MARGIN() ))
         bgView.backgroundColor=UIColor.white
         self.tabBar.insertSubview(bgView, at: 0)
         self.delegate=self
         self.tabBar.isOpaque=true
+        
+//        self.imageView=UIImageView.init(frame: CGRect(x: 0, y: SCREEN_HEIGHT()-HEIGHT_TAB_BAR()-HEIGHT_BOTTOM_MARGIN(), width: SCREEN_WHIDTH(), height: HEIGHT_TAB_BAR()+HEIGHT_BOTTOM_MARGIN()))
+//
+//        var height:CGFloat = self.tabBar.bounds.size.height
+//        self.imageView = BaseTabBarView.share().getBaseTabBarView(self.imageView, andHeight: &height)
+//
+//        BaseTabBarView.share().delegate = self
+//        self.tabBar.isHidden = true
+//        self.view .addSubview(self.imageView)
+//        self.selectedIndex = 0
+        
+        
+    }
+    func getIndex(_ index: Int32) {
+        //        if index == 0{
+        //            self.imageView.isHidden = true
+        //        }else{
+        //            self.imageView.isHidden = false
+        //        }
+        self.selectedIndex = Int(index)
     }
     func getNavigationWithVc(vc:UIViewController,title:String,img1:String,selectImg:String)->UINavigationController{
         let nav:UINavigationController=UINavigationController.init(rootViewController: vc)

@@ -30,6 +30,12 @@ class MainViewController: BaseViewController {
         initReturnBtn()
         isNavigationBarObstructed()
         initMyTableView()
+        if #available(iOS 11.0, *) {
+            self.myTableView.contentInsetAdjustmentBehavior = .never
+            self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)//导航栏如果使用系统原生半透明的，top设置为64
+            self.myTableView.scrollIndicatorInsets = self.myTableView.contentInset
+        }
+        self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)
     }
 
     override func viewWillDisappear(_ animated: Bool) {

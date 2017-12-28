@@ -31,6 +31,8 @@
 
 
 @property (strong, nonatomic)NSArray *tabBarTitle;
+@property (strong, nonatomic)NSArray *tabBarNomImageArray;
+@property (strong, nonatomic)NSArray *tabBarSelectImageArray;
 @end
 @implementation TabBarView
 
@@ -40,6 +42,8 @@
         dispatch_once(&onceToken, ^{
             tabBarView = [[TabBarView alloc]init];
             tabBarView.tabBarTitle = @[@"主页",@"代审",@"已审",@"搜索"];
+            baseTabBarView.tabBarNomImageArray = @[@"tabbar_pupcoming_nor",@"tabbar_approved_nor",@"tabbar_mine_nor",@"tabbar_pupcoming_nor"];
+            baseTabBarView.tabBarSelectImageArray = @[@"tabbar_pupcoming_select",@"tabbar_approved_select",@"tabbar_mine_select",@"tabbar_pupcoming_select"];
         });
     return tabBarView;
 }
