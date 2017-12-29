@@ -42,6 +42,7 @@
 		174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC331FDE639400D9F535 /* DSHttpMessageListCmd+Response.m */; };
 		174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */; };
 		174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */; };
+		174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 174B04B11FF6342500850959 /* ValidateIDCardNumber.m */; };
 		1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE541FD12953004B3D8E /* MainViewController.swift */; };
 		1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE561FD12960004B3D8E /* MainViewController.storyboard */; };
 		1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */; };
@@ -204,6 +205,8 @@
 		174852E41FDE911F00FC159C /* DSSegmentedDic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSSegmentedDic.h; sourceTree = "<group>"; };
 		174852E51FDE911F00FC159C /* DSSegmentedDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSSegmentedDic.m; sourceTree = "<group>"; };
 		174852E71FDE911F00FC159C /* DSCatsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCatsArray.swift; sourceTree = "<group>"; };
+		174B04B11FF6342500850959 /* ValidateIDCardNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateIDCardNumber.m; sourceTree = "<group>"; };
+		174B04B21FF6342500850959 /* ValidateIDCardNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateIDCardNumber.h; sourceTree = "<group>"; };
 		1757FE541FD12953004B3D8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1757FE561FD12960004B3D8E /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		1757FE581FD12D48004B3D8E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -513,6 +516,7 @@
 		172078E91FD0157F00DBC647 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				174B04B01FF6340B00850959 /* ValidateIDCardNumber */,
 				174852D11FDE911F00FC159C /* Tools */,
 				172078EA1FD0157F00DBC647 /* LocalSetting */,
 				172078EE1FD0157F00DBC647 /* Extension */,
@@ -711,6 +715,15 @@
 				174852E71FDE911F00FC159C /* DSCatsArray.swift */,
 			);
 			path = CatsArray;
+			sourceTree = "<group>";
+		};
+		174B04B01FF6340B00850959 /* ValidateIDCardNumber */ = {
+			isa = PBXGroup;
+			children = (
+				174B04B21FF6342500850959 /* ValidateIDCardNumber.h */,
+				174B04B11FF6342500850959 /* ValidateIDCardNumber.m */,
+			);
+			path = ValidateIDCardNumber;
 			sourceTree = "<group>";
 		};
 		1757FE671FD14D20004B3D8E /* DBHelper */ = {
@@ -1319,6 +1332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */,
 				174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */,
 				174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */,
 				174852C11FDE6F6900FC159C /* HttpConfig.m in Sources */,
