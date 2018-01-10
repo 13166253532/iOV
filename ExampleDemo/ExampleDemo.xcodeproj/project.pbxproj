@@ -59,6 +59,9 @@
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
 		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
+		17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C2D2005B7F100858751 /* CharacterJudgment.m */; };
+		17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */; };
+		17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E46C322005BF9000858751 /* CharacterJudgmentViewController.storyboard */; };
 		17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE6F1FD14D20004B3D8E /* FGDBHelper.m */; };
 		17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE701FD14D20004B3D8E /* HTMessageInfo.m */; };
 		17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE721FD14D20004B3D8E /* HTCalendarOrdersInfo.m */; };
@@ -281,6 +284,10 @@
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
 		17C5E0D41FF4CD6100C0C0FE /* BaseTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarView.h; sourceTree = "<group>"; };
 		17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarView.m; sourceTree = "<group>"; };
+		17E46C2C2005B7F100858751 /* CharacterJudgment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterJudgment.h; sourceTree = "<group>"; };
+		17E46C2D2005B7F100858751 /* CharacterJudgment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterJudgment.m; sourceTree = "<group>"; };
+		17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJudgmentViewController.swift; sourceTree = "<group>"; };
+		17E46C322005BF9000858751 /* CharacterJudgmentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterJudgmentViewController.storyboard; sourceTree = "<group>"; };
 		17E983931FD0F04E00A8480D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17E983951FD0F29E00A8480D /* QRCodeAVCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAVCaptureDevice.m; sourceTree = "<group>"; };
 		17E983971FD0F29E00A8480D /* QRCodeTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeTwoViewController.m; sourceTree = "<group>"; };
@@ -499,6 +506,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17E46C2F2005BF5C00858751 /* StrJudgment */,
 				174852CC1FDE8F2900FC159C /* GetAlbum */,
 				17A5DC351FDE63FF00D9F535 /* Http */,
 				17EFC5CF1FD5558700A1C3BF /* Home */,
@@ -645,6 +653,7 @@
 		174852D11FDE911F00FC159C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				17E46C2B2005B7D500858751 /* CharacterJudgment */,
 				174852D21FDE911F00FC159C /* PickerTool */,
 				174852D41FDE911F00FC159C /* LanguageTool */,
 				174852D71FDE911F00FC159C /* StringTool */,
@@ -676,8 +685,8 @@
 		174852D71FDE911F00FC159C /* StringTool */ = {
 			isa = PBXGroup;
 			children = (
-				174852D81FDE911F00FC159C /* MDFStringHandle.m */,
 				174852D91FDE911F00FC159C /* MDFStringHandle.h */,
+				174852D81FDE911F00FC159C /* MDFStringHandle.m */,
 			);
 			path = StringTool;
 			sourceTree = "<group>";
@@ -853,6 +862,24 @@
 				17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		17E46C2B2005B7D500858751 /* CharacterJudgment */ = {
+			isa = PBXGroup;
+			children = (
+				17E46C2C2005B7F100858751 /* CharacterJudgment.h */,
+				17E46C2D2005B7F100858751 /* CharacterJudgment.m */,
+			);
+			path = CharacterJudgment;
+			sourceTree = "<group>";
+		};
+		17E46C2F2005BF5C00858751 /* StrJudgment */ = {
+			isa = PBXGroup;
+			children = (
+				17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */,
+				17E46C322005BF9000858751 /* CharacterJudgmentViewController.storyboard */,
+			);
+			path = StrJudgment;
 			sourceTree = "<group>";
 		};
 		17E983941FD0F29E00A8480D /* QRCode */ = {
@@ -1146,6 +1173,7 @@
 				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
+				17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */,
 				17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */,
 				17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */,
 				1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */,
@@ -1350,6 +1378,7 @@
 				17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */,
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
+				17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */,
 				17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
 				17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */,
@@ -1389,6 +1418,7 @@
 				172078E41FD0150600DBC647 /* BaseOCViewController.m in Sources */,
 				1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */,
 				17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */,
+				17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */,
 				172078E31FD0150200DBC647 /* BaseConfigFounction.swift in Sources */,
 				1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */,
 				172078E21FD014FD00DBC647 /* BaseCellModel.swift in Sources */,

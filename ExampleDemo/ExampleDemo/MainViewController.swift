@@ -73,7 +73,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -95,6 +95,8 @@ class MainViewController: BaseViewController {
             gotoWebVC()
         }else if str == "http"{
             gotoHttpVC()
+        }else if str == "字符判断"{
+            gotoCharacterJudgmentViewController()
         }
         
     }
@@ -120,6 +122,11 @@ class MainViewController: BaseViewController {
     }
     func gotoHttpVC(){
         let vc:HttpViewController = HttpViewController.createViewController(createArgs: nil) as! HttpViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
+    func gotoCharacterJudgmentViewController(){
+        let vc:CharacterJudgmentViewController = CharacterJudgmentViewController.createViewController(createArgs: nil) as! CharacterJudgmentViewController
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
