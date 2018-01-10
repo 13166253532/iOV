@@ -73,7 +73,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","swift条码","数据库","web页面","http"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"

@@ -26,8 +26,7 @@ class MDFGuideViewController: UIViewController ,UIScrollViewDelegate
         let scrollView = UIScrollView()
         scrollView.frame = CGRect(x:0, y: 0, width:SCREEN_WHIDTH() , height:SCREEN_HEIGHT())
         
-        
-        //scrollView.contentSize = CGSizeMake(SCREEN_WHIDTH() * CGFloat(numOfPages), SCREEN_HEIGHT())
+    
         scrollView.contentSize = CGSize(width: SCREEN_WHIDTH() * CGFloat(numOfPages), height: SCREEN_HEIGHT())
         scrollView.delegate = self
         scrollView.isPagingEnabled = true
@@ -41,8 +40,6 @@ class MDFGuideViewController: UIViewController ,UIScrollViewDelegate
             print(imgfile)
             let image = UIImage(named:"\(imgfile)")
             let imgView = UIImageView(image: image)
-            //imgView.frame = CGRectMake(frame.size.width*CGFloat(i),CGFloat(0),
-                                       //frame.size.width,frame.size.height)
             imgView.frame = CGRect(x:frame.size.width*CGFloat(i), y: CGFloat(0), width:frame.size.width , height:frame.size.height )
             scrollView.addSubview(imgView)
             if i == 2 {
