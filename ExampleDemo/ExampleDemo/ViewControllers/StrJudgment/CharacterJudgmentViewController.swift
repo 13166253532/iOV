@@ -21,9 +21,15 @@ class CharacterJudgmentViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if CharacterJudgment.onlyLetters("aAwq") {
+            print("==true")
+        }else{
+            print("==false")
+        }
+        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

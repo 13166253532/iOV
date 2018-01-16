@@ -23,11 +23,7 @@ class ExampleDemoTests: XCTestCase {
     
     func testExample() {
         
-        if CharacterJudgment.onlyLetters("aAwq") {
-            print("==true")
-        }else{
-            print("==false")
-        }
+        
     }
     
     func testPerformanceExample() {

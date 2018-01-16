@@ -43,7 +43,7 @@ class MainViewController: BaseViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.delegate.slidingBlock = nil
+        //self.delegate.slidingBlock = nil
         displayNavigationBar()
     }
     override func didReceiveMemoryWarning() {
@@ -73,7 +73,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断","陀螺仪小球"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -97,6 +97,8 @@ class MainViewController: BaseViewController {
             gotoHttpVC()
         }else if str == "字符判断"{
             gotoCharacterJudgmentViewController()
+        }else if str == "陀螺仪小球"{
+            gotoSmallBallViewController()
         }
         
     }
@@ -130,6 +132,12 @@ class MainViewController: BaseViewController {
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
+    func gotoSmallBallViewController(){
+        let vc:SmallBallViewController = SmallBallViewController.createViewController(createArgs: nil) as! SmallBallViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
+    
 }
 class MainViewControllerDelegate: BaseOneTableViewDelegate {
     var selecCompany:String!

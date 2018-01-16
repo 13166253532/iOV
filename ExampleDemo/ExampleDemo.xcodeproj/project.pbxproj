@@ -26,6 +26,9 @@
 		172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */; };
 		172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F61FD0157F00DBC647 /* UIView+Additions.m */; };
 		172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079061FD0177000DBC647 /* MBProgressHUD.m */; };
+		17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17303C7120071112007B32FC /* SmallBallViewController.swift */; };
+		17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17303C732007111B007B32FC /* SmallBallViewController.storyboard */; };
+		17303C7520071210007B32FC /* STBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17303C6F200710DF007B32FC /* STBallView.swift */; };
 		174852B61FDE6CF300FC159C /* RequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1A1FDE62F000D9F535 /* RequestResult.m */; };
 		174852B71FDE6CF800FC159C /* SNHttpRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC121FDE62F000D9F535 /* SNHttpRequestResult.m */; };
 		174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC341FDE639400D9F535 /* DSHttpMessageListCmd.m */; };
@@ -194,6 +197,9 @@
 		1720792B1FD0177000DBC647 /* UIImage+GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		17303C6F200710DF007B32FC /* STBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBallView.swift; sourceTree = "<group>"; };
+		17303C7120071112007B32FC /* SmallBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallBallViewController.swift; sourceTree = "<group>"; };
+		17303C732007111B007B32FC /* SmallBallViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SmallBallViewController.storyboard; sourceTree = "<group>"; };
 		174852C71FDE716400FC159C /* DSHttpMessageListResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSHttpMessageListResult.h; sourceTree = "<group>"; };
 		174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumViewController.swift; sourceTree = "<group>"; };
 		174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetAlbumViewController.storyboard; sourceTree = "<group>"; };
@@ -506,6 +512,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17303C7020071105007B32FC /* SmallBall */,
 				17E46C2F2005BF5C00858751 /* StrJudgment */,
 				174852CC1FDE8F2900FC159C /* GetAlbum */,
 				17A5DC351FDE63FF00D9F535 /* Http */,
@@ -641,6 +648,23 @@
 			path = BRPlaceholderTextView;
 			sourceTree = "<group>";
 		};
+		17303C6E20070B4D007B32FC /* SmallBall */ = {
+			isa = PBXGroup;
+			children = (
+				17303C6F200710DF007B32FC /* STBallView.swift */,
+			);
+			path = SmallBall;
+			sourceTree = "<group>";
+		};
+		17303C7020071105007B32FC /* SmallBall */ = {
+			isa = PBXGroup;
+			children = (
+				17303C7120071112007B32FC /* SmallBallViewController.swift */,
+				17303C732007111B007B32FC /* SmallBallViewController.storyboard */,
+			);
+			path = SmallBall;
+			sourceTree = "<group>";
+		};
 		174852CC1FDE8F2900FC159C /* GetAlbum */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +677,7 @@
 		174852D11FDE911F00FC159C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				17303C6E20070B4D007B32FC /* SmallBall */,
 				17E46C2B2005B7D500858751 /* CharacterJudgment */,
 				174852D21FDE911F00FC159C /* PickerTool */,
 				174852D41FDE911F00FC159C /* LanguageTool */,
@@ -1168,6 +1193,7 @@
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
 				17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */,
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
+				17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
 				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
@@ -1360,6 +1386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17303C7520071210007B32FC /* STBallView.swift in Sources */,
 				174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */,
 				174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */,
 				174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */,
@@ -1409,6 +1436,7 @@
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
 				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
+				17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */,
 				172079001FD0159900DBC647 /* ConfigColor.swift in Sources */,
 				17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */,
 				172078E81FD0151E00DBC647 /* BaseViewController.swift in Sources */,

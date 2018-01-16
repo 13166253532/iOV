@@ -57,6 +57,24 @@ func showAlert(title:String,message:String,titleCancelBtn:String,titleSecondBtn:
     AppRootViewController()!.present(alertController, animated: true, completion: nil)
     
 }
+func showAlertRefresh(title:String,message:String,titleCancelBtn:String,titleSecondBtn:String, blockCancelBtn:@escaping selectBlock,blockSureBtn:@escaping selectBlock){
+    let alertController = UIAlertController(title: title,
+                                            message: message, preferredStyle: .alert)
+    
+    let cancelAction = UIAlertAction(title: titleCancelBtn, style: .cancel, handler: {
+        action in
+        blockCancelBtn()
+    })
+    let okAction = UIAlertAction(title: titleSecondBtn, style: .default,
+                                 handler: {
+                                    action in
+                                    blockSureBtn()
+    })
+    
+    alertController.addAction(cancelAction)
+    alertController.addAction(okAction)
+    AppRootViewController()!.present(alertController, animated: true, completion: nil)
+}
 func AppRootViewController() -> UIViewController? {
     var topVC = UIApplication.shared.keyWindow?.rootViewController
     while topVC?.presentedViewController != nil {
