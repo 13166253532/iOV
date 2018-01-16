@@ -62,6 +62,7 @@
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
 		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
+		17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DC9FAC200DD2460088D567 /* JKCountDownButton.m */; };
 		17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C2D2005B7F100858751 /* CharacterJudgment.m */; };
 		17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */; };
 		17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E46C322005BF9000858751 /* CharacterJudgmentViewController.storyboard */; };
@@ -290,6 +291,8 @@
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
 		17C5E0D41FF4CD6100C0C0FE /* BaseTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarView.h; sourceTree = "<group>"; };
 		17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarView.m; sourceTree = "<group>"; };
+		17DC9FAB200DD2460088D567 /* JKCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKCountDownButton.h; sourceTree = "<group>"; };
+		17DC9FAC200DD2460088D567 /* JKCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKCountDownButton.m; sourceTree = "<group>"; };
 		17E46C2C2005B7F100858751 /* CharacterJudgment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterJudgment.h; sourceTree = "<group>"; };
 		17E46C2D2005B7F100858751 /* CharacterJudgment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterJudgment.m; sourceTree = "<group>"; };
 		17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJudgmentViewController.swift; sourceTree = "<group>"; };
@@ -465,6 +468,7 @@
 		172078D21FD00CDE00DBC647 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				17DC9FAA200DD2460088D567 /* JKCountDownButton */,
 				1757FE671FD14D20004B3D8E /* DBHelper */,
 				1757FE741FD14D20004B3D8E /* LKDBHelper */,
 				1720792C1FD0177000DBC647 /* BRPlaceholderTextView */,
@@ -887,6 +891,15 @@
 				17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		17DC9FAA200DD2460088D567 /* JKCountDownButton */ = {
+			isa = PBXGroup;
+			children = (
+				17DC9FAB200DD2460088D567 /* JKCountDownButton.h */,
+				17DC9FAC200DD2460088D567 /* JKCountDownButton.m */,
+			);
+			path = JKCountDownButton;
 			sourceTree = "<group>";
 		};
 		17E46C2B2005B7D500858751 /* CharacterJudgment */ = {
@@ -1386,6 +1399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */,
 				17303C7520071210007B32FC /* STBallView.swift in Sources */,
 				174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */,
 				174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */,

@@ -73,7 +73,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断","陀螺仪小球"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -95,7 +95,7 @@ class MainViewController: BaseViewController {
             gotoWebVC()
         }else if str == "http"{
             gotoHttpVC()
-        }else if str == "字符判断"{
+        }else if str == "字符判断获取验证码"{
             gotoCharacterJudgmentViewController()
         }else if str == "陀螺仪小球"{
             gotoSmallBallViewController()
