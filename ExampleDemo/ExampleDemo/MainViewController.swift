@@ -7,12 +7,18 @@
 //
 
 import UIKit
-
+import MJRefresh
 class MainViewController: BaseViewController {
     
     @IBOutlet weak var myTableView: UITableView!
     var dataSource:NSMutableArray!
     var delegate:MainViewControllerDelegate!
+    var page = 0
+    //顶部刷新
+    var header = MJRefreshNormalHeader()
+    //底部刷新
+    var footer = MJRefreshAutoNormalFooter()
+    
     class func createViewController(createArgs:AnyObject?) ->AnyObject{
         let storyboard:UIStoryboard=UIStoryboard(name: "MainViewController", bundle: nil)
         let vc:MainViewController=storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
@@ -32,15 +38,35 @@ class MainViewController: BaseViewController {
         initReturnBtn()
         //isNavigationBarObstructed()
         initMyTableView()
-        if #available(iOS 11.0, *) {
-            self.myTableView.contentInsetAdjustmentBehavior = .never
-            self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)//导航栏如果使用系统原生半透明的，top设置为64
-            self.myTableView.scrollIndicatorInsets = self.myTableView.contentInset
-        }
-        self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)
-        self.scrollViewDidScroll(scrollView: self.myTableView)
+        addHeaderFooter()
     }
 
+    //MARK:添加上拉加载 下拉刷新
+    func addHeaderFooter(){
+        self.header.setRefreshingTarget(self, refreshingAction: #selector(upPullLoadData))
+        self.header.lastUpdatedTimeLabel.isHidden = true
+        self.header.stateLabel.isHidden = true
+        self.footer.setRefreshingTarget(self, refreshingAction: #selector(downPlullLoadData))
+        self.footer.stateLabel.isHidden = true
+        self.footer.isRefreshingTitleHidden = true
+        self.myTableView.mj_header = self.header
+        self.myTableView.mj_footer = self.footer
+    }
+    
+    //MARK:下拉刷新
+    func upPullLoadData(){
+        self.dataSource = NSMutableArray()
+        
+        self.myTableView.reloadData()
+    }
+    //MARK:上拉加载
+    func downPlullLoadData(){
+        //self.myTableView.mj_footer.endRefreshing()
+        //self.myTableView.mj_header.endRefreshing()
+        self.myTableView.reloadData()
+    }
+    
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         //self.delegate.slidingBlock = nil
@@ -60,6 +86,14 @@ class MainViewController: BaseViewController {
     }
     func initMyTableView() {
         initdataSource()
+        if #available(iOS 11.0, *) {
+            self.myTableView.contentInsetAdjustmentBehavior = .never
+            self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)//导航栏如果使用系统原生半透明的，top设置为64
+            self.myTableView.scrollIndicatorInsets = self.myTableView.contentInset
+        }
+        self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)
+        self.scrollViewDidScroll(scrollView: self.myTableView)
+        
         self.delegate = MainViewControllerDelegate()
         self.delegate.slidingBlock = {[weak self] in
             self?.scrollViewDidScroll(scrollView: (self?.myTableView)!)

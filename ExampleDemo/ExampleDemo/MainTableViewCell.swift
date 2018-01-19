@@ -17,6 +17,8 @@ class MainTableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        //设置分割线长短
+        // self.separatorInset=UIEdgeInsetsMake(0, SCREEN_WHIDTH(), 0, 0)
     }
     override func configurateTheCell(_ xinfo: BaseCellModel) {
         self.infoModel = xinfo as! MainTableViewCellModel

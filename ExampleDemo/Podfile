@@ -20,5 +20,5 @@ pod 'JSONModel'
 pod 'AFNetworking', '~> 3.0'
 pod 'IQKeyboardManager'
 pod 'LKDBHelper'
-
+pod 'MJRefresh'
 end

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MJRefresh
 class BaseViewController: UIViewController {
     var createArgs:AnyObject!
     var hud:MBProgressHUD!
