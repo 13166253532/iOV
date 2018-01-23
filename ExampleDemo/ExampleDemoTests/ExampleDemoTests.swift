@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import ExampleDemo
 
 class ExampleDemoTests: XCTestCase {
@@ -21,8 +22,9 @@ class ExampleDemoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testDSHttpMessageListCmd() {
         
+       
         
     }
     

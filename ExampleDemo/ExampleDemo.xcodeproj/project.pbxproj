@@ -63,6 +63,8 @@
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
 		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
+		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
+		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
 		17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DC9FAC200DD2460088D567 /* JKCountDownButton.m */; };
 		17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C2D2005B7F100858751 /* CharacterJudgment.m */; };
 		17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */; };
@@ -291,6 +293,10 @@
 		17A5DC361FDE642B00D9F535 /* HttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
 		17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HttpViewController.storyboard; sourceTree = "<group>"; };
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
+		17C0D27F20172C0200D62A1E /* SMCommandComplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMCommandComplete.m; sourceTree = "<group>"; };
+		17C0D28020172C0200D62A1E /* SMUnitTestMacroDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUnitTestMacroDef.h; sourceTree = "<group>"; };
+		17C0D28120172C0200D62A1E /* SMCommandComplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommandComplete.h; sourceTree = "<group>"; };
+		17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHttpMessageListCmdText.swift; sourceTree = "<group>"; };
 		17C5E0D41FF4CD6100C0C0FE /* BaseTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarView.h; sourceTree = "<group>"; };
 		17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarView.m; sourceTree = "<group>"; };
 		17DC9FAB200DD2460088D567 /* JKCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKCountDownButton.h; sourceTree = "<group>"; };
@@ -447,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				172078B81FCFE6FF00DBC647 /* ExampleDemoTests.swift */,
+				17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */,
 				172078BA1FCFE6FF00DBC647 /* Info.plist */,
 			);
 			path = ExampleDemoTests;
@@ -825,9 +832,10 @@
 			children = (
 				17A5DC191FDE62F000D9F535 /* Http */,
 				17A5DC141FDE62F000D9F535 /* CommonFunc */,
-				17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */,
+				17C0D27E20172C0200D62A1E /* Tests */,
 				17A5DC0C1FDE62F000D9F535 /* SNHttpBaseCmd.m */,
 				17A5DC0D1FDE62F000D9F535 /* SNHttpBasePutCmd.m */,
+				17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */,
 				17A5DC0E1FDE62F000D9F535 /* ProjectConfigGroup.h */,
 				17A5DC0F1FDE62F000D9F535 /* SNHttpBasePostCmd.h */,
 				17A5DC101FDE62F000D9F535 /* SNHttpBaseDeleteCmd.m */,
@@ -894,6 +902,16 @@
 				17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		17C0D27E20172C0200D62A1E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				17C0D28120172C0200D62A1E /* SMCommandComplete.h */,
+				17C0D27F20172C0200D62A1E /* SMCommandComplete.m */,
+				17C0D28020172C0200D62A1E /* SMUnitTestMacroDef.h */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		17DC9FAA200DD2460088D567 /* JKCountDownButton */ = {
@@ -1405,6 +1423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */,
 				17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */,
 				17303C7520071210007B32FC /* STBallView.swift in Sources */,
 				174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */,
@@ -1480,6 +1499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */,
 				172078B91FCFE6FF00DBC647 /* ExampleDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1651,7 +1671,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1671,7 +1691,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

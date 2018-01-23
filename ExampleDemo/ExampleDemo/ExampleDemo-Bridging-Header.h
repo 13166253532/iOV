@@ -22,6 +22,8 @@
 
 #import "HTHttpConfig.h"
 #import "ProjectConfigGroup.h"
+#import "SMCommandComplete.h"
+
 
 #import "DSHttpMessageListCmd.h"
 #import "DSHttpMessageListResult.h"
