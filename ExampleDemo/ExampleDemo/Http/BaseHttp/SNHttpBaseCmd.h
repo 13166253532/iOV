@@ -23,5 +23,5 @@
 -(void)showHintView:(NSString*)content;
 -(void)hidenHintView;
 -(void)judgeTokenExpired:(NSInteger)code;
-
++(void)NetworkTestingActionTRUEBlock:(void (^)(void))trueBlock;
 @end

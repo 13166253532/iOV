@@ -12,6 +12,7 @@
 #import "CommonFunc.h"
 #import "ExampleDemo-Swift.h"
 #import "HTHttpConfig.h"
+#import "AFNetworking.h"
 const NSString *kResult = @"result";
 
 @interface SNHttpBaseCmd ()
@@ -154,5 +155,34 @@ const NSString *kResult = @"result";
     if (code==401){
         [[NSNotificationCenter defaultCenter] postNotificationName: @"AccessTokenExpired" object:nil];
     }
+}
++(void)NetworkTestingActionTRUEBlock:(void (^)(void))trueBlock{
+    
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        // 当网络状态改变时调用
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络");
+                [SMToastView showMessage:@"请查看当前网络状态！"];
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                [SMToastView showMessage:@"请查看当前网络状态！"];
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"手机自带网络");
+                //trueBlock(@"");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                //trueBlock(@"");
+                
+                NSLog(@"WIFI");
+                break;
+        }
+    }];
+    //开始监控
+    [manager startMonitoring];
 }
 @end

@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         HTHttpConfig.sharedInstance().isout = false
         ProjectConfigGroup.initHttpConfig()
+        SNHttpBaseCmd.networkTestingActionTRUEBlock {
+            
+        }
         gotoTabBar()
         return true
     }
