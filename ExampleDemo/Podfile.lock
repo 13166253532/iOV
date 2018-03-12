@@ -22,6 +22,9 @@ PODS:
   - LKDBHelper (2.4.1):
     - FMDB
   - MJRefresh (3.1.12)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -29,6 +32,7 @@ DEPENDENCIES:
   - JSONModel
   - LKDBHelper
   - MJRefresh
+  - SDWebImage (~> 4.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -37,7 +41,8 @@ SPEC CHECKSUMS:
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: f478b45ce15d1e89aac502e49fd22c3ec39020bc
+PODFILE CHECKSUM: 74e8d3e5de8232be774e5829b5ffac124343c004
 
 COCOAPODS: 1.3.1
