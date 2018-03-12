@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171A114E20566648007345BA /* SNPhotoBrowserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AAB202D7C2600BCF7D1 /* SNPhotoBrowserTool.m */; };
+		171A114F2056666A007345BA /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AA9202D7C2600BCF7D1 /* PBViewController.m */; };
+		171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AAC202D7C2600BCF7D1 /* PBImageScrollerViewController.m */; };
 		172078A41FCFE6FE00DBC647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172078A31FCFE6FE00DBC647 /* AppDelegate.swift */; };
 		172078A61FCFE6FE00DBC647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172078A51FCFE6FE00DBC647 /* ViewController.swift */; };
 		172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172078A71FCFE6FE00DBC647 /* Main.storyboard */; };
@@ -26,9 +29,14 @@
 		172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */; };
 		172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F61FD0157F00DBC647 /* UIView+Additions.m */; };
 		172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079061FD0177000DBC647 /* MBProgressHUD.m */; };
+		172CB584205669390067AC29 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB583205669390067AC29 /* libc++.tbd */; };
+		172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB585205669460067AC29 /* libsqlite3.tbd */; };
+		172CB58820566A900067AC29 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB58720566A900067AC29 /* ImageIO.framework */; };
 		17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17303C7120071112007B32FC /* SmallBallViewController.swift */; };
 		17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17303C732007111B007B32FC /* SmallBallViewController.storyboard */; };
 		17303C7520071210007B32FC /* STBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17303C6F200710DF007B32FC /* STBallView.swift */; };
+		173A5AB4202D802800BCF7D1 /* BigImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AB3202D802800BCF7D1 /* BigImageViewController.swift */; };
+		173A5AB6202D803200BCF7D1 /* BigImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173A5AB5202D803200BCF7D1 /* BigImageViewController.storyboard */; };
 		174852B61FDE6CF300FC159C /* RequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC1A1FDE62F000D9F535 /* RequestResult.m */; };
 		174852B71FDE6CF800FC159C /* SNHttpRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC121FDE62F000D9F535 /* SNHttpRequestResult.m */; };
 		174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC341FDE639400D9F535 /* DSHttpMessageListCmd.m */; };
@@ -59,6 +67,8 @@
 		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
 		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
 		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
+		17792F2A202059D300460427 /* BaseTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */; };
+		17A21CA22028562400B529EC /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A21CA12028562400B529EC /* DownloadViewController.m */; };
 		17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC361FDE642B00D9F535 /* HttpViewController.swift */; };
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
 		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
@@ -201,9 +211,23 @@
 		1720792B1FD0177000DBC647 /* UIImage+GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		172CB583205669390067AC29 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		172CB585205669460067AC29 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		172CB58720566A900067AC29 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		17303C6F200710DF007B32FC /* STBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBallView.swift; sourceTree = "<group>"; };
 		17303C7120071112007B32FC /* SmallBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallBallViewController.swift; sourceTree = "<group>"; };
 		17303C732007111B007B32FC /* SmallBallViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SmallBallViewController.storyboard; sourceTree = "<group>"; };
+		173A5AA9202D7C2600BCF7D1 /* PBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
+		173A5AAA202D7C2600BCF7D1 /* PBViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewControllerDelegate.h; sourceTree = "<group>"; };
+		173A5AAB202D7C2600BCF7D1 /* SNPhotoBrowserTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPhotoBrowserTool.m; sourceTree = "<group>"; };
+		173A5AAC202D7C2600BCF7D1 /* PBImageScrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBImageScrollerViewController.m; sourceTree = "<group>"; };
+		173A5AAD202D7C2600BCF7D1 /* PBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		173A5AAE202D7C2600BCF7D1 /* PBViewControllerDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewControllerDataSource.h; sourceTree = "<group>"; };
+		173A5AAF202D7C2600BCF7D1 /* PhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowser.h; sourceTree = "<group>"; };
+		173A5AB0202D7C2600BCF7D1 /* PBImageScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBImageScrollerViewController.h; sourceTree = "<group>"; };
+		173A5AB1202D7C2600BCF7D1 /* SNPhotoBrowserTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPhotoBrowserTool.h; sourceTree = "<group>"; };
+		173A5AB3202D802800BCF7D1 /* BigImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageViewController.swift; sourceTree = "<group>"; };
+		173A5AB5202D803200BCF7D1 /* BigImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BigImageViewController.storyboard; sourceTree = "<group>"; };
 		174852C71FDE716400FC159C /* DSHttpMessageListResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSHttpMessageListResult.h; sourceTree = "<group>"; };
 		174852CD1FDE8F4500FC159C /* GetAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumViewController.swift; sourceTree = "<group>"; };
 		174852CF1FDE8F4F00FC159C /* GetAlbumViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetAlbumViewController.storyboard; sourceTree = "<group>"; };
@@ -254,6 +278,8 @@
 		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
 		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
+		17A21CA02028562400B529EC /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		17A21CA12028562400B529EC /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseGetCmd.m; sourceTree = "<group>"; };
 		17A5DC0C1FDE62F000D9F535 /* SNHttpBaseCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseCmd.m; sourceTree = "<group>"; };
 		17A5DC0D1FDE62F000D9F535 /* SNHttpBasePutCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBasePutCmd.m; sourceTree = "<group>"; };
@@ -373,6 +399,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172CB58820566A900067AC29 /* ImageIO.framework in Frameworks */,
+				172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */,
+				172CB584205669390067AC29 /* libc++.tbd in Frameworks */,
 				17529A442011D281002260DE /* MJRefresh.framework in Frameworks */,
 				17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */,
 				17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */,
@@ -478,6 +507,7 @@
 		172078D21FD00CDE00DBC647 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				173A5AA8202D7C2600BCF7D1 /* PhotoBrowser */,
 				17DC9FAA200DD2460088D567 /* JKCountDownButton */,
 				1757FE671FD14D20004B3D8E /* DBHelper */,
 				1757FE741FD14D20004B3D8E /* LKDBHelper */,
@@ -526,6 +556,8 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				173A5AB2202D800B00BCF7D1 /* BigImage */,
+				1797C00320215E2500D67C96 /* Download */,
 				17303C7020071105007B32FC /* SmallBall */,
 				17E46C2F2005BF5C00858751 /* StrJudgment */,
 				174852CC1FDE8F2900FC159C /* GetAlbum */,
@@ -679,6 +711,31 @@
 			path = SmallBall;
 			sourceTree = "<group>";
 		};
+		173A5AA8202D7C2600BCF7D1 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				173A5AA9202D7C2600BCF7D1 /* PBViewController.m */,
+				173A5AAA202D7C2600BCF7D1 /* PBViewControllerDelegate.h */,
+				173A5AAB202D7C2600BCF7D1 /* SNPhotoBrowserTool.m */,
+				173A5AAC202D7C2600BCF7D1 /* PBImageScrollerViewController.m */,
+				173A5AAD202D7C2600BCF7D1 /* PBViewController.h */,
+				173A5AAE202D7C2600BCF7D1 /* PBViewControllerDataSource.h */,
+				173A5AAF202D7C2600BCF7D1 /* PhotoBrowser.h */,
+				173A5AB0202D7C2600BCF7D1 /* PBImageScrollerViewController.h */,
+				173A5AB1202D7C2600BCF7D1 /* SNPhotoBrowserTool.h */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		173A5AB2202D800B00BCF7D1 /* BigImage */ = {
+			isa = PBXGroup;
+			children = (
+				173A5AB3202D802800BCF7D1 /* BigImageViewController.swift */,
+				173A5AB5202D803200BCF7D1 /* BigImageViewController.storyboard */,
+			);
+			path = BigImage;
+			sourceTree = "<group>";
+		};
 		174852CC1FDE8F2900FC159C /* GetAlbum */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +882,15 @@
 				1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */,
 			);
 			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		1797C00320215E2500D67C96 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				17A21CA02028562400B529EC /* DownloadViewController.h */,
+				17A21CA12028562400B529EC /* DownloadViewController.m */,
+			);
+			path = Download;
 			sourceTree = "<group>";
 		};
 		17A5DC0A1FDE62F000D9F535 /* BaseHttp */ = {
@@ -1095,6 +1161,9 @@
 		EB718443460D7758F72DD5B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				172CB58720566A900067AC29 /* ImageIO.framework */,
+				172CB585205669460067AC29 /* libsqlite3.tbd */,
+				172CB583205669390067AC29 /* libc++.tbd */,
 				17529A452011D281002260DE /* MJRefresh.framework */,
 				17E983A01FD0F30F00A8480D /* AVFoundation.framework */,
 				17E9839E1FD0F30400A8480D /* QuartzCore.framework */,
@@ -1234,6 +1303,7 @@
 				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
+				173A5AB6202D803200BCF7D1 /* BigImageViewController.storyboard in Resources */,
 				17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */,
 				17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */,
 				17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */,
@@ -1423,6 +1493,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */,
+				171A114F2056666A007345BA /* PBViewController.m in Sources */,
+				171A114E20566648007345BA /* SNPhotoBrowserTool.m in Sources */,
+				17792F2A202059D300460427 /* BaseTabBarView.m in Sources */,
+				17A21CA22028562400B529EC /* DownloadViewController.m in Sources */,
 				17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */,
 				17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */,
 				17303C7520071210007B32FC /* STBallView.swift in Sources */,
@@ -1464,6 +1539,7 @@
 				174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
+				173A5AB4202D802800BCF7D1 /* BigImageViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,
 				17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */,
 				17E983C61FD1044100A8480D /* SMToastView.m in Sources */,
@@ -1666,6 +1742,22 @@
 				INFOPLIST_FILE = ExampleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"LKDBHelper\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shangyao.SHYTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
@@ -1687,6 +1779,22 @@
 				INFOPLIST_FILE = ExampleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"LKDBHelper\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shangyao.SHYTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";

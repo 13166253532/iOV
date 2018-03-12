@@ -38,15 +38,15 @@ class RootTabBarViewController: UITabBarController,UITabBarControllerDelegate,Ba
         self.delegate=self
         self.tabBar.isOpaque=true
         
-//        self.imageView=UIImageView.init(frame: CGRect(x: 0, y: SCREEN_HEIGHT()-HEIGHT_TAB_BAR()-HEIGHT_BOTTOM_MARGIN(), width: SCREEN_WHIDTH(), height: HEIGHT_TAB_BAR()+HEIGHT_BOTTOM_MARGIN()))
-//
-//        var height:CGFloat = self.tabBar.bounds.size.height
-//        self.imageView = BaseTabBarView.share().getBaseTabBarView(self.imageView, andHeight: &height)
-//
-//        BaseTabBarView.share().delegate = self
-//        self.tabBar.isHidden = true
-//        self.view .addSubview(self.imageView)
-//        self.selectedIndex = 0
+        self.imageView=UIImageView.init(frame: CGRect(x: 0, y: SCREEN_HEIGHT()-HEIGHT_TAB_BAR()-HEIGHT_BOTTOM_MARGIN(), width: SCREEN_WHIDTH(), height: HEIGHT_TAB_BAR()+HEIGHT_BOTTOM_MARGIN()))
+
+        var height:CGFloat = self.tabBar.bounds.size.height
+        self.imageView = BaseTabBarView.share().getBaseTabBarView(self.imageView, andHeight: &height)
+
+        BaseTabBarView.share().delegate = self
+        self.tabBar.isHidden = true
+        self.view .addSubview(self.imageView)
+        self.selectedIndex = 0
         
         
     }

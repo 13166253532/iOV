@@ -33,8 +33,8 @@ class MainViewController: BaseViewController {
         initTitleBar()
         self.title = "我的"
         self.view.backgroundColor = loginBg_Color
-        self.navigationController?.navigationBar.lt_setBackgroundColor(UIColor.clear)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //self.navigationController?.navigationBar.lt_setBackgroundColor(UIColor.clear)
+        //self.navigationController?.navigationBar.shadowImage = UIImage()
         initReturnBtn()
         //isNavigationBarObstructed()
         initMyTableView()
@@ -107,7 +107,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -133,9 +133,14 @@ class MainViewController: BaseViewController {
             gotoCharacterJudgmentViewController()
         }else if str == "陀螺仪小球"{
             gotoSmallBallViewController()
+        }else if str == "下载"{
+            gotoDownloadViewController()
+        }else if str == "图片放大"{
+            gotoBigImageViewController()
         }
-        
+    //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
     }
+    
     func gotoQRVC() {
         let vc:QRCodeViewController=QRCodeViewController.createViewController(createArgs: nil) as! QRCodeViewController
         vc.hidesBottomBarWhenPushed = true
@@ -171,7 +176,16 @@ class MainViewController: BaseViewController {
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
-    
+    func gotoDownloadViewController(){
+//        let vc:DownloadViewController = DownloadViewController.parentViewController(createArgs: nil) as! DownloadViewController
+//        vc.hidesBottomBarWhenPushed = true
+//        self.pushViewController(viewController: vc, animated: true)
+    }
+    func gotoBigImageViewController(){
+        let vc:BigImageViewController = BigImageViewController.createViewController(createArgs: nil) as! BigImageViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
 }
 class MainViewControllerDelegate: BaseOneTableViewDelegate {
     var selecCompany:String!

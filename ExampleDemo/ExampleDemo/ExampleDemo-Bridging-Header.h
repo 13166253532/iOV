@@ -30,3 +30,6 @@
 
 #import "BaseTabBarView.h"
 #import "JKCountDownButton.h"
+
+#import "DownloadViewController.h"
+#import "SNPhotoBrowserTool.h"
