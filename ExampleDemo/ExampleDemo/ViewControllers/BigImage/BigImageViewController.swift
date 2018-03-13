@@ -25,7 +25,9 @@ class BigImageViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        SNPhotoBrowserTool.showPhotoBrowser(1, originData: imageArray as! [Any], containerVC: self)
+       // SNPhotoBrowserTool.showPhotoBrowser(1, originData: imageArray as! [Any], containerVC: self)
+        
+        print(Encryption.md5Encrypt(with: "19930322qwerty"))
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

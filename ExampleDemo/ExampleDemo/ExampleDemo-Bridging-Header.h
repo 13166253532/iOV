@@ -11,7 +11,7 @@
 #import "HTMessageInfo.h"
 #import "FGDBHelper.h"
 #import "WebViewController.h"
-
+#import "Encryption.h"
 //字符判断
 #import "CharacterJudgment.h"
 

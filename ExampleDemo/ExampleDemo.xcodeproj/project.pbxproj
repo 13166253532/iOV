@@ -107,6 +107,7 @@
 		17EFC5DB1FD5561000A1C3BF /* ParkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */; };
 		17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */; };
 		17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */; };
+		17F62C052057A09D001D9444 /* Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F62C042057A09D001D9444 /* Encryption.m */; };
 		17F97F6E1FEB590500C33EE7 /* BaseCollcetionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F97F6D1FEB590500C33EE7 /* BaseCollcetionViewCell.swift */; };
 		17FDBD5C1FDFAD9600A13252 /* PickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDBD5B1FDFAD9600A13252 /* PickView.swift */; };
 		1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD87F8BAE063AA3BE5E1524 /* Pods_ExampleDemo.framework */; };
@@ -379,6 +380,8 @@
 		17EFC5DA1FD5561000A1C3BF /* ParkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParkViewController.storyboard; sourceTree = "<group>"; };
 		17EFC5DC1FD5562A00A1C3BF /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		17EFC5DE1FD5563400A1C3BF /* ProjectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProjectViewController.storyboard; sourceTree = "<group>"; };
+		17F62C032057A09D001D9444 /* Encryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encryption.h; sourceTree = "<group>"; };
+		17F62C042057A09D001D9444 /* Encryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Encryption.m; sourceTree = "<group>"; };
 		17F97F6D1FEB590500C33EE7 /* BaseCollcetionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollcetionViewCell.swift; sourceTree = "<group>"; };
 		17F97F701FEB5A0C00C33EE7 /* TabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
 		17F97F711FEB5A0C00C33EE7 /* TabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
@@ -748,6 +751,7 @@
 		174852D11FDE911F00FC159C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				17F62C022057A090001D9444 /* MD5 */,
 				17303C6E20070B4D007B32FC /* SmallBall */,
 				17E46C2B2005B7D500858751 /* CharacterJudgment */,
 				174852D21FDE911F00FC159C /* PickerTool */,
@@ -1132,6 +1136,15 @@
 				17EFC5D21FD555B800A1C3BF /* HomeViewController.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		17F62C022057A090001D9444 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				17F62C032057A09D001D9444 /* Encryption.h */,
+				17F62C042057A09D001D9444 /* Encryption.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 		17F97F6F1FEB5A0C00C33EE7 /* TabBarView */ = {
@@ -1525,6 +1538,7 @@
 				17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
 				17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */,
+				17F62C052057A09D001D9444 /* Encryption.m in Sources */,
 				17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */,
 				17F97F6E1FEB590500C33EE7 /* BaseCollcetionViewCell.swift in Sources */,
 				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
