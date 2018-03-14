@@ -22,4 +22,5 @@ pod 'IQKeyboardManager'
 pod 'LKDBHelper'
 pod 'MJRefresh'
 pod 'SDWebImage', '~> 4.0'
+pod 'SnapKit', '~> 3.0'
 end

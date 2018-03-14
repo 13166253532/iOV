@@ -57,7 +57,7 @@
     
     NSString *str=self.originDataArray[index];
     [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"]];
-   
+   // [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"] options:SDWebImageCacheMemoryOnly];
     
 //    SNImageModel * model = self.originDataArray[index];
 //    [imageView setImageWithURL:[NSURL URLWithString:model.thumbImage] placeholderImage:HOLDER_IMAGE];

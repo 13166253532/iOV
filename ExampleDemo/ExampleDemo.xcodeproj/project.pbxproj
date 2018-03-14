@@ -68,6 +68,8 @@
 		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
 		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
 		17792F2A202059D300460427 /* BaseTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */; };
+		178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178160822058FB1000F95DBA /* SnapKitViewController.swift */; };
+		178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178160842058FB2200F95DBA /* SnapKitViewController.storyboard */; };
 		17A21CA22028562400B529EC /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A21CA12028562400B529EC /* DownloadViewController.m */; };
 		17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC361FDE642B00D9F535 /* HttpViewController.swift */; };
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
@@ -279,6 +281,8 @@
 		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
 		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
+		178160822058FB1000F95DBA /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
+		178160842058FB2200F95DBA /* SnapKitViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnapKitViewController.storyboard; sourceTree = "<group>"; };
 		17A21CA02028562400B529EC /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
 		17A21CA12028562400B529EC /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseGetCmd.m; sourceTree = "<group>"; };
@@ -559,6 +563,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				178160812058FAF500F95DBA /* SnapKitView */,
 				173A5AB2202D800B00BCF7D1 /* BigImage */,
 				1797C00320215E2500D67C96 /* Download */,
 				17303C7020071105007B32FC /* SmallBall */,
@@ -886,6 +891,15 @@
 				1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */,
 			);
 			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		178160812058FAF500F95DBA /* SnapKitView */ = {
+			isa = PBXGroup;
+			children = (
+				178160822058FB1000F95DBA /* SnapKitViewController.swift */,
+				178160842058FB2200F95DBA /* SnapKitViewController.storyboard */,
+			);
+			path = SnapKitView;
 			sourceTree = "<group>";
 		};
 		1797C00320215E2500D67C96 /* Download */ = {
@@ -1305,6 +1319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17EFC5D31FD555B800A1C3BF /* HomeViewController.storyboard in Resources */,
+				178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
@@ -1449,6 +1464,7 @@
 				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1459,6 +1475,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1566,6 +1583,7 @@
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
 				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,
+				178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
 				17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */,
 				172079001FD0159900DBC647 /* ConfigColor.swift in Sources */,
