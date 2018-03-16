@@ -12,7 +12,7 @@
 #import "FGDBHelper.h"
 #import "WebViewController.h"
 #import "Encryption.h"
-
+#import "BRPlaceholderTextView.h"
 //字符判断
 #import "CharacterJudgment.h"
 

@@ -77,6 +77,9 @@
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
 		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
 		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
+		17DA2827205BBE55008442E7 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720790F1FD0177000DBC647 /* SDWebImageManager.m */; };
+		17DA2828205BBE67008442E7 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079231FD0177000DBC647 /* UIImageView+WebCache.m */; };
+		17DA2829205BCB8C008442E7 /* BRPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */; };
 		17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DC9FAC200DD2460088D567 /* JKCountDownButton.m */; };
 		17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C2D2005B7F100858751 /* CharacterJudgment.m */; };
 		17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */; };
@@ -1463,6 +1466,7 @@
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -1474,6 +1478,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -1525,6 +1530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DA2829205BCB8C008442E7 /* BRPlaceholderTextView.m in Sources */,
+				17DA2828205BBE67008442E7 /* UIImageView+WebCache.m in Sources */,
+				17DA2827205BBE55008442E7 /* SDWebImageManager.m in Sources */,
 				171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */,
 				171A114F2056666A007345BA /* PBViewController.m in Sources */,
 				171A114E20566648007345BA /* SNPhotoBrowserTool.m in Sources */,

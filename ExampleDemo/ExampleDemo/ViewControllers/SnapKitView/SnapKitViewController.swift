@@ -11,17 +11,28 @@ import UIKit
 class SnapKitViewController: BaseViewController {
 
     
+    var textView:BRPlaceholderTextView!
+    
+    
+    
     class func createViewController(createArgs:AnyObject?) ->AnyObject{
         let storyboard:UIStoryboard=UIStoryboard(name: "SnapKitViewController", bundle: nil)
         let vc:SnapKitViewController=storyboard.instantiateViewController(withIdentifier: "SnapKitViewController") as! SnapKitViewController
         vc.createArgs=createArgs
         return vc
     }
-    
+    var age:Int = 18{
+        didSet{
+            print("didSet   \(oldValue)")
+        }
+        willSet{
+            print("willSet  \(newValue)")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        two()
+        self.view.backgroundColor = grayColor
+        forr()
         
     }
     func one() {
@@ -36,10 +47,13 @@ class SnapKitViewController: BaseViewController {
     func two(){
         // 黑色视图作为父视图
         let view1 = UIView()
-        view1.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
         view1.center = view.center
         view1.backgroundColor = UIColor.black
         view.addSubview(view1)
+        view1.snp.makeConstraints { (make) in
+            make.width.height.equalTo(300)    // 链式语法直接定义宽高
+            make.center.equalToSuperview()    // 直接在父视图居中
+        }
         
         // 测试视图
         let view2 = UIView()
@@ -73,7 +87,14 @@ class SnapKitViewController: BaseViewController {
     
     }
     func forr() {
-        
+        self.textView = BRPlaceholderTextView.init(frame: CGRect(x:30, y: 100, width:SCREEN_WHIDTH()-60 , height:40 ))
+        self.textView.backgroundColor = UIColor.white
+        self.textView.placeholder = "12345678"
+        self.textView.setPlaceholderFont(UIFont.systemFont(ofSize: 14))
+        self.textView.font = UIFont.systemFont(ofSize: 14)
+        self.textView.setPlaceholderColor(UIColor.yellow)
+        self.textView.maxTextLength = 150
+        self.view .addSubview(self.textView)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -81,14 +102,6 @@ class SnapKitViewController: BaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }
