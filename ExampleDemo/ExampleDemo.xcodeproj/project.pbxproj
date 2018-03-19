@@ -98,6 +98,10 @@
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
 		17EF69DF205F88F2005784E7 /* GCDFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */; };
 		17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */; };
+		17EF69E4205F8E0F005784E7 /* NewAppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */; };
+		17EF69E6205F8E1D005784E7 /* NewAppIconViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E5205F8E1D005784E7 /* NewAppIconViewController.storyboard */; };
+		17EF69ED205FA942005784E7 /* newIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E9205F90E0005784E7 /* newIcon@2x.png */; };
+		17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69EA205F90E0005784E7 /* newIcon@3x.png */; };
 		17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5B61FD52FC300A1C3BF /* WebViewController.m */; };
 		17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */; };
 		17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */ = {isa = PBXBuildFile; fileRef = 172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */; };
@@ -371,6 +375,10 @@
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
 		17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDFuncViewController.swift; sourceTree = "<group>"; };
 		17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCDFuncViewController.storyboard; sourceTree = "<group>"; };
+		17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppIconViewController.swift; sourceTree = "<group>"; };
+		17EF69E5205F8E1D005784E7 /* NewAppIconViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewAppIconViewController.storyboard; sourceTree = "<group>"; };
+		17EF69E9205F90E0005784E7 /* newIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newIcon@2x.png"; sourceTree = "<group>"; };
+		17EF69EA205F90E0005784E7 /* newIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newIcon@3x.png"; sourceTree = "<group>"; };
 		17EFC5B51FD52FC300A1C3BF /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		17EFC5B61FD52FC300A1C3BF /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
@@ -477,6 +485,8 @@
 				172078D61FD00CDF00DBC647 /* ViewControllers */,
 				172078A31FCFE6FE00DBC647 /* AppDelegate.swift */,
 				17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */,
+				17EF69E9205F90E0005784E7 /* newIcon@2x.png */,
+				17EF69EA205F90E0005784E7 /* newIcon@3x.png */,
 				172078A51FCFE6FE00DBC647 /* ViewController.swift */,
 				1757FE541FD12953004B3D8E /* MainViewController.swift */,
 				1757FE561FD12960004B3D8E /* MainViewController.storyboard */,
@@ -570,6 +580,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EF69E2205F8E00005784E7 /* NewAppIcon */,
 				17EF69DD205F88DC005784E7 /* GCDFunc */,
 				178160812058FAF500F95DBA /* SnapKitView */,
 				173A5AB2202D800B00BCF7D1 /* BigImage */,
@@ -1115,6 +1126,15 @@
 			path = GCDFunc;
 			sourceTree = "<group>";
 		};
+		17EF69E2205F8E00005784E7 /* NewAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */,
+				17EF69E5205F8E1D005784E7 /* NewAppIconViewController.storyboard */,
+			);
+			path = NewAppIcon;
+			sourceTree = "<group>";
+		};
 		17EFC5B41FD52FB200A1C3BF /* WebVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1335,8 +1355,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */,
+				17EF69ED205FA942005784E7 /* newIcon@2x.png in Resources */,
 				17EFC5D31FD555B800A1C3BF /* HomeViewController.storyboard in Resources */,
 				178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */,
+				17EF69E6205F8E1D005784E7 /* NewAppIconViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */,
@@ -1571,6 +1594,7 @@
 				174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */,
 				174852B71FDE6CF800FC159C /* SNHttpRequestResult.m in Sources */,
 				174852B61FDE6CF300FC159C /* RequestResult.m in Sources */,
+				17EF69E4205F8E0F005784E7 /* NewAppIconViewController.swift in Sources */,
 				17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */,
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
