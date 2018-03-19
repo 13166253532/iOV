@@ -102,6 +102,8 @@
 		17EF69E6205F8E1D005784E7 /* NewAppIconViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E5205F8E1D005784E7 /* NewAppIconViewController.storyboard */; };
 		17EF69ED205FA942005784E7 /* newIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E9205F90E0005784E7 /* newIcon@2x.png */; };
 		17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69EA205F90E0005784E7 /* newIcon@3x.png */; };
+		17EF69F1205FADF4005784E7 /* SwiftWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69F0205FADF4005784E7 /* SwiftWebViewController.swift */; };
+		17EF69F3205FAE0F005784E7 /* SwiftWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69F2205FAE0E005784E7 /* SwiftWebViewController.storyboard */; };
 		17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5B61FD52FC300A1C3BF /* WebViewController.m */; };
 		17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */; };
 		17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */ = {isa = PBXBuildFile; fileRef = 172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */; };
@@ -379,6 +381,8 @@
 		17EF69E5205F8E1D005784E7 /* NewAppIconViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewAppIconViewController.storyboard; sourceTree = "<group>"; };
 		17EF69E9205F90E0005784E7 /* newIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newIcon@2x.png"; sourceTree = "<group>"; };
 		17EF69EA205F90E0005784E7 /* newIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newIcon@3x.png"; sourceTree = "<group>"; };
+		17EF69F0205FADF4005784E7 /* SwiftWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebViewController.swift; sourceTree = "<group>"; };
+		17EF69F2205FAE0E005784E7 /* SwiftWebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftWebViewController.storyboard; sourceTree = "<group>"; };
 		17EFC5B51FD52FC300A1C3BF /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		17EFC5B61FD52FC300A1C3BF /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
@@ -580,6 +584,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EF69EF205FADE4005784E7 /* SwiftWeb */,
 				17EF69E2205F8E00005784E7 /* NewAppIcon */,
 				17EF69DD205F88DC005784E7 /* GCDFunc */,
 				178160812058FAF500F95DBA /* SnapKitView */,
@@ -1135,6 +1140,15 @@
 			path = NewAppIcon;
 			sourceTree = "<group>";
 		};
+		17EF69EF205FADE4005784E7 /* SwiftWeb */ = {
+			isa = PBXGroup;
+			children = (
+				17EF69F0205FADF4005784E7 /* SwiftWebViewController.swift */,
+				17EF69F2205FAE0E005784E7 /* SwiftWebViewController.storyboard */,
+			);
+			path = SwiftWeb;
+			sourceTree = "<group>";
+		};
 		17EFC5B41FD52FB200A1C3BF /* WebVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1361,6 +1375,7 @@
 				178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */,
 				17EF69E6205F8E1D005784E7 /* NewAppIconViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
+				17EF69F3205FAE0F005784E7 /* SwiftWebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
@@ -1631,6 +1646,7 @@
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
 				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,
+				17EF69F1205FADF4005784E7 /* SwiftWebViewController.swift in Sources */,
 				178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
 				17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */,
