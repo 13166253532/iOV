@@ -107,7 +107,7 @@ class MainViewController: BaseViewController {
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -139,11 +139,18 @@ class MainViewController: BaseViewController {
             gotoBigImageViewController()
         }else if str == "SnapKit"{
             gotoSnapKit()
+        }else if str == "GCD"{
+            gotoGCD()
         }
         
         
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
+    }
+    func gotoGCD() {
+        let vc:GCDFuncViewController=GCDFuncViewController.createViewController(createArgs: nil) as! GCDFuncViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
     }
     func gotoSnapKit() {
         let vc:SnapKitViewController=SnapKitViewController.createViewController(createArgs: nil) as! SnapKitViewController

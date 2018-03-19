@@ -96,6 +96,8 @@
 		17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */; };
 		17E983C61FD1044100A8480D /* SMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983AF1FD1041400A8480D /* SMToastView.m */; };
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
+		17EF69DF205F88F2005784E7 /* GCDFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */; };
+		17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */; };
 		17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC5B61FD52FC300A1C3BF /* WebViewController.m */; };
 		17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */; };
 		17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */ = {isa = PBXBuildFile; fileRef = 172078EF1FD0157F00DBC647 /* UINavigationBar+Awesome.h */; };
@@ -367,6 +369,8 @@
 		17E983BE1FD1041400A8480D /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
 		17E983C01FD1041400A8480D /* SMAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAlertView.h; sourceTree = "<group>"; };
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
+		17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDFuncViewController.swift; sourceTree = "<group>"; };
+		17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCDFuncViewController.storyboard; sourceTree = "<group>"; };
 		17EFC5B51FD52FC300A1C3BF /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		17EFC5B61FD52FC300A1C3BF /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		17EFC5BA1FD52FE100A1C3BF /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
@@ -566,6 +570,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EF69DD205F88DC005784E7 /* GCDFunc */,
 				178160812058FAF500F95DBA /* SnapKitView */,
 				173A5AB2202D800B00BCF7D1 /* BigImage */,
 				1797C00320215E2500D67C96 /* Download */,
@@ -1101,6 +1106,15 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		17EF69DD205F88DC005784E7 /* GCDFunc */ = {
+			isa = PBXGroup;
+			children = (
+				17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */,
+				17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */,
+			);
+			path = GCDFunc;
+			sourceTree = "<group>";
+		};
 		17EFC5B41FD52FB200A1C3BF /* WebVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1325,6 +1339,7 @@
 				178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
+				17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
 				17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */,
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
@@ -1567,6 +1582,7 @@
 				17EFC5C81FD53F3700A1C3BF /* UITabBar+HTBageNum.m in Sources */,
 				17F97F6E1FEB590500C33EE7 /* BaseCollcetionViewCell.swift in Sources */,
 				17EFC5C61FD53F3700A1C3BF /* UITabBar+HTBage.m in Sources */,
+				17EF69DF205F88F2005784E7 /* GCDFuncViewController.swift in Sources */,
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
 				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
 				17FDBD5C1FDFAD9600A13252 /* PickView.swift in Sources */,
