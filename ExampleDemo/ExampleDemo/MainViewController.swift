@@ -99,11 +99,25 @@ class MainViewController: BaseViewController {
             self?.scrollViewDidScroll(scrollView: (self?.myTableView)!)
         }
         self.delegate.dataSource=self.dataSource
+        self.delegate.block = {(sender: AnyObject , sender1: AnyObject)->() in
+            //self.perform(self.refreshUI(object:sender1), on: .main, with: sender1, waitUntilDone: true)
+            self.perform(#selector(MainViewController.refreshUI(object:)), on: .main, with: sender1, waitUntilDone: true)
+        }
         registerCell(self.myTableView, cell: MainTableViewCell.self)
         self.myTableView.delegate = self.delegate
         self.myTableView.dataSource = self.delegate
         self.myTableView.backgroundColor = grayBgColor
         setExtraCellLineHidden(tableView: self.myTableView)
+    }
+    @objc func refreshUI(object: AnyObject?) {
+        
+        let indexPath = object as? NSIndexPath
+        self.dataSource.removeObject(at: (indexPath?.row)!)
+        //2.reload
+        //直接使用reload方法界面的变化非常迅速，用户体验非常不好
+        //                self.tableView.reloadData()
+        //这个具有动画效果
+        self.myTableView.deleteRows(at: [indexPath! as IndexPath], with: UITableViewRowAnimation.automatic)
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
@@ -149,7 +163,7 @@ class MainViewController: BaseViewController {
             gotoGuidancePage()
         }
         
-        
+      
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
     }
@@ -229,7 +243,7 @@ class MainViewController: BaseViewController {
 class MainViewControllerDelegate: BaseOneTableViewDelegate {
     var selecCompany:String!
     var slidingBlock:selectBlock!
-    
+    var block:passTwoParameterBlock!
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.slidingBlock()
     }
@@ -245,5 +259,19 @@ class MainViewControllerDelegate: BaseOneTableViewDelegate {
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44*WHIDTH_RATIO()
+    }
+    func tableView(_ tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.delete
+    }
+    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+        return "删除"
+    }
+    func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        let data = self.dataSource[indexPath.row] as! MainTableViewCellModel
+        //let info = data[indexPath.row] as! MainTableViewCellModel
+        self.block(data,indexPath)
     }
 }
