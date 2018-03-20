@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170596F02060B4F900486D0D /* GuidancePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596EF2060B4F900486D0D /* GuidancePageViewController.swift */; };
+		170596F42060B52800486D0D /* GuidancePageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170596F32060B52800486D0D /* GuidancePageViewController.storyboard */; };
+		170597012060B65900486D0D /* DefineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F52060B65800486D0D /* DefineConfig.swift */; };
+		170597022060B65900486D0D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F62060B65800486D0D /* UIImage+Extension.swift */; };
+		170597032060B65900486D0D /* JHGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F72060B65800486D0D /* JHGuideView.swift */; };
+		170597042060B7A300486D0D /* guide_1_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596F92060B65800486D0D /* guide_1_iphone5@2x.png */; };
+		170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FA2060B65800486D0D /* guide_1_iphone6p@2x.png */; };
+		170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FB2060B65800486D0D /* guide_2_iphone5@2x.png */; };
+		170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FC2060B65800486D0D /* guide_1_iphone4@2x.png */; };
+		170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FD2060B65800486D0D /* guide_2_iphone6p@2x.png */; };
+		170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FE2060B65900486D0D /* guide_1_iphone6@2x.png */; };
+		1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FF2060B65900486D0D /* guide_2_iphone4@2x.png */; };
+		1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170597002060B65900486D0D /* guide_2_iphone6@2x.png */; };
 		171A114E20566648007345BA /* SNPhotoBrowserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AAB202D7C2600BCF7D1 /* SNPhotoBrowserTool.m */; };
 		171A114F2056666A007345BA /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AA9202D7C2600BCF7D1 /* PBViewController.m */; };
 		171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AAC202D7C2600BCF7D1 /* PBImageScrollerViewController.m */; };
@@ -146,6 +159,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170596EF2060B4F900486D0D /* GuidancePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidancePageViewController.swift; sourceTree = "<group>"; };
+		170596F32060B52800486D0D /* GuidancePageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidancePageViewController.storyboard; sourceTree = "<group>"; };
+		170596F52060B65800486D0D /* DefineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineConfig.swift; sourceTree = "<group>"; };
+		170596F62060B65800486D0D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		170596F72060B65800486D0D /* JHGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHGuideView.swift; sourceTree = "<group>"; };
+		170596F92060B65800486D0D /* guide_1_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone5@2x.png"; sourceTree = "<group>"; };
+		170596FA2060B65800486D0D /* guide_1_iphone6p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone6p@2x.png"; sourceTree = "<group>"; };
+		170596FB2060B65800486D0D /* guide_2_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_2_iphone5@2x.png"; sourceTree = "<group>"; };
+		170596FC2060B65800486D0D /* guide_1_iphone4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone4@2x.png"; sourceTree = "<group>"; };
+		170596FD2060B65800486D0D /* guide_2_iphone6p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_2_iphone6p@2x.png"; sourceTree = "<group>"; };
+		170596FE2060B65900486D0D /* guide_1_iphone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone6@2x.png"; sourceTree = "<group>"; };
+		170596FF2060B65900486D0D /* guide_2_iphone4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_2_iphone4@2x.png"; sourceTree = "<group>"; };
+		170597002060B65900486D0D /* guide_2_iphone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_2_iphone6@2x.png"; sourceTree = "<group>"; };
 		172078A01FCFE6FE00DBC647 /* ExampleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172078A31FCFE6FE00DBC647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172078A51FCFE6FE00DBC647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -454,6 +480,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170596EE2060B4C500486D0D /* GuidancePage */ = {
+			isa = PBXGroup;
+			children = (
+				170596F52060B65800486D0D /* DefineConfig.swift */,
+				170596F72060B65800486D0D /* JHGuideView.swift */,
+				170596F82060B65800486D0D /* resource */,
+				170596F62060B65800486D0D /* UIImage+Extension.swift */,
+				170596EF2060B4F900486D0D /* GuidancePageViewController.swift */,
+				170596F32060B52800486D0D /* GuidancePageViewController.storyboard */,
+			);
+			path = GuidancePage;
+			sourceTree = "<group>";
+		};
+		170596F82060B65800486D0D /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				170596F92060B65800486D0D /* guide_1_iphone5@2x.png */,
+				170596FA2060B65800486D0D /* guide_1_iphone6p@2x.png */,
+				170596FB2060B65800486D0D /* guide_2_iphone5@2x.png */,
+				170596FC2060B65800486D0D /* guide_1_iphone4@2x.png */,
+				170596FD2060B65800486D0D /* guide_2_iphone6p@2x.png */,
+				170596FE2060B65900486D0D /* guide_1_iphone6@2x.png */,
+				170596FF2060B65900486D0D /* guide_2_iphone4@2x.png */,
+				170597002060B65900486D0D /* guide_2_iphone6@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		172078971FCFE6FE00DBC647 = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +638,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				170596EE2060B4C500486D0D /* GuidancePage */,
 				17EF69EF205FADE4005784E7 /* SwiftWeb */,
 				17EF69E2205F8E00005784E7 /* NewAppIcon */,
 				17EF69DD205F88DC005784E7 /* GCDFunc */,
@@ -1369,6 +1424,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
+				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
+				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
+				170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */,
+				1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */,
+				1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */,
+				170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */,
+				170597042060B7A300486D0D /* guide_1_iphone5@2x.png in Resources */,
 				17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */,
 				17EF69ED205FA942005784E7 /* newIcon@2x.png in Resources */,
 				17EFC5D31FD555B800A1C3BF /* HomeViewController.storyboard in Resources */,
@@ -1376,6 +1439,7 @@
 				17EF69E6205F8E1D005784E7 /* NewAppIconViewController.storyboard in Resources */,
 				17EFC5BB1FD52FE100A1C3BF /* WebViewController.storyboard in Resources */,
 				17EF69F3205FAE0F005784E7 /* SwiftWebViewController.storyboard in Resources */,
+				170596F42060B52800486D0D /* GuidancePageViewController.storyboard in Resources */,
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
@@ -1625,14 +1689,17 @@
 				17E85B581FD4F17E003E6487 /* HTCountryListInfo.m in Sources */,
 				17E85B571FD4F176003E6487 /* HTCalendarOrdersInfo.m in Sources */,
 				17FDBD5C1FDFAD9600A13252 /* PickView.swift in Sources */,
+				170597032060B65900486D0D /* JHGuideView.swift in Sources */,
 				17EFC5D51FD555DE00A1C3BF /* InvewtorsViewController.swift in Sources */,
 				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
+				170597012060B65900486D0D /* DefineConfig.swift in Sources */,
 				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
 				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
 				17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
 				174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */,
+				170596F02060B4F900486D0D /* GuidancePageViewController.swift in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
 				173A5AB4202D802800BCF7D1 /* BigImageViewController.swift in Sources */,
@@ -1640,6 +1707,7 @@
 				17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */,
 				17E983C61FD1044100A8480D /* SMToastView.m in Sources */,
 				17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */,
+				170597022060B65900486D0D /* UIImage+Extension.swift in Sources */,
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,
 				172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */,
 				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,

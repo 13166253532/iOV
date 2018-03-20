@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 class SwiftWebViewController: BaseViewController,WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,UIGestureRecognizerDelegate {
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.name)
     }
