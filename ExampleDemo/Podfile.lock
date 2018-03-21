@@ -17,6 +17,7 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
+  - HMSegmentedControl (1.5.3)
   - IQKeyboardManager (4.0.9)
   - JSONModel (1.7.0)
   - LKDBHelper (2.4.1):
@@ -31,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - HMSegmentedControl
   - IQKeyboardManager
   - JSONModel
   - LKDBHelper
@@ -42,6 +44,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
@@ -50,6 +53,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: dbad7c47ad2c457dd5c46b0d974ed57f08cf7f69
+PODFILE CHECKSUM: 07843909112af4a164e6f9cf01cb798de648cd3d
 
 COCOAPODS: 1.3.1

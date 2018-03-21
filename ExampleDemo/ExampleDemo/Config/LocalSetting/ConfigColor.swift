@@ -8,6 +8,7 @@
 
 import UIKit
 
+let greenNavigationColor=UIColorFromRGB(rgbValue: 0x22cccc)
 let blackContentColor = UIColorFromRGB(rgbValue: 0x333333)
 let titleColor = UIColorFromRGB(rgbValue: 0x69d8ec)
 let lineColor = UIColorFromRGB(rgbValue: 0x306ab3)
