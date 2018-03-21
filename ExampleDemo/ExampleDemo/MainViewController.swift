@@ -8,7 +8,9 @@
 
 import UIKit
 import MJRefresh
-class MainViewController: BaseViewController {
+class MainViewController: BaseViewController ,FontSizeChangeDelegate{
+    
+    
     
     @IBOutlet weak var myTableView: UITableView!
     var dataSource:NSMutableArray!
@@ -216,9 +218,14 @@ class MainViewController: BaseViewController {
     }
     func gotoHttpVC(){
         let vc:HttpViewController = HttpViewController.createViewController(createArgs: nil) as! HttpViewController
+        vc.delegateFont = self
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
+    func fontSizeDidChange(controllerR: HttpViewController, fontSize: Int, fontColor: UIColor) {
+        print(fontSize)
+    }
+    
     func gotoCharacterJudgmentViewController(){
         let vc:CharacterJudgmentViewController = CharacterJudgmentViewController.createViewController(createArgs: nil) as! CharacterJudgmentViewController
         vc.hidesBottomBarWhenPushed = true
@@ -270,8 +277,8 @@ class MainViewControllerDelegate: BaseOneTableViewDelegate {
         return "删除"
     }
     func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        let data = self.dataSource[indexPath.row] as! MainTableViewCellModel
-        //let info = data[indexPath.row] as! MainTableViewCellModel
-        self.block(data,indexPath)
+        //let data = self.dataSource[indexPath.row] as! MainTableViewCellModel
+        
+        //self.block(data,indexPath)
     }
 }

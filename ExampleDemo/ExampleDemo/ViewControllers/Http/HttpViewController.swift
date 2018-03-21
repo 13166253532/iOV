@@ -8,9 +8,17 @@
 
 import UIKit
 
+protocol FontSizeChangeDelegate:NSObjectProtocol{
+    //定义一个delegate函数
+    //参数1：代理创建时所在的Controller，参数2：字体大小，参数3：字体颜色
+    func fontSizeDidChange(controllerR:HttpViewController ,fontSize:Int,fontColor:UIColor);
+    //可以添加更多的协议方法......
+}
 class HttpViewController: BaseViewController {
     
-    
+    //定义代理对象
+    var delegateFont:FontSizeChangeDelegate?;//定义一个协议，实现可以从前往后传值
+   
     class func createViewController(createArgs:AnyObject?) ->AnyObject{
         let storyboard:UIStoryboard=UIStoryboard(name: "HttpViewController", bundle: nil)
         let vc:HttpViewController=storyboard.instantiateViewController(withIdentifier: "HttpViewController") as! HttpViewController
@@ -62,6 +70,9 @@ class HttpViewController: BaseViewController {
             }
         }else{
             SMToastView.showMessage(r.errMsg)
+        }
+        if delegateFont != nil {
+            delegateFont?.fontSizeDidChange(controllerR: self, fontSize: 8, fontColor: UIColor.black)
         }
     }
 
