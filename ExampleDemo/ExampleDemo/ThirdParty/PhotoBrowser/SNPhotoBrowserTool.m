@@ -56,12 +56,12 @@
 //    });
     
     NSString *str=self.originDataArray[index];
-    [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"]];
-   // [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"] options:SDWebImageCacheMemoryOnly];
+   // [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"]];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"testImage"] options:SDWebImageCacheMemoryOnly];
     
 //    SNImageModel * model = self.originDataArray[index];
 //    [imageView setImageWithURL:[NSURL URLWithString:model.thumbImage] placeholderImage:HOLDER_IMAGE];
-    
+//
     
     
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
