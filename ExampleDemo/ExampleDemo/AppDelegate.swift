@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SNHttpBaseCmd.networkTestingActionTRUEBlock {
             
         }
+        
         gotoTabBar()
         return true
     }
