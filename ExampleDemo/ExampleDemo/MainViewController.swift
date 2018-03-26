@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+import Masonry
 class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     
     
@@ -27,9 +28,9 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         vc.createArgs=createArgs
         return vc
     }
-    override func viewWillAppear(_ animated: Bool) {
-        //hideNavigationBar()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        //hideNavigationBar()
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         initTitleBar()
@@ -40,7 +41,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         initReturnBtn()
         //isNavigationBarObstructed()
         initMyTableView()
-        addHeaderFooter()
+        //addHeaderFooter()
     }
 
     //MARK:添加上拉加载 下拉刷新
@@ -110,6 +111,12 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         self.myTableView.dataSource = self.delegate
         self.myTableView.backgroundColor = grayBgColor
         setExtraCellLineHidden(tableView: self.myTableView)
+//        self.myTableView.mas_makeConstraints { (make: MASConstraintMaker? ) in
+//            make?.top.mas_equalTo()
+//            make?.left.right().bottom().mas_offset()
+//        }
+        
+        
     }
     @objc func refreshUI(object: AnyObject?) {
         
@@ -124,6 +131,15 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     func initdataSource()  {
         self.dataSource = NSMutableArray()
         let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented"]
+        for index in 0..<titleArray.count {
+            let model = MainTableViewCellModel()
+            model.className = "MainTableViewCell"
+            model.titleValue = titleArray[index]
+            model.block = { [weak self] (value:AnyObject) in
+                self?.gotoVC(str: value as! String)
+            }
+            dataSource.add(model)
+        }
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
