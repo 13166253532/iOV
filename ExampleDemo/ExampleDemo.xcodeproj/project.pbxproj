@@ -80,6 +80,13 @@
 		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
 		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
 		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
+		1775B1D42069EA7000C69721 /* UIPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1D32069EA7000C69721 /* UIPresentationViewController.swift */; };
+		1775B1D82069EAAB00C69721 /* UIPresentationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1775B1D72069EAAB00C69721 /* UIPresentationViewController.storyboard */; };
+		1775B1E5206A141100C69721 /* FirstBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1DE206A114000C69721 /* FirstBottomVC.swift */; };
+		1775B1E6206A141C00C69721 /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1DF206A114000C69721 /* SelectionVC.swift */; };
+		1775B1E7206A142300C69721 /* TimeSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1E0206A114000C69721 /* TimeSelectVC.swift */; };
+		1775B1E8206A142D00C69721 /* PresentBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1E4206A114000C69721 /* PresentBottom.swift */; };
+		1775B1E9206A143800C69721 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1E2206A114000C69721 /* RoundView.swift */; };
 		17789C842062256E0073377B /* HMSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789C832062256E0073377B /* HMSegmentedViewController.swift */; };
 		17789C86206225CA0073377B /* HMSegmentedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17789C85206225CA0073377B /* HMSegmentedViewController.storyboard */; };
 		17789C88206227030073377B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789C87206227030073377B /* OneViewController.swift */; };
@@ -287,6 +294,13 @@
 		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
 		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
+		1775B1D32069EA7000C69721 /* UIPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentationViewController.swift; sourceTree = "<group>"; };
+		1775B1D72069EAAB00C69721 /* UIPresentationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPresentationViewController.storyboard; sourceTree = "<group>"; };
+		1775B1DE206A114000C69721 /* FirstBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBottomVC.swift; sourceTree = "<group>"; };
+		1775B1DF206A114000C69721 /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
+		1775B1E0206A114000C69721 /* TimeSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectVC.swift; sourceTree = "<group>"; };
+		1775B1E2206A114000C69721 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		1775B1E4206A114000C69721 /* PresentBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentBottom.swift; sourceTree = "<group>"; };
 		17789C832062256E0073377B /* HMSegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSegmentedViewController.swift; sourceTree = "<group>"; };
 		17789C85206225CA0073377B /* HMSegmentedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HMSegmentedViewController.storyboard; sourceTree = "<group>"; };
 		17789C87206227030073377B /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
@@ -610,6 +624,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1775B1D22069EA5F00C69721 /* UIPresentationC */,
 				17789C822062255C0073377B /* HMSegmentedControl */,
 				170596EE2060B4C500486D0D /* GuidancePage */,
 				17EF69EF205FADE4005784E7 /* SwiftWeb */,
@@ -903,6 +918,44 @@
 				1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */,
 			);
 			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		1775B1D22069EA5F00C69721 /* UIPresentationC */ = {
+			isa = PBXGroup;
+			children = (
+				1775B1E1206A114000C69721 /* Class */,
+				1775B1E3206A114000C69721 /* Source */,
+				1775B1DD206A114000C69721 /* VC */,
+				1775B1D32069EA7000C69721 /* UIPresentationViewController.swift */,
+				1775B1D72069EAAB00C69721 /* UIPresentationViewController.storyboard */,
+			);
+			path = UIPresentationC;
+			sourceTree = "<group>";
+		};
+		1775B1DD206A114000C69721 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1775B1DE206A114000C69721 /* FirstBottomVC.swift */,
+				1775B1DF206A114000C69721 /* SelectionVC.swift */,
+				1775B1E0206A114000C69721 /* TimeSelectVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1775B1E1206A114000C69721 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1775B1E2206A114000C69721 /* RoundView.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		1775B1E3206A114000C69721 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1775B1E4206A114000C69721 /* PresentBottom.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		17789C822062255C0073377B /* HMSegmentedControl */ = {
@@ -1375,6 +1428,7 @@
 				1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */,
 				1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */,
 				170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */,
+				1775B1D82069EAAB00C69721 /* UIPresentationViewController.storyboard in Resources */,
 				170597042060B7A300486D0D /* guide_1_iphone5@2x.png in Resources */,
 				17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */,
 				17EF69ED205FA942005784E7 /* newIcon@2x.png in Resources */,
@@ -1595,6 +1649,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1775B1E9206A143800C69721 /* RoundView.swift in Sources */,
+				1775B1E8206A142D00C69721 /* PresentBottom.swift in Sources */,
+				1775B1E7206A142300C69721 /* TimeSelectVC.swift in Sources */,
+				1775B1E6206A141C00C69721 /* SelectionVC.swift in Sources */,
+				1775B1E5206A141100C69721 /* FirstBottomVC.swift in Sources */,
 				17DA2829205BCB8C008442E7 /* BRPlaceholderTextView.m in Sources */,
 				171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */,
 				171A114F2056666A007345BA /* PBViewController.m in Sources */,
@@ -1625,6 +1684,7 @@
 				17EFC5BC1FD5362500A1C3BF /* UINavigationBar+Awesome.h in Sources */,
 				17E85B5A1FD4F18F003E6487 /* EPHistorySearchInfo.m in Sources */,
 				17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */,
+				1775B1D42069EA7000C69721 /* UIPresentationViewController.swift in Sources */,
 				17EFC5CB1FD5543200A1C3BF /* RootTabBarViewController.swift in Sources */,
 				17E85B591FD4F187003E6487 /* HTCitiesListInfo.m in Sources */,
 				17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */,
