@@ -36,3 +36,5 @@
 
 #import "DownloadViewController.h"
 #import "SNPhotoBrowserTool.h"
+
+#import "GesturesView.h"

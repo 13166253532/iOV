@@ -69,7 +69,7 @@ class SwiftWebViewController: BaseViewController,WKUIDelegate,WKNavigationDelega
         }
     }
     /**
-     //swift中的get方法，可以直接varget或letget显示提示，如果使用的是get方法创建视图，调用添加到父类上的时候，要self._参数，如self._wkWebV，如此就可以看出来这个get方法的名称可以跟全局定义的参数名不一样，建议除了“_”不一样外，字母最好一样
+     //swift中的get方法，可以直接var get或letget显示提示，如果使用的是get方法创建视图，调用添加到父类上的时候，要self._参数，如self._wkWebV，如此就可以看出来这个get方法的名称可以跟全局定义的参数名不一样，建议除了“_”不一样外，字母最好一样
      //letget
      let <#property name#>: <#type name#> = {
      <#statements#>

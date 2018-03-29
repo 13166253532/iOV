@@ -128,7 +128,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -173,11 +173,21 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoHMSegmented()
         }else if str == "UIPresentation"{
             gotoUIPresentation()
+        }else if str == "设置手势"{
+            gotoYZXUnlock(isSuss: true)
+        }else if str == "确认手势"{
+            gotoYZXUnlock(isSuss: false)
         }
         
       
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
+    }
+    func gotoYZXUnlock(isSuss:Bool) {
+        let vc:YZXUnlockViewController=YZXUnlockViewController.createViewController(createArgs: nil) as! YZXUnlockViewController
+        vc.settingGesture = isSuss
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
     }
     func gotoUIPresentation() {
         let vc:UIPresentationViewController=UIPresentationViewController.createViewController(createArgs: nil) as! UIPresentationViewController
