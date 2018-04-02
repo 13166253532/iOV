@@ -94,6 +94,10 @@
 		17789C88206227030073377B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789C87206227030073377B /* OneViewController.swift */; };
 		17789C8A206227220073377B /* OneViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17789C89206227220073377B /* OneViewController.storyboard */; };
 		17792F2A202059D300460427 /* BaseTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */; };
+		177ECCB82071BFF000E9FFB1 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */; };
+		177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */; };
+		177ECCBC2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */; };
+		177ECCBE2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */; };
 		178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178160822058FB1000F95DBA /* SnapKitViewController.swift */; };
 		178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178160842058FB2200F95DBA /* SnapKitViewController.storyboard */; };
 		17A21CA22028562400B529EC /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A21CA12028562400B529EC /* DownloadViewController.m */; };
@@ -311,6 +315,10 @@
 		17789C85206225CA0073377B /* HMSegmentedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HMSegmentedViewController.storyboard; sourceTree = "<group>"; };
 		17789C87206227030073377B /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		17789C89206227220073377B /* OneViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneViewController.storyboard; sourceTree = "<group>"; };
+		177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
+		177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextFieldViewController.storyboard; sourceTree = "<group>"; };
+		177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		178160822058FB1000F95DBA /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 		178160842058FB2200F95DBA /* SnapKitViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnapKitViewController.storyboard; sourceTree = "<group>"; };
 		17A21CA02028562400B529EC /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
@@ -647,6 +655,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				177ECCB62071BFB500E9FFB1 /* UITextFieldVC */,
 				171B2E23206B8A1200E9CE5F /* YZXUnlock */,
 				1775B1D22069EA5F00C69721 /* UIPresentationC */,
 				17789C822062255C0073377B /* HMSegmentedControl */,
@@ -991,6 +1000,17 @@
 				17789C89206227220073377B /* OneViewController.storyboard */,
 			);
 			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		177ECCB62071BFB500E9FFB1 /* UITextFieldVC */ = {
+			isa = PBXGroup;
+			children = (
+				177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */,
+				177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */,
+				177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */,
+				177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */,
+			);
+			path = UITextFieldVC;
 			sourceTree = "<group>";
 		};
 		178160812058FAF500F95DBA /* SnapKitView */ = {
@@ -1448,6 +1468,7 @@
 				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
+				177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */,
 				170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */,
 				1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */,
 				1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */,
@@ -1471,6 +1492,7 @@
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
 				17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
+				177ECCBE2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
 				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
 				171B2E27206B8A3A00E9CE5F /* YZXUnlockViewController.storyboard in Resources */,
@@ -1739,6 +1761,7 @@
 				173A5AB4202D802800BCF7D1 /* BigImageViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,
 				17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */,
+				177ECCBC2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift in Sources */,
 				17789C842062256E0073377B /* HMSegmentedViewController.swift in Sources */,
 				17E983C61FD1044100A8480D /* SMToastView.m in Sources */,
 				17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */,
@@ -1746,6 +1769,7 @@
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,
 				172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */,
 				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,
+				177ECCB82071BFF000E9FFB1 /* UITextFieldViewController.swift in Sources */,
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
 				17EFC5DD1FD5562A00A1C3BF /* ProjectViewController.swift in Sources */,

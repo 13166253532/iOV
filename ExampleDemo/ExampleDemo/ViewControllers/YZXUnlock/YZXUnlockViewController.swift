@@ -12,7 +12,7 @@ import UIKit
 class YZXUnlockViewController: BaseViewController {
     var settingGesture:Bool = true
     var selectedID = NSArray()
-    
+    //https://github.com/yinxing29/YZXUnlock
     @IBOutlet weak var hintLabel: UILabel!
     
     @IBOutlet weak var cancelBut: UIButton!
@@ -44,6 +44,7 @@ class YZXUnlockViewController: BaseViewController {
         let _gesturesView = GesturesView.init(frame:CGRect(x:40, y: SCREEN_HEIGHT()/2-(SCREEN_WHIDTH()-80)/2, width:SCREEN_WHIDTH()-80 , height:SCREEN_WHIDTH()-80 ) )
         _gesturesView.backgroundColor = UIColor.clear
         _gesturesView.settingGesture = self.settingGesture
+  
         _gesturesView.setGestureBlock({ [weak self](selectedID) in
             self?.selectedID = selectedID! as NSArray
             self?.hintLabel.isHidden = true
