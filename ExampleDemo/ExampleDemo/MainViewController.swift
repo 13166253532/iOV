@@ -128,7 +128,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -179,12 +179,20 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoYZXUnlock(isSuss: false)
         }else if str == "gotoUITextField"{
             gotoUITextField(isSuss: false)
+        }else if str == "IrregularLabel"{
+            gotoIrregularLabel()
         }
         
       
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
     }
+    func gotoIrregularLabel() {
+        let vc:IrregularLabelViewController=IrregularLabelViewController.createViewController(createArgs: nil) as! IrregularLabelViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
+    
     func gotoUITextField(isSuss:Bool) {
         let vc:UITextFieldViewController=UITextFieldViewController.createViewController(createArgs: nil) as! UITextFieldViewController
         vc.hidesBottomBarWhenPushed = true

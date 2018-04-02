@@ -13,7 +13,7 @@
 #import "WebViewController.h"
 #import "Encryption.h"
 #import "BRPlaceholderTextView.h"
-//
+#import "IrregularLabel.h"
 
 //字符判断
 #import "CharacterJudgment.h"

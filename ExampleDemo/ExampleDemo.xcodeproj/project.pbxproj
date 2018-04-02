@@ -94,10 +94,13 @@
 		17789C88206227030073377B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789C87206227030073377B /* OneViewController.swift */; };
 		17789C8A206227220073377B /* OneViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17789C89206227220073377B /* OneViewController.storyboard */; };
 		17792F2A202059D300460427 /* BaseTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */; };
+		177D836020720C4A0089BB9C /* IrregularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCC32072058900E9FFB1 /* IrregularLabel.m */; };
 		177ECCB82071BFF000E9FFB1 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */; };
 		177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */; };
 		177ECCBC2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */; };
 		177ECCBE2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */; };
+		177ECCC12072056D00E9FFB1 /* IrregularLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCC02072056D00E9FFB1 /* IrregularLabelViewController.swift */; };
+		177ECCC62072059100E9FFB1 /* IrregularLabelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCC52072059100E9FFB1 /* IrregularLabelViewController.storyboard */; };
 		178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178160822058FB1000F95DBA /* SnapKitViewController.swift */; };
 		178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178160842058FB2200F95DBA /* SnapKitViewController.storyboard */; };
 		17A21CA22028562400B529EC /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A21CA12028562400B529EC /* DownloadViewController.m */; };
@@ -319,6 +322,10 @@
 		177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextFieldViewController.storyboard; sourceTree = "<group>"; };
 		177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		177ECCC02072056D00E9FFB1 /* IrregularLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularLabelViewController.swift; sourceTree = "<group>"; };
+		177ECCC32072058900E9FFB1 /* IrregularLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrregularLabel.m; sourceTree = "<group>"; };
+		177ECCC42072058900E9FFB1 /* IrregularLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrregularLabel.h; sourceTree = "<group>"; };
+		177ECCC52072059100E9FFB1 /* IrregularLabelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IrregularLabelViewController.storyboard; sourceTree = "<group>"; };
 		178160822058FB1000F95DBA /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 		178160842058FB2200F95DBA /* SnapKitViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnapKitViewController.storyboard; sourceTree = "<group>"; };
 		17A21CA02028562400B529EC /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
@@ -655,6 +662,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				177ECCBF2072054600E9FFB1 /* IrregularLabel */,
 				177ECCB62071BFB500E9FFB1 /* UITextFieldVC */,
 				171B2E23206B8A1200E9CE5F /* YZXUnlock */,
 				1775B1D22069EA5F00C69721 /* UIPresentationC */,
@@ -1011,6 +1019,25 @@
 				177ECCBD2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib */,
 			);
 			path = UITextFieldVC;
+			sourceTree = "<group>";
+		};
+		177ECCBF2072054600E9FFB1 /* IrregularLabel */ = {
+			isa = PBXGroup;
+			children = (
+				177ECCC22072058900E9FFB1 /* IrregularLabel */,
+				177ECCC02072056D00E9FFB1 /* IrregularLabelViewController.swift */,
+				177ECCC52072059100E9FFB1 /* IrregularLabelViewController.storyboard */,
+			);
+			path = IrregularLabel;
+			sourceTree = "<group>";
+		};
+		177ECCC22072058900E9FFB1 /* IrregularLabel */ = {
+			isa = PBXGroup;
+			children = (
+				177ECCC42072058900E9FFB1 /* IrregularLabel.h */,
+				177ECCC32072058900E9FFB1 /* IrregularLabel.m */,
+			);
+			path = IrregularLabel;
 			sourceTree = "<group>";
 		};
 		178160812058FAF500F95DBA /* SnapKitView */ = {
@@ -1491,6 +1518,7 @@
 				17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */,
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
 				17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */,
+				177ECCC62072059100E9FFB1 /* IrregularLabelViewController.storyboard in Resources */,
 				172078AE1FCFE6FE00DBC647 /* LaunchScreen.storyboard in Resources */,
 				177ECCBE2071C2CE00E9FFB1 /* UITextFieldTableViewCell.xib in Resources */,
 				172078AB1FCFE6FE00DBC647 /* Assets.xcassets in Resources */,
@@ -1696,10 +1724,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177D836020720C4A0089BB9C /* IrregularLabel.m in Sources */,
 				1775B1E9206A143800C69721 /* RoundView.swift in Sources */,
 				1775B1E8206A142D00C69721 /* PresentBottom.swift in Sources */,
 				1775B1E7206A142300C69721 /* TimeSelectVC.swift in Sources */,
 				1775B1E6206A141C00C69721 /* SelectionVC.swift in Sources */,
+				177ECCC12072056D00E9FFB1 /* IrregularLabelViewController.swift in Sources */,
 				171B2E25206B8A2600E9CE5F /* YZXUnlockViewController.swift in Sources */,
 				1775B1E5206A141100C69721 /* FirstBottomVC.swift in Sources */,
 				17DA2829205BCB8C008442E7 /* BRPlaceholderTextView.m in Sources */,
