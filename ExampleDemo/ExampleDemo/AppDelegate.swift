@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func gotoTabBar() {
         //let vc:MainViewController=MainViewController.createViewController(createArgs: nil) as! MainViewController
-        let vc:GCDFuncViewController=GCDFuncViewController.createViewController(createArgs: nil) as! GCDFuncViewController
+        let vc:PushFuncViewController=PushFuncViewController.createViewController(createArgs: nil) as! PushFuncViewController
         let nav = UINavigationController.init(rootViewController: vc)
         //let nav = RootTabBarViewController.init()
         self.window?.rootViewController = nav

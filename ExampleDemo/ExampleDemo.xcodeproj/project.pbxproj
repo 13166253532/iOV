@@ -108,6 +108,8 @@
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
 		17A5DC3B1FDE691D00D9F535 /* CompanyListInfoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */; };
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
+		17A8AD4920737384006898CB /* PushFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4820737384006898CB /* PushFuncViewController.swift */; };
+		17A8AD4B20737394006898CB /* PushFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */; };
 		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
 		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
 		17CA0062206C82A600C9BAFF /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA0061206C82A600C9BAFF /* PointView.m */; };
@@ -369,6 +371,8 @@
 		17A5DC361FDE642B00D9F535 /* HttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
 		17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HttpViewController.storyboard; sourceTree = "<group>"; };
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
+		17A8AD4820737384006898CB /* PushFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFuncViewController.swift; sourceTree = "<group>"; };
+		17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PushFuncViewController.storyboard; sourceTree = "<group>"; };
 		17C0D27F20172C0200D62A1E /* SMCommandComplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMCommandComplete.m; sourceTree = "<group>"; };
 		17C0D28020172C0200D62A1E /* SMUnitTestMacroDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUnitTestMacroDef.h; sourceTree = "<group>"; };
 		17C0D28120172C0200D62A1E /* SMCommandComplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommandComplete.h; sourceTree = "<group>"; };
@@ -662,6 +666,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17A8AD4720737367006898CB /* PUSHFunc */,
 				177ECCBF2072054600E9FFB1 /* IrregularLabel */,
 				177ECCB62071BFB500E9FFB1 /* UITextFieldVC */,
 				171B2E23206B8A1200E9CE5F /* YZXUnlock */,
@@ -1135,6 +1140,15 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		17A8AD4720737367006898CB /* PUSHFunc */ = {
+			isa = PBXGroup;
+			children = (
+				17A8AD4820737384006898CB /* PushFuncViewController.swift */,
+				17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */,
+			);
+			path = PUSHFunc;
+			sourceTree = "<group>";
+		};
 		17C0D27E20172C0200D62A1E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1498,6 +1512,7 @@
 				177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */,
 				170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */,
 				1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */,
+				17A8AD4B20737394006898CB /* PushFuncViewController.storyboard in Resources */,
 				1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */,
 				170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */,
 				1775B1D82069EAAB00C69721 /* UIPresentationViewController.storyboard in Resources */,
@@ -1742,6 +1757,7 @@
 				17789C88206227030073377B /* OneViewController.swift in Sources */,
 				17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */,
 				17303C7520071210007B32FC /* STBallView.swift in Sources */,
+				17A8AD4920737384006898CB /* PushFuncViewController.swift in Sources */,
 				174B04B31FF6344600850959 /* ValidateIDCardNumber.m in Sources */,
 				174852CB1FDE789B00FC159C /* DSHttpMessageListCmd+Response.m in Sources */,
 				174852CA1FDE724F00FC159C /* ProjectConfigGroup.m in Sources */,
