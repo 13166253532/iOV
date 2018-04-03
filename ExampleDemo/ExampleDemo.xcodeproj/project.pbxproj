@@ -110,6 +110,8 @@
 		17A5DC3C1FDE6A9200D9F535 /* SMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983C31FD1041400A8480D /* SMAlertView.m */; };
 		17A8AD4920737384006898CB /* PushFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4820737384006898CB /* PushFuncViewController.swift */; };
 		17A8AD4B20737394006898CB /* PushFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */; };
+		17A8AD4D20737802006898CB /* CustomNaviAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */; };
+		17A8AD4F20737877006898CB /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */; };
 		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
 		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
 		17CA0062206C82A600C9BAFF /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA0061206C82A600C9BAFF /* PointView.m */; };
@@ -373,6 +375,8 @@
 		17A5DC3A1FDE691B00D9F535 /* CompanyListInfoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInfoMode.swift; sourceTree = "<group>"; };
 		17A8AD4820737384006898CB /* PushFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFuncViewController.swift; sourceTree = "<group>"; };
 		17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PushFuncViewController.storyboard; sourceTree = "<group>"; };
+		17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNaviAnimatedTransition.swift; sourceTree = "<group>"; };
+		17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
 		17C0D27F20172C0200D62A1E /* SMCommandComplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMCommandComplete.m; sourceTree = "<group>"; };
 		17C0D28020172C0200D62A1E /* SMUnitTestMacroDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUnitTestMacroDef.h; sourceTree = "<group>"; };
 		17C0D28120172C0200D62A1E /* SMCommandComplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommandComplete.h; sourceTree = "<group>"; };
@@ -1145,6 +1149,8 @@
 			children = (
 				17A8AD4820737384006898CB /* PushFuncViewController.swift */,
 				17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */,
+				17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */,
+				17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */,
 			);
 			path = PUSHFunc;
 			sourceTree = "<group>";
@@ -1815,6 +1821,7 @@
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,
 				172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */,
 				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,
+				17A8AD4D20737802006898CB /* CustomNaviAnimatedTransition.swift in Sources */,
 				177ECCB82071BFF000E9FFB1 /* UITextFieldViewController.swift in Sources */,
 				172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */,
 				172079021FD015A500DBC647 /* ConfigBlock.swift in Sources */,
@@ -1827,6 +1834,7 @@
 				17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */,
 				172078E81FD0151E00DBC647 /* BaseViewController.swift in Sources */,
 				17EFC5D91FD5560500A1C3BF /* ParkViewController.swift in Sources */,
+				17A8AD4F20737877006898CB /* AnimatedTransitioning.swift in Sources */,
 				172078E71FD0151A00DBC647 /* BaseTableViewDelegate.swift in Sources */,
 				172078E61FD0151000DBC647 /* BaseTableViewCell.swift in Sources */,
 				172078E41FD0150600DBC647 /* BaseOCViewController.m in Sources */,

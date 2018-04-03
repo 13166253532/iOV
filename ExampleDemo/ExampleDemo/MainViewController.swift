@@ -31,14 +31,17 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         initTitleBar()
+        
         self.title = "我的"
-        self.view.backgroundColor = loginBg_Color
+        //self.view.backgroundColor = loginBg_Color
         //self.navigationController?.navigationBar.lt_setBackgroundColor(UIColor.clear)
         //self.navigationController?.navigationBar.shadowImage = UIImage()
-        initReturnBtn()
-        //isNavigationBarObstructed()
+        //initReturnBtn()
+        isNavigationBarObstructed()
         initMyTableView()
+        
         //addHeaderFooter()
     }
 
@@ -71,7 +74,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         //self.delegate.slidingBlock = nil
-        displayNavigationBar()
+        //displayNavigationBar()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -83,7 +86,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         self.navigationItem.leftBarButtonItem = leftN
     }
     override func arrowResponse(){
-        
+
     }
     func initMyTableView() {
         initdataSource()
@@ -93,16 +96,16 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             self.myTableView.scrollIndicatorInsets = self.myTableView.contentInset
         }
         self.myTableView.contentInset = UIEdgeInsetsMake(0, 0, (self.navigationController?.toolbar.bounds.height)!, 0)
-        self.scrollViewDidScroll(scrollView: self.myTableView)
+        //self.scrollViewDidScroll(scrollView: self.myTableView)
         
         self.delegate = MainViewControllerDelegate()
         self.delegate.slidingBlock = {[weak self] in
-            self?.scrollViewDidScroll(scrollView: (self?.myTableView)!)
+            //self?.scrollViewDidScroll(scrollView: (self?.myTableView)!)
         }
         self.delegate.dataSource=self.dataSource
         self.delegate.block = {(sender: AnyObject , sender1: AnyObject)->() in
-            //self.perform(self.refreshUI(object:sender1), on: .main, with: sender1, waitUntilDone: true)
-            self.perform(#selector(MainViewController.refreshUI(object:)), on: .main, with: sender1, waitUntilDone: true)
+//            self.perform(self.refreshUI(object:sender1), on: .main, with: sender1, waitUntilDone: true)
+//            self.perform(#selector(MainViewController.refreshUI(object:)), on: .main, with: sender1, waitUntilDone: true)
         }
         registerCell(self.myTableView, cell: MainTableViewCell.self)
         self.myTableView.delegate = self.delegate
