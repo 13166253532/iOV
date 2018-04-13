@@ -14,10 +14,11 @@
 #import "Encryption.h"
 #import "BRPlaceholderTextView.h"
 #import "IrregularLabel.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 //字符判断
 #import "CharacterJudgment.h"
-
+#import <AVFoundation/AVFoundation.h>
 #import "SMAlertView.h"
 #import "SMToastView.h"
 

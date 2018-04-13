@@ -42,6 +42,11 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         isNavigationBarObstructed()
         initMyTableView()
         
+        let urlImageView = UIImageView.init(frame: CGRect(x:10, y:50, width:60 , height:60))
+        urlImageView.sd_setImage(with: URL.init(string: "https://www.hstd.com/portalimage//2018/6760CFAB642D913AE053ACC8A8C08DF8.png"), placeholderImage: UIImage.init(named: "hand_image"))
+        
+        //self.view .addSubview(urlImageView)
+        
         //addHeaderFooter()
     }
 
@@ -131,7 +136,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -184,11 +189,18 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoUITextField(isSuss: false)
         }else if str == "IrregularLabel"{
             gotoIrregularLabel()
+        }else if str == "人脸识别"{
+            gotoFaceRecognition()
         }
         
       
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
+    }
+    func gotoFaceRecognition() {
+        let vc:FaceRecognitionViewController=FaceRecognitionViewController.createViewController(createArgs: nil) as! FaceRecognitionViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
     }
     func gotoIrregularLabel() {
         let vc:IrregularLabelViewController=IrregularLabelViewController.createViewController(createArgs: nil) as! IrregularLabelViewController

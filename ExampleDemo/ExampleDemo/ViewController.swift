@@ -23,9 +23,7 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        //光华，今天是您结婚的大喜日子，真的很抱歉没能回去。虽然我没能去参加您的婚礼，但我仍为您祝福着。祝您新婚愉快!百年好合！
-        
+       
     }
 
 

@@ -10,7 +10,6 @@
 		170596F02060B4F900486D0D /* GuidancePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596EF2060B4F900486D0D /* GuidancePageViewController.swift */; };
 		170596F42060B52800486D0D /* GuidancePageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170596F32060B52800486D0D /* GuidancePageViewController.storyboard */; };
 		170597012060B65900486D0D /* DefineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F52060B65800486D0D /* DefineConfig.swift */; };
-		170597022060B65900486D0D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F62060B65800486D0D /* UIImage+Extension.swift */; };
 		170597032060B65900486D0D /* JHGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170596F72060B65800486D0D /* JHGuideView.swift */; };
 		170597042060B7A300486D0D /* guide_1_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596F92060B65800486D0D /* guide_1_iphone5@2x.png */; };
 		170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170596FA2060B65800486D0D /* guide_1_iphone6p@2x.png */; };
@@ -82,6 +81,7 @@
 		1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE651FD139D0004B3D8E /* QRCodeTwoViewController.storyboard */; };
 		1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */; };
 		1757FE841FD14E09004B3D8E /* LKDBHelperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */; };
+		17745E25207F2BAB005CA390 /* FaceRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17745E24207F2BAB005CA390 /* FaceRecognitionViewController.swift */; };
 		1775B1D42069EA7000C69721 /* UIPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1D32069EA7000C69721 /* UIPresentationViewController.swift */; };
 		1775B1D82069EAAB00C69721 /* UIPresentationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1775B1D72069EAAB00C69721 /* UIPresentationViewController.storyboard */; };
 		1775B1E5206A141100C69721 /* FirstBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775B1DE206A114000C69721 /* FirstBottomVC.swift */; };
@@ -94,6 +94,8 @@
 		17789C88206227030073377B /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789C87206227030073377B /* OneViewController.swift */; };
 		17789C8A206227220073377B /* OneViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17789C89206227220073377B /* OneViewController.storyboard */; };
 		17792F2A202059D300460427 /* BaseTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E0D51FF4CD6100C0C0FE /* BaseTabBarView.m */; };
+		177CBA0E207DFA49005D0453 /* 41734r.gif in Resources */ = {isa = PBXBuildFile; fileRef = 177CBA0D207DF963005D0453 /* 41734r.gif */; };
+		177CBA0F207DFA56005D0453 /* iconfont-fanzhuanshexiangtou.png in Resources */ = {isa = PBXBuildFile; fileRef = 177CBA0C207DF2D1005D0453 /* iconfont-fanzhuanshexiangtou.png */; };
 		177D836020720C4A0089BB9C /* IrregularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCC32072058900E9FFB1 /* IrregularLabel.m */; };
 		177ECCB82071BFF000E9FFB1 /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */; };
 		177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */; };
@@ -112,6 +114,7 @@
 		17A8AD4B20737394006898CB /* PushFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */; };
 		17A8AD4D20737802006898CB /* CustomNaviAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */; };
 		17A8AD4F20737877006898CB /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */; };
+		17ABAD6A207DEAA800724E65 /* FaceRecognitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ABAD69207DEAA800724E65 /* FaceRecognitionViewController.storyboard */; };
 		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
 		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
 		17CA0062206C82A600C9BAFF /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA0061206C82A600C9BAFF /* PointView.m */; };
@@ -133,6 +136,7 @@
 		17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */; };
 		17E983C61FD1044100A8480D /* SMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983AF1FD1041400A8480D /* SMToastView.m */; };
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
+		17EDCB86208071CE00BD66DF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */; };
 		17EF69DF205F88F2005784E7 /* GCDFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */; };
 		17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */; };
 		17EF69E4205F8E0F005784E7 /* NewAppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */; };
@@ -186,7 +190,6 @@
 		170596EF2060B4F900486D0D /* GuidancePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidancePageViewController.swift; sourceTree = "<group>"; };
 		170596F32060B52800486D0D /* GuidancePageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidancePageViewController.storyboard; sourceTree = "<group>"; };
 		170596F52060B65800486D0D /* DefineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineConfig.swift; sourceTree = "<group>"; };
-		170596F62060B65800486D0D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		170596F72060B65800486D0D /* JHGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHGuideView.swift; sourceTree = "<group>"; };
 		170596F92060B65800486D0D /* guide_1_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone5@2x.png"; sourceTree = "<group>"; };
 		170596FA2060B65800486D0D /* guide_1_iphone6p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_1_iphone6p@2x.png"; sourceTree = "<group>"; };
@@ -311,6 +314,7 @@
 		1757FE7F1FD14D20004B3D8E /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		1757FE811FD14DE1004B3D8E /* LKDBHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDBHelperViewController.swift; sourceTree = "<group>"; };
 		1757FE831FD14E09004B3D8E /* LKDBHelperViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LKDBHelperViewController.storyboard; sourceTree = "<group>"; };
+		17745E24207F2BAB005CA390 /* FaceRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionViewController.swift; sourceTree = "<group>"; };
 		1775B1D32069EA7000C69721 /* UIPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentationViewController.swift; sourceTree = "<group>"; };
 		1775B1D72069EAAB00C69721 /* UIPresentationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPresentationViewController.storyboard; sourceTree = "<group>"; };
 		1775B1DE206A114000C69721 /* FirstBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBottomVC.swift; sourceTree = "<group>"; };
@@ -322,6 +326,8 @@
 		17789C85206225CA0073377B /* HMSegmentedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HMSegmentedViewController.storyboard; sourceTree = "<group>"; };
 		17789C87206227030073377B /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		17789C89206227220073377B /* OneViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneViewController.storyboard; sourceTree = "<group>"; };
+		177CBA0C207DF2D1005D0453 /* iconfont-fanzhuanshexiangtou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-fanzhuanshexiangtou.png"; sourceTree = "<group>"; };
+		177CBA0D207DF963005D0453 /* 41734r.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 41734r.gif; sourceTree = "<group>"; };
 		177ECCB72071BFF000E9FFB1 /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
 		177ECCB92071BFF800E9FFB1 /* UITextFieldViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextFieldViewController.storyboard; sourceTree = "<group>"; };
 		177ECCBB2071C2C500E9FFB1 /* UITextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldTableViewCell.swift; sourceTree = "<group>"; };
@@ -377,6 +383,7 @@
 		17A8AD4A20737394006898CB /* PushFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PushFuncViewController.storyboard; sourceTree = "<group>"; };
 		17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNaviAnimatedTransition.swift; sourceTree = "<group>"; };
 		17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		17ABAD69207DEAA800724E65 /* FaceRecognitionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceRecognitionViewController.storyboard; sourceTree = "<group>"; };
 		17C0D27F20172C0200D62A1E /* SMCommandComplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMCommandComplete.m; sourceTree = "<group>"; };
 		17C0D28020172C0200D62A1E /* SMUnitTestMacroDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUnitTestMacroDef.h; sourceTree = "<group>"; };
 		17C0D28120172C0200D62A1E /* SMCommandComplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCommandComplete.h; sourceTree = "<group>"; };
@@ -421,6 +428,7 @@
 		17E983BE1FD1041400A8480D /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
 		17E983C01FD1041400A8480D /* SMAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAlertView.h; sourceTree = "<group>"; };
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
+		17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDFuncViewController.swift; sourceTree = "<group>"; };
 		17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCDFuncViewController.storyboard; sourceTree = "<group>"; };
 		17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppIconViewController.swift; sourceTree = "<group>"; };
@@ -506,7 +514,6 @@
 				170596F52060B65800486D0D /* DefineConfig.swift */,
 				170596F72060B65800486D0D /* JHGuideView.swift */,
 				170596F82060B65800486D0D /* resource */,
-				170596F62060B65800486D0D /* UIImage+Extension.swift */,
 				170596EF2060B4F900486D0D /* GuidancePageViewController.swift */,
 				170596F32060B52800486D0D /* GuidancePageViewController.storyboard */,
 			);
@@ -670,6 +677,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17ABAD66207DE9F600724E65 /* FaceRecognition */,
 				17A8AD4720737367006898CB /* PUSHFunc */,
 				177ECCBF2072054600E9FFB1 /* IrregularLabel */,
 				177ECCB62071BFB500E9FFB1 /* UITextFieldVC */,
@@ -1155,6 +1163,18 @@
 			path = PUSHFunc;
 			sourceTree = "<group>";
 		};
+		17ABAD66207DE9F600724E65 /* FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				177CBA0D207DF963005D0453 /* 41734r.gif */,
+				177CBA0C207DF2D1005D0453 /* iconfont-fanzhuanshexiangtou.png */,
+				17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */,
+				17745E24207F2BAB005CA390 /* FaceRecognitionViewController.swift */,
+				17ABAD69207DEAA800724E65 /* FaceRecognitionViewController.storyboard */,
+			);
+			path = FaceRecognition;
+			sourceTree = "<group>";
+		};
 		17C0D27E20172C0200D62A1E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1512,6 +1532,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177CBA0F207DFA56005D0453 /* iconfont-fanzhuanshexiangtou.png in Resources */,
+				177CBA0E207DFA49005D0453 /* 41734r.gif in Resources */,
 				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
@@ -1546,6 +1568,7 @@
 				174852D01FDE8F4F00FC159C /* GetAlbumViewController.storyboard in Resources */,
 				171B2E27206B8A3A00E9CE5F /* YZXUnlockViewController.storyboard in Resources */,
 				172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */,
+				17ABAD6A207DEAA800724E65 /* FaceRecognitionViewController.storyboard in Resources */,
 				1757FE5B1FD12D54004B3D8E /* MainTableViewCell.xib in Resources */,
 				173A5AB6202D803200BCF7D1 /* BigImageViewController.storyboard in Resources */,
 				17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */,
@@ -1750,6 +1773,7 @@
 				1775B1E8206A142D00C69721 /* PresentBottom.swift in Sources */,
 				1775B1E7206A142300C69721 /* TimeSelectVC.swift in Sources */,
 				1775B1E6206A141C00C69721 /* SelectionVC.swift in Sources */,
+				17745E25207F2BAB005CA390 /* FaceRecognitionViewController.swift in Sources */,
 				177ECCC12072056D00E9FFB1 /* IrregularLabelViewController.swift in Sources */,
 				171B2E25206B8A2600E9CE5F /* YZXUnlockViewController.swift in Sources */,
 				1775B1E5206A141100C69721 /* FirstBottomVC.swift in Sources */,
@@ -1801,6 +1825,7 @@
 				17EFC5D51FD555DE00A1C3BF /* InvewtorsViewController.swift in Sources */,
 				17E85B561FD4F10C003E6487 /* HTMessageInfo.m in Sources */,
 				170597012060B65900486D0D /* DefineConfig.swift in Sources */,
+				17EDCB86208071CE00BD66DF /* UIImage+Extension.swift in Sources */,
 				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
 				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
 				17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */,
@@ -1817,7 +1842,6 @@
 				17789C842062256E0073377B /* HMSegmentedViewController.swift in Sources */,
 				17E983C61FD1044100A8480D /* SMToastView.m in Sources */,
 				17E9839D1FD0F2CC00A8480D /* QRCodeAVCaptureDevice.m in Sources */,
-				170597022060B65900486D0D /* UIImage+Extension.swift in Sources */,
 				172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */,
 				172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */,
 				1757FE551FD12953004B3D8E /* MainViewController.swift in Sources */,
