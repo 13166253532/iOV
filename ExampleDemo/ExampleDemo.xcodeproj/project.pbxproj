@@ -137,6 +137,9 @@
 		17E983C61FD1044100A8480D /* SMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983AF1FD1041400A8480D /* SMToastView.m */; };
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
 		17EDCB86208071CE00BD66DF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */; };
+		17EDCB8920808FF100BD66DF /* UrbanPositioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCB8820808FF100BD66DF /* UrbanPositioningViewController.swift */; };
+		17EDCB8B20808FFC00BD66DF /* UrbanPositioningViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EDCB8A20808FFC00BD66DF /* UrbanPositioningViewController.storyboard */; };
+		17EDCB8D2080945000BD66DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EDCB8C2080945000BD66DF /* CoreLocation.framework */; };
 		17EF69DF205F88F2005784E7 /* GCDFuncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */; };
 		17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */; };
 		17EF69E4205F8E0F005784E7 /* NewAppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */; };
@@ -429,6 +432,9 @@
 		17E983C01FD1041400A8480D /* SMAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAlertView.h; sourceTree = "<group>"; };
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
 		17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		17EDCB8820808FF100BD66DF /* UrbanPositioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanPositioningViewController.swift; sourceTree = "<group>"; };
+		17EDCB8A20808FFC00BD66DF /* UrbanPositioningViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UrbanPositioningViewController.storyboard; sourceTree = "<group>"; };
+		17EDCB8C2080945000BD66DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		17EF69DE205F88F2005784E7 /* GCDFuncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDFuncViewController.swift; sourceTree = "<group>"; };
 		17EF69E0205F88FC005784E7 /* GCDFuncViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCDFuncViewController.storyboard; sourceTree = "<group>"; };
 		17EF69E3205F8E0F005784E7 /* NewAppIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppIconViewController.swift; sourceTree = "<group>"; };
@@ -479,6 +485,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EDCB8D2080945000BD66DF /* CoreLocation.framework in Frameworks */,
 				172CB58820566A900067AC29 /* ImageIO.framework in Frameworks */,
 				172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */,
 				172CB584205669390067AC29 /* libc++.tbd in Frameworks */,
@@ -677,6 +684,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EDCB8720808FC500BD66DF /* UrbanPositioning */,
 				17ABAD66207DE9F600724E65 /* FaceRecognition */,
 				17A8AD4720737367006898CB /* PUSHFunc */,
 				177ECCBF2072054600E9FFB1 /* IrregularLabel */,
@@ -1285,6 +1293,15 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		17EDCB8720808FC500BD66DF /* UrbanPositioning */ = {
+			isa = PBXGroup;
+			children = (
+				17EDCB8820808FF100BD66DF /* UrbanPositioningViewController.swift */,
+				17EDCB8A20808FFC00BD66DF /* UrbanPositioningViewController.storyboard */,
+			);
+			path = UrbanPositioning;
+			sourceTree = "<group>";
+		};
 		17EF69DD205F88DC005784E7 /* GCDFunc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1402,6 +1419,7 @@
 		EB718443460D7758F72DD5B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17EDCB8C2080945000BD66DF /* CoreLocation.framework */,
 				172CB58720566A900067AC29 /* ImageIO.framework */,
 				172CB585205669460067AC29 /* libsqlite3.tbd */,
 				172CB583205669390067AC29 /* libc++.tbd */,
@@ -1558,6 +1576,7 @@
 				1757FE661FD139D0004B3D8E /* QRCodeTwoViewController.storyboard in Resources */,
 				17EF69E1205F88FC005784E7 /* GCDFuncViewController.storyboard in Resources */,
 				1757FE571FD12960004B3D8E /* MainViewController.storyboard in Resources */,
+				17EDCB8B20808FFC00BD66DF /* UrbanPositioningViewController.storyboard in Resources */,
 				17EFC5D71FD555E800A1C3BF /* InvewtorsViewController.storyboard in Resources */,
 				17EFC5DF1FD5563400A1C3BF /* ProjectViewController.storyboard in Resources */,
 				17303C742007111B007B32FC /* SmallBallViewController.storyboard in Resources */,
@@ -1832,6 +1851,7 @@
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
 				1757FE601FD138B2004B3D8E /* QRCodeTwoViewController.m in Sources */,
 				174852CE1FDE8F4500FC159C /* GetAlbumViewController.swift in Sources */,
+				17EDCB8920808FF100BD66DF /* UrbanPositioningViewController.swift in Sources */,
 				170596F02060B4F900486D0D /* GuidancePageViewController.swift in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,

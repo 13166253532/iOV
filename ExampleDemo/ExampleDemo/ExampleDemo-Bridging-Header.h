@@ -15,7 +15,8 @@
 #import "BRPlaceholderTextView.h"
 #import "IrregularLabel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-
+//定位
+  #import <CoreLocation/CoreLocation.h>
 //字符判断
 #import "CharacterJudgment.h"
 #import <AVFoundation/AVFoundation.h>
