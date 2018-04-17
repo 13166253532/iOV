@@ -43,6 +43,31 @@
 		172079031FD015AD00DBC647 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F01FD0157F00DBC647 /* UINavigationBar+Awesome.m */; };
 		172079041FD015BC00DBC647 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 172078F61FD0157F00DBC647 /* UIView+Additions.m */; };
 		172079301FD0183800DBC647 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 172079061FD0177000DBC647 /* MBProgressHUD.m */; };
+		1724DC6B2085C1E400021BDD /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC6A2085C1E400021BDD /* ModelIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1724DC6D2085C1EE00021BDD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC6C2085C1EE00021BDD /* CoreMotion.framework */; };
+		1724DC6F2085C1FA00021BDD /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC6E2085C1FA00021BDD /* VideoToolbox.framework */; };
+		1724DC712085C21600021BDD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC702085C21600021BDD /* MobileCoreServices.framework */; };
+		1724DC732085C26B00021BDD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC722085C26A00021BDD /* Social.framework */; };
+		1724DC752085C27400021BDD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC742085C27300021BDD /* MessageUI.framework */; };
+		1724DC772085C28100021BDD /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC762085C28100021BDD /* EventKit.framework */; };
+		1724DC792085C29100021BDD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC782085C29100021BDD /* MediaPlayer.framework */; };
+		1724DC7B2085C29E00021BDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC7A2085C29E00021BDD /* SystemConfiguration.framework */; };
+		1724DC7D2085C2A600021BDD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC7C2085C2A600021BDD /* AdSupport.framework */; };
+		1724DC7F2085C2B700021BDD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC7E2085C2B600021BDD /* CoreText.framework */; };
+		1724DC812085C2CA00021BDD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC802085C2CA00021BDD /* OpenGLES.framework */; };
+		1724DC832085C2E300021BDD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC822085C2E300021BDD /* CoreMedia.framework */; };
+		1724DC852085C2EF00021BDD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC842085C2EF00021BDD /* AudioToolbox.framework */; };
+		1724DC872085C2F900021BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC862085C2F800021BDD /* UIKit.framework */; };
+		1724DC892085C30300021BDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC882085C30300021BDD /* Foundation.framework */; };
+		1724DC8B2085C31500021BDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC8A2085C31500021BDD /* CoreGraphics.framework */; };
+		1724DC8D2085C33200021BDD /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC8C2085C33200021BDD /* libc++.1.tbd */; };
+		1724DC8F2085C33B00021BDD /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC8E2085C33B00021BDD /* libbz2.1.0.tbd */; };
+		1724DC912085C34A00021BDD /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC902085C34A00021BDD /* libxml2.2.tbd */; };
+		1724DC932085C37600021BDD /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC922085C37600021BDD /* libiconv.2.tbd */; };
+		1724DC952085C39000021BDD /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC942085C39000021BDD /* libresolv.9.tbd */; };
+		1724DC972085C39A00021BDD /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724DC962085C39A00021BDD /* libz.1.tbd */; };
+		1724DC9B2085CAF000021BDD /* YouKuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724DC9A2085CAF000021BDD /* YouKuViewController.m */; };
+		1724DCB22085DB7100021BDD /* YouKuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724DCB12085DB7000021BDD /* YouKuViewController.storyboard */; };
 		172CB584205669390067AC29 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB583205669390067AC29 /* libc++.tbd */; };
 		172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB585205669460067AC29 /* libsqlite3.tbd */; };
 		172CB58820566A900067AC29 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CB58720566A900067AC29 /* ImageIO.framework */; };
@@ -250,6 +275,32 @@
 		172079091FD0177000DBC647 /* README.mdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		1720792D1FD0177000DBC647 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
 		1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		1724DC6A2085C1E400021BDD /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		1724DC6C2085C1EE00021BDD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1724DC6E2085C1FA00021BDD /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1724DC702085C21600021BDD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1724DC722085C26A00021BDD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1724DC742085C27300021BDD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1724DC762085C28100021BDD /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		1724DC782085C29100021BDD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1724DC7A2085C29E00021BDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1724DC7C2085C2A600021BDD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1724DC7E2085C2B600021BDD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1724DC802085C2CA00021BDD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1724DC822085C2E300021BDD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1724DC842085C2EF00021BDD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1724DC862085C2F800021BDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1724DC882085C30300021BDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1724DC8A2085C31500021BDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1724DC8C2085C33200021BDD /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		1724DC8E2085C33B00021BDD /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		1724DC902085C34A00021BDD /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		1724DC922085C37600021BDD /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		1724DC942085C39000021BDD /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		1724DC962085C39A00021BDD /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		1724DC992085CAF000021BDD /* YouKuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouKuViewController.h; sourceTree = "<group>"; };
+		1724DC9A2085CAF000021BDD /* YouKuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouKuViewController.m; sourceTree = "<group>"; };
+		1724DCB12085DB7000021BDD /* YouKuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YouKuViewController.storyboard; sourceTree = "<group>"; };
 		172CB583205669390067AC29 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		172CB585205669460067AC29 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		172CB58720566A900067AC29 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -485,13 +536,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1724DC972085C39A00021BDD /* libz.1.tbd in Frameworks */,
+				1724DC952085C39000021BDD /* libresolv.9.tbd in Frameworks */,
+				1724DC932085C37600021BDD /* libiconv.2.tbd in Frameworks */,
+				1724DC912085C34A00021BDD /* libxml2.2.tbd in Frameworks */,
+				1724DC8F2085C33B00021BDD /* libbz2.1.0.tbd in Frameworks */,
+				1724DC8D2085C33200021BDD /* libc++.1.tbd in Frameworks */,
+				172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */,
+				1724DC8B2085C31500021BDD /* CoreGraphics.framework in Frameworks */,
+				1724DC892085C30300021BDD /* Foundation.framework in Frameworks */,
+				1724DC872085C2F900021BDD /* UIKit.framework in Frameworks */,
+				1724DC852085C2EF00021BDD /* AudioToolbox.framework in Frameworks */,
+				1724DC832085C2E300021BDD /* CoreMedia.framework in Frameworks */,
+				17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */,
+				1724DC812085C2CA00021BDD /* OpenGLES.framework in Frameworks */,
+				1724DC7F2085C2B700021BDD /* CoreText.framework in Frameworks */,
+				1724DC7D2085C2A600021BDD /* AdSupport.framework in Frameworks */,
+				1724DC7B2085C29E00021BDD /* SystemConfiguration.framework in Frameworks */,
+				1724DC792085C29100021BDD /* MediaPlayer.framework in Frameworks */,
+				1724DC772085C28100021BDD /* EventKit.framework in Frameworks */,
+				1724DC752085C27400021BDD /* MessageUI.framework in Frameworks */,
+				1724DC732085C26B00021BDD /* Social.framework in Frameworks */,
+				1724DC712085C21600021BDD /* MobileCoreServices.framework in Frameworks */,
+				1724DC6F2085C1FA00021BDD /* VideoToolbox.framework in Frameworks */,
+				1724DC6D2085C1EE00021BDD /* CoreMotion.framework in Frameworks */,
+				1724DC6B2085C1E400021BDD /* ModelIO.framework in Frameworks */,
 				17EDCB8D2080945000BD66DF /* CoreLocation.framework in Frameworks */,
 				172CB58820566A900067AC29 /* ImageIO.framework in Frameworks */,
-				172CB586205669460067AC29 /* libsqlite3.tbd in Frameworks */,
 				172CB584205669390067AC29 /* libc++.tbd in Frameworks */,
 				17529A442011D281002260DE /* MJRefresh.framework in Frameworks */,
 				17E983A11FD0F30F00A8480D /* AVFoundation.framework in Frameworks */,
-				17E9839F1FD0F30400A8480D /* QuartzCore.framework in Frameworks */,
 				1EBAD0300D26C776A9D9DADA /* Pods_ExampleDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,6 +758,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1724DC522085C14B00021BDD /* YouKu */,
 				17EDCB8720808FC500BD66DF /* UrbanPositioning */,
 				17ABAD66207DE9F600724E65 /* FaceRecognition */,
 				17A8AD4720737367006898CB /* PUSHFunc */,
@@ -793,6 +868,16 @@
 				1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */,
 			);
 			path = BRPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		1724DC522085C14B00021BDD /* YouKu */ = {
+			isa = PBXGroup;
+			children = (
+				1724DC992085CAF000021BDD /* YouKuViewController.h */,
+				1724DC9A2085CAF000021BDD /* YouKuViewController.m */,
+				1724DCB12085DB7000021BDD /* YouKuViewController.storyboard */,
+			);
+			path = YouKu;
 			sourceTree = "<group>";
 		};
 		17303C6E20070B4D007B32FC /* SmallBall */ = {
@@ -1419,6 +1504,29 @@
 		EB718443460D7758F72DD5B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1724DC962085C39A00021BDD /* libz.1.tbd */,
+				1724DC942085C39000021BDD /* libresolv.9.tbd */,
+				1724DC922085C37600021BDD /* libiconv.2.tbd */,
+				1724DC902085C34A00021BDD /* libxml2.2.tbd */,
+				1724DC8E2085C33B00021BDD /* libbz2.1.0.tbd */,
+				1724DC8C2085C33200021BDD /* libc++.1.tbd */,
+				1724DC8A2085C31500021BDD /* CoreGraphics.framework */,
+				1724DC882085C30300021BDD /* Foundation.framework */,
+				1724DC862085C2F800021BDD /* UIKit.framework */,
+				1724DC842085C2EF00021BDD /* AudioToolbox.framework */,
+				1724DC822085C2E300021BDD /* CoreMedia.framework */,
+				1724DC802085C2CA00021BDD /* OpenGLES.framework */,
+				1724DC7E2085C2B600021BDD /* CoreText.framework */,
+				1724DC7C2085C2A600021BDD /* AdSupport.framework */,
+				1724DC7A2085C29E00021BDD /* SystemConfiguration.framework */,
+				1724DC782085C29100021BDD /* MediaPlayer.framework */,
+				1724DC762085C28100021BDD /* EventKit.framework */,
+				1724DC742085C27300021BDD /* MessageUI.framework */,
+				1724DC722085C26A00021BDD /* Social.framework */,
+				1724DC702085C21600021BDD /* MobileCoreServices.framework */,
+				1724DC6E2085C1FA00021BDD /* VideoToolbox.framework */,
+				1724DC6C2085C1EE00021BDD /* CoreMotion.framework */,
+				1724DC6A2085C1E400021BDD /* ModelIO.framework */,
 				17EDCB8C2080945000BD66DF /* CoreLocation.framework */,
 				172CB58720566A900067AC29 /* ImageIO.framework */,
 				172CB585205669460067AC29 /* libsqlite3.tbd */,
@@ -1561,6 +1669,7 @@
 				17A8AD4B20737394006898CB /* PushFuncViewController.storyboard in Resources */,
 				1705970B2060B7AF00486D0D /* guide_2_iphone6@2x.png in Resources */,
 				170597052060B7A800486D0D /* guide_1_iphone6p@2x.png in Resources */,
+				1724DCB22085DB7100021BDD /* YouKuViewController.storyboard in Resources */,
 				1775B1D82069EAAB00C69721 /* UIPresentationViewController.storyboard in Resources */,
 				170597042060B7A300486D0D /* guide_1_iphone5@2x.png in Resources */,
 				17EF69EE205FA947005784E7 /* newIcon@3x.png in Resources */,
@@ -1855,6 +1964,7 @@
 				170596F02060B4F900486D0D /* GuidancePageViewController.swift in Sources */,
 				1757FE5D1FD132C8004B3D8E /* ScannerBackgroundView.swift in Sources */,
 				1757FE5C1FD131EA004B3D8E /* QRCodeViewController.swift in Sources */,
+				1724DC9B2085CAF000021BDD /* YouKuViewController.m in Sources */,
 				173A5AB4202D802800BCF7D1 /* BigImageViewController.swift in Sources */,
 				17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */,
 				17EFC5B71FD52FC300A1C3BF /* WebViewController.m in Sources */,
@@ -2062,10 +2172,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FYU37G7W6;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ExampleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ExampleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExampleDemo/ViewControllers/YouKu/YouTuEngineMediaPlayer",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -2081,6 +2196,7 @@
 					"-framework",
 					"\"MJRefresh\"",
 					"-Objc",
+					"-w",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shangyao.SHYTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2099,10 +2215,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FYU37G7W6;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ExampleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ExampleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExampleDemo/ViewControllers/YouKu/YouTuEngineMediaPlayer",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -2118,6 +2239,7 @@
 					"-framework",
 					"\"MJRefresh\"",
 					"-Objc",
+					"-w",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shangyao.SHYTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";

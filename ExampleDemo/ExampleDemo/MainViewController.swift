@@ -136,7 +136,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位","优酷视频"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -193,11 +193,18 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoFaceRecognition()
         }else if str == "城市定位"{
             gotoUrbanPositioning()
+        }else if str == "优酷视频"{
+            gotoyouku()
         }
         
       
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
+    }
+    func gotoyouku() {
+        let vc:YouKuViewController = YouKuViewController.createViewController(withVid: "", platform: "", quality: "") as! YouKuViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
     }
     func gotoUrbanPositioning() {
         let vc:UrbanPositioningViewController=UrbanPositioningViewController.createViewController(createArgs: nil) as! UrbanPositioningViewController

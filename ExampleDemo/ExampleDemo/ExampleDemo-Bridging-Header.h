@@ -22,7 +22,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "SMAlertView.h"
 #import "SMToastView.h"
-
+#import "YouKuViewController.h"
 //#import "MJRefresh.h"
 
 #import "HTHttpConfig.h"
