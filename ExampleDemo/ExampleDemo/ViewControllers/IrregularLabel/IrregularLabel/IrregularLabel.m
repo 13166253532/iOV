@@ -40,13 +40,20 @@
     // 设置path起点
     [self.borderPath moveToPoint:CGPointMake(0, 10)];
     // 左上角的圆角
-    [self.borderPath addQuadCurveToPoint:CGPointMake(10, 0) controlPoint:CGPointMake(0, 0)];
+    //[self.borderPath addQuadCurveToPoint:CGPointMake(10, 0) controlPoint:CGPointMake(0, 0)];
+    
+    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width/2-5, 10)];
+    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width/2, 5)];
+    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width/2 +5, 10)];
+    
+    
+    
     // 直线，到右上角
-    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width - 10, 0)];
+    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width - 10, 10)];
     // 右上角的圆角
-    [self.borderPath addQuadCurveToPoint:CGPointMake(self.bounds.size.width, 10) controlPoint:CGPointMake(self.bounds.size.width, 0)];
+    //[self.borderPath addQuadCurveToPoint:CGPointMake(self.bounds.size.width, 10) controlPoint:CGPointMake(self.bounds.size.width, 0)];
     // 直线，到右下角
-    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width, self.bounds.size.height)];
+    [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width- 10, self.bounds.size.height)];
     // 底部的小三角形
     [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width/2+5, self.bounds.size.height)];
     [self.borderPath addLineToPoint:CGPointMake(self.bounds.size.width/2, self.bounds.size.height-5)];

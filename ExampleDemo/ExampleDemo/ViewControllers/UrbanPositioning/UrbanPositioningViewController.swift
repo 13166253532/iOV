@@ -42,6 +42,9 @@ class UrbanPositioningViewController: BaseViewController,CLLocationManagerDelega
         
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.lacationManager.startUpdatingLocation()
+    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let curLoc:CLLocation = locations.first!
         print("经度："+String(curLoc.coordinate.longitude)+" 纬度："+String(curLoc.coordinate.latitude))
@@ -58,9 +61,7 @@ class UrbanPositioningViewController: BaseViewController,CLLocationManagerDelega
                 self?.lacationManager.stopUpdatingLocation()
             }
         }
-        
-        
-        
+ 
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
