@@ -146,6 +146,11 @@
 		17CA0065206C82BB00C9BAFF /* GesturesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA0064206C82BB00C9BAFF /* GesturesView.m */; };
 		17DA2829205BCB8C008442E7 /* BRPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720792E1FD0177000DBC647 /* BRPlaceholderTextView.m */; };
 		17DC9FAD200DD2690088D567 /* JKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DC9FAC200DD2460088D567 /* JKCountDownButton.m */; };
+		17E09F6A2112D916008CAEDB /* SectorChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E09F692112D916008CAEDB /* SectorChartViewController.swift */; };
+		17E09F6C2112D943008CAEDB /* SectorChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E09F6B2112D943008CAEDB /* SectorChartViewController.storyboard */; };
+		17E09F742112DD10008CAEDB /* DVPieCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E09F6E2112DCBA008CAEDB /* DVPieCenterView.m */; };
+		17E09F752112DD14008CAEDB /* DVPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E09F732112DCBA008CAEDB /* DVPieChart.m */; };
+		17E09F762112DD1D008CAEDB /* DVFoodPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E09F6F2112DCBA008CAEDB /* DVFoodPieModel.m */; };
 		17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C2D2005B7F100858751 /* CharacterJudgment.m */; };
 		17E46C312005BF8700858751 /* CharacterJudgmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */; };
 		17E46C332005BF9000858751 /* CharacterJudgmentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E46C322005BF9000858751 /* CharacterJudgmentViewController.storyboard */; };
@@ -450,6 +455,14 @@
 		17CA0064206C82BB00C9BAFF /* GesturesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturesView.m; sourceTree = "<group>"; };
 		17DC9FAB200DD2460088D567 /* JKCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKCountDownButton.h; sourceTree = "<group>"; };
 		17DC9FAC200DD2460088D567 /* JKCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKCountDownButton.m; sourceTree = "<group>"; };
+		17E09F692112D916008CAEDB /* SectorChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorChartViewController.swift; sourceTree = "<group>"; };
+		17E09F6B2112D943008CAEDB /* SectorChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectorChartViewController.storyboard; sourceTree = "<group>"; };
+		17E09F6E2112DCBA008CAEDB /* DVPieCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVPieCenterView.m; sourceTree = "<group>"; };
+		17E09F6F2112DCBA008CAEDB /* DVFoodPieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVFoodPieModel.m; sourceTree = "<group>"; };
+		17E09F702112DCBA008CAEDB /* DVPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVPieChart.h; sourceTree = "<group>"; };
+		17E09F712112DCBA008CAEDB /* DVPieCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVPieCenterView.h; sourceTree = "<group>"; };
+		17E09F722112DCBA008CAEDB /* DVFoodPieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVFoodPieModel.h; sourceTree = "<group>"; };
+		17E09F732112DCBA008CAEDB /* DVPieChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVPieChart.m; sourceTree = "<group>"; };
 		17E46C2C2005B7F100858751 /* CharacterJudgment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterJudgment.h; sourceTree = "<group>"; };
 		17E46C2D2005B7F100858751 /* CharacterJudgment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterJudgment.m; sourceTree = "<group>"; };
 		17E46C302005BF8700858751 /* CharacterJudgmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJudgmentViewController.swift; sourceTree = "<group>"; };
@@ -758,6 +771,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17E09F682112D8DE008CAEDB /* SectorChart */,
 				1724DC522085C14B00021BDD /* YouKu */,
 				17EDCB8720808FC500BD66DF /* UrbanPositioning */,
 				17ABAD66207DE9F600724E65 /* FaceRecognition */,
@@ -1287,6 +1301,29 @@
 			path = JKCountDownButton;
 			sourceTree = "<group>";
 		};
+		17E09F682112D8DE008CAEDB /* SectorChart */ = {
+			isa = PBXGroup;
+			children = (
+				17E09F6D2112DCBA008CAEDB /* DVDishPieHeader */,
+				17E09F692112D916008CAEDB /* SectorChartViewController.swift */,
+				17E09F6B2112D943008CAEDB /* SectorChartViewController.storyboard */,
+			);
+			path = SectorChart;
+			sourceTree = "<group>";
+		};
+		17E09F6D2112DCBA008CAEDB /* DVDishPieHeader */ = {
+			isa = PBXGroup;
+			children = (
+				17E09F6E2112DCBA008CAEDB /* DVPieCenterView.m */,
+				17E09F712112DCBA008CAEDB /* DVPieCenterView.h */,
+				17E09F6F2112DCBA008CAEDB /* DVFoodPieModel.m */,
+				17E09F722112DCBA008CAEDB /* DVFoodPieModel.h */,
+				17E09F732112DCBA008CAEDB /* DVPieChart.m */,
+				17E09F702112DCBA008CAEDB /* DVPieChart.h */,
+			);
+			path = DVDishPieHeader;
+			sourceTree = "<group>";
+		};
 		17E46C2B2005B7D500858751 /* CharacterJudgment */ = {
 			isa = PBXGroup;
 			children = (
@@ -1662,6 +1699,7 @@
 				177CBA0E207DFA49005D0453 /* 41734r.gif in Resources */,
 				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
+				17E09F6C2112D943008CAEDB /* SectorChartViewController.storyboard in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
 				177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */,
 				170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */,
@@ -1896,6 +1934,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E09F762112DD1D008CAEDB /* DVFoodPieModel.m in Sources */,
+				17E09F752112DD14008CAEDB /* DVPieChart.m in Sources */,
+				17E09F742112DD10008CAEDB /* DVPieCenterView.m in Sources */,
 				177D836020720C4A0089BB9C /* IrregularLabel.m in Sources */,
 				1775B1E9206A143800C69721 /* RoundView.swift in Sources */,
 				1775B1E8206A142D00C69721 /* PresentBottom.swift in Sources */,
@@ -1926,6 +1967,7 @@
 				174852BD1FDE6E3900FC159C /* SNHttpBaseGetCmd.m in Sources */,
 				174852BC1FDE6E2700FC159C /* PVHttpVersion.m in Sources */,
 				174852BB1FDE6DF000FC159C /* HttpConfigGroup.m in Sources */,
+				17E09F6A2112D916008CAEDB /* SectorChartViewController.swift in Sources */,
 				174852BA1FDE6DDE00FC159C /* HTHttpConfig.m in Sources */,
 				174852B91FDE6D2E00FC159C /* SMBaseHttpComplete.m in Sources */,
 				174852B81FDE6D2000FC159C /* DSHttpMessageListCmd.m in Sources */,

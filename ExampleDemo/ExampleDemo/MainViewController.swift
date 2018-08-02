@@ -136,7 +136,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位","优酷视频"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位","优酷视频","扇形图"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -195,6 +195,8 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoUrbanPositioning()
         }else if str == "优酷视频"{
             gotoyouku()
+        }else if str == "扇形图"{
+            gotoSectorChartViewController()
         }
         
       
@@ -321,6 +323,12 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
         vc.hidesBottomBarWhenPushed = true
         self.pushViewController(viewController: vc, animated: true)
     }
+    func gotoSectorChartViewController(){
+        let vc:SectorChartViewController = SectorChartViewController.createViewController(createArgs: nil) as! SectorChartViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
+    }
+
 }
 class MainViewControllerDelegate: BaseOneTableViewDelegate {
     var selecCompany:String!
