@@ -32,6 +32,7 @@ class GCDFuncViewController: BaseViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         ///async_concurrent()
+        sync_serial()
         self.dismiss(animated: true, completion: nil)
     }
     // 同步 + 串行队列：不会开启新的线程，在当前线程执行任务。任务是串行的，执行完一个任务，再执行下一个任务
