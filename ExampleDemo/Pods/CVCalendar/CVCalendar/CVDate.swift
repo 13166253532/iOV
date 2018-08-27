@@ -72,6 +72,18 @@ extension CVDate {
         let month = dateFormattedStringWithFormat("MMMM", fromDate: date)
         return "\(day) \(month), \(year)"
     }
+    public var myDateDescription: String {
+        get {
+            
+            let month = dateFormattedStringWithFormat("MM", fromDate: date)
+            let week = dateFormattedStringWithFormat("EEEE", fromDate: date)
+            let day = dateFormattedStringWithFormat("dd", fromDate: date)
+            return "\(month).\(day) \(week)"
+        }
+    }
+    public var getTheNSDate:Foundation.Date{
+        return self.date
+    }
 }
 
 private extension CVDate {

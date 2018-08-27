@@ -166,6 +166,9 @@
 		17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E983A91FD0F9C200A8480D /* MDFGuideViewController.swift */; };
 		17E983C61FD1044100A8480D /* SMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983AF1FD1041400A8480D /* SMToastView.m */; };
 		17E983C71FD1044800A8480D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983B11FD1041400A8480D /* UIView+Toast.m */; };
+		17EAF6B12133DBFA001A2C61 /* CalendarDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAF6B02133DBFA001A2C61 /* CalendarDateViewController.swift */; };
+		17EAF6B32133DC02001A2C61 /* CalendarDateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EAF6B22133DC02001A2C61 /* CalendarDateViewController.storyboard */; };
+		17EAF6B42133F814001A2C61 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E983BB1FD1041400A8480D /* UIView+GMGridViewAdditions.m */; };
 		17EDCB86208071CE00BD66DF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */; };
 		17EDCB8920808FF100BD66DF /* UrbanPositioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCB8820808FF100BD66DF /* UrbanPositioningViewController.swift */; };
 		17EDCB8B20808FFC00BD66DF /* UrbanPositioningViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EDCB8A20808FFC00BD66DF /* UrbanPositioningViewController.storyboard */; };
@@ -495,6 +498,8 @@
 		17E983BE1FD1041400A8480D /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
 		17E983C01FD1041400A8480D /* SMAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAlertView.h; sourceTree = "<group>"; };
 		17E983C31FD1041400A8480D /* SMAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertView.m; sourceTree = "<group>"; };
+		17EAF6B02133DBFA001A2C61 /* CalendarDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateViewController.swift; sourceTree = "<group>"; };
+		17EAF6B22133DC02001A2C61 /* CalendarDateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarDateViewController.storyboard; sourceTree = "<group>"; };
 		17EDCB85208071CD00BD66DF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		17EDCB8820808FF100BD66DF /* UrbanPositioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanPositioningViewController.swift; sourceTree = "<group>"; };
 		17EDCB8A20808FFC00BD66DF /* UrbanPositioningViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UrbanPositioningViewController.storyboard; sourceTree = "<group>"; };
@@ -771,6 +776,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17EAF6AF2133DBD2001A2C61 /* CalendarDate */,
 				17E09F682112D8DE008CAEDB /* SectorChart */,
 				1724DC522085C14B00021BDD /* YouKu */,
 				17EDCB8720808FC500BD66DF /* UrbanPositioning */,
@@ -1415,6 +1421,15 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		17EAF6AF2133DBD2001A2C61 /* CalendarDate */ = {
+			isa = PBXGroup;
+			children = (
+				17EAF6B02133DBFA001A2C61 /* CalendarDateViewController.swift */,
+				17EAF6B22133DC02001A2C61 /* CalendarDateViewController.storyboard */,
+			);
+			path = CalendarDate;
+			sourceTree = "<group>";
+		};
 		17EDCB8720808FC500BD66DF /* UrbanPositioning */ = {
 			isa = PBXGroup;
 			children = (
@@ -1698,6 +1713,7 @@
 				177CBA0F207DFA56005D0453 /* iconfont-fanzhuanshexiangtou.png in Resources */,
 				177CBA0E207DFA49005D0453 /* 41734r.gif in Resources */,
 				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
+				17EAF6B32133DC02001A2C61 /* CalendarDateViewController.storyboard in Resources */,
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
 				17E09F6C2112D943008CAEDB /* SectorChartViewController.storyboard in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
@@ -1936,6 +1952,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EAF6B42133F814001A2C61 /* UIView+GMGridViewAdditions.m in Sources */,
 				17E09F762112DD1D008CAEDB /* DVFoodPieModel.m in Sources */,
 				17E09F752112DD14008CAEDB /* DVPieChart.m in Sources */,
 				17E09F742112DD10008CAEDB /* DVPieCenterView.m in Sources */,
@@ -2040,6 +2057,7 @@
 				1757FE591FD12D48004B3D8E /* MainTableViewCell.swift in Sources */,
 				17E983AA1FD0F9C200A8480D /* MDFGuideViewController.swift in Sources */,
 				17E46C2E2005B7F100858751 /* CharacterJudgment.m in Sources */,
+				17EAF6B12133DBFA001A2C61 /* CalendarDateViewController.swift in Sources */,
 				172078E31FD0150200DBC647 /* BaseConfigFounction.swift in Sources */,
 				1757FE821FD14DE1004B3D8E /* LKDBHelperViewController.swift in Sources */,
 				172078E21FD014FD00DBC647 /* BaseCellModel.swift in Sources */,

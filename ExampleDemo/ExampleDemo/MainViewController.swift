@@ -136,7 +136,7 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
     }
     func initdataSource()  {
         self.dataSource = NSMutableArray()
-        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位","优酷视频","扇形图"]
+        let titleArray = ["swift二维码","swift条码","数据库","web页面","http","swift二维码","字符判断获取验证码","陀螺仪小球","下载","图片放大","SnapKit","GCD","newIcon","swiftWeb","GuidancePage","HMSegmented","UIPresentation","设置手势","确认手势","gotoUITextField","IrregularLabel","人脸识别","城市定位","优酷视频","扇形图","自定义日历"]
         for index in 0..<titleArray.count {
             let model = MainTableViewCellModel()
             model.className = "MainTableViewCell"
@@ -197,11 +197,18 @@ class MainViewController: BaseViewController ,FontSizeChangeDelegate{
             gotoyouku()
         }else if str == "扇形图"{
             gotoSectorChartViewController()
+        }else if str == "自定义日历"{
+            gotoCalendarDateViewController()
         }
         
       
         
     //http://testfbci.tongwei.com/bas.mobile/download/download-attachment.do?downloadtype=0&attachmentid=5927
+    }
+    func gotoCalendarDateViewController() {
+        let vc:CalendarDateViewController = CalendarDateViewController.createViewController(createArgs: nil) as! CalendarDateViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.pushViewController(viewController: vc, animated: true)
     }
     func gotoyouku() {
         let vc:YouKuViewController = YouKuViewController.createViewController(withVid: "", platform: "", quality: "") as! YouKuViewController
