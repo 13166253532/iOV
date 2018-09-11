@@ -8,6 +8,9 @@
 
 import UIKit
 import SnapKit
+import AvoidCrash
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,15 +19,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AvoidCrash.becomeEffective()
+        NotificationCenter.default.addObserver(self, selector: #selector(networkDidReceiveMessage(notification:)), name: NSNotification.Name(rawValue: AvoidCrashNotification), object: nil)
         HTHttpConfig.sharedInstance().isout = false
         ProjectConfigGroup.initHttpConfig()
         SNHttpBaseCmd.networkTestingActionTRUEBlock {
             
         }
-        
-        gotoTabBar()
+        //exceptionLogWithData()
+        //gotoTabBar()
         return true
     }
+    func networkDidReceiveMessage(notification:NSNotification){
+        print(notification.userInfo)
+    }
+    func exceptionLogWithData() {
+        AccountInfo.sharedInstance().setDefaultHandler()
+        let str = AccountInfo.sharedInstance().getdataPath()
+        let data = NSData.init(contentsOfFile: str)
+        if data != nil {
+            let crushStr = String.init(data: data as! Data, encoding: String.Encoding.utf8)
+            print(crushStr!)
+            
+        }
+        //测试数据
+        let arry:NSArray = ["1"]
+        print("%@",arry[5])
+    }
+   
+    
+    
     func gotuMDFGuideViewController(){
         if (!(UserDefaults.standard.bool(forKey: "everLaunched"))) {
             UserDefaults.standard.set(true, forKey:"everLaunched")

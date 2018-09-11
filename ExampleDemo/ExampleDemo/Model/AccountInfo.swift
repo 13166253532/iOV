@@ -40,4 +40,32 @@ class AccountInfo: NSObject {
         }
         return SharedStatic.instance
     }
+    public func getdataPath() -> String{
+        let str = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
+        let urlPath = str.appending("Exception.txt")
+        return urlPath
+    }
+    
+    public func setDefaultHandler() {
+        NSSetUncaughtExceptionHandler { (exception) in
+            let arr:NSArray = exception.callStackSymbols as NSArray
+            let reason:String = exception.reason!
+            let name:String = exception.name.rawValue
+            let date:NSDate = NSDate()
+            let timeFormatter = DateFormatter()
+            timeFormatter.dateFormat = "YYYY/MM/dd hh:mm:ss SS"
+            let strNowTime = timeFormatter.string(from: date as Date) as String
+            let url:String = String.init(format: "========异常错误报告========\ntime:%@\nname:%@\nreason:\n%@\ncallStackSymbols:\n%@",strNowTime,name,reason,arr.componentsJoined(by: "\n"))
+            let documentpath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
+            let path = documentpath.appending("Exception.txt")
+            do{
+                try
+                    url.write(toFile: path, atomically: true, encoding: String.Encoding.utf8)
+            }catch{}
+        }
+    }
+   
+
+    
+    
 }

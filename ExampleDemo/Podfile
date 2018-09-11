@@ -26,4 +26,5 @@ pod 'SnapKit', '~> 3.0'
 pod 'SDCycleScrollView', '~> 1.6'
 pod 'HMSegmentedControl'
 pod 'CVCalendar'
+pod 'AvoidCrash'
 end

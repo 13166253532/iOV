@@ -140,6 +140,7 @@
 		17A8AD4D20737802006898CB /* CustomNaviAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4C20737802006898CB /* CustomNaviAnimatedTransition.swift */; };
 		17A8AD4F20737877006898CB /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A8AD4E20737877006898CB /* AnimatedTransitioning.swift */; };
 		17ABAD6A207DEAA800724E65 /* FaceRecognitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ABAD69207DEAA800724E65 /* FaceRecognitionViewController.storyboard */; };
+		17BE7433213535FB00855B1A /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757FE621FD138EA004B3D8E /* AccountInfo.swift */; };
 		17C0D28220172C2100D62A1E /* SMCommandComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D27F20172C0200D62A1E /* SMCommandComplete.m */; };
 		17C0D28420172F1E00D62A1E /* DSHttpMessageListCmdText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D28320172F1E00D62A1E /* DSHttpMessageListCmdText.swift */; };
 		17CA0062206C82A600C9BAFF /* PointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CA0061206C82A600C9BAFF /* PointView.m */; };
@@ -647,6 +648,13 @@
 			path = YZXUnlock;
 			sourceTree = "<group>";
 		};
+		171B92B22147645900583B37 /* PAWebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PAWebView;
+			sourceTree = "<group>";
+		};
 		172078971FCFE6FE00DBC647 = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +784,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				171B92B22147645900583B37 /* PAWebView */,
 				17EAF6AF2133DBD2001A2C61 /* CalendarDate */,
 				17E09F682112D8DE008CAEDB /* SectorChart */,
 				1724DC522085C14B00021BDD /* YouKu */,
@@ -1879,6 +1888,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExampleDemo/Pods-ExampleDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AvoidCrash/AvoidCrash.framework",
 				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
@@ -1893,6 +1903,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvoidCrash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
@@ -1952,6 +1963,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17BE7433213535FB00855B1A /* AccountInfo.swift in Sources */,
 				17EAF6B42133F814001A2C61 /* UIView+GMGridViewAdditions.m in Sources */,
 				17E09F762112DD1D008CAEDB /* DVFoodPieModel.m in Sources */,
 				17E09F752112DD14008CAEDB /* DVPieChart.m in Sources */,

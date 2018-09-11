@@ -61,6 +61,9 @@ extension CalendarDateViewController:CVCalendarViewDelegate,CVCalendarMenuViewDe
     func firstWeekday() -> Weekday {
         return .sunday
     }
+    func presentedDateUpdated(_ date: CVDate) {
+        self.title = date.globalDescription
+    }
     //在此设置当该日为星期天时，设置文字的颜色为红色，否则设置文字的颜色为黑色
     func dayOfWeekTextColor(by weekday: Weekday) -> UIColor {
         return weekday == .sunday ? UIColor.red : UIColor.black
@@ -104,7 +107,7 @@ extension CalendarDateViewController:CVCalendarViewDelegate,CVCalendarMenuViewDe
         switch numberOfDots {
         case 2:
             return [color,color]
-        case 2:
+        case 3:
             return [color,color,color]
         default:
             return [color]
