@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         //exceptionLogWithData()
-        //gotoTabBar()
+        gotoTabBar()
         return true
     }
     func networkDidReceiveMessage(notification:NSNotification){

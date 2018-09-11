@@ -24,6 +24,20 @@
 		171A115020566683007345BA /* PBImageScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A5AAC202D7C2600BCF7D1 /* PBImageScrollerViewController.m */; };
 		171B2E25206B8A2600E9CE5F /* YZXUnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B2E24206B8A2600E9CE5F /* YZXUnlockViewController.swift */; };
 		171B2E27206B8A3A00E9CE5F /* YZXUnlockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B2E26206B8A3A00E9CE5F /* YZXUnlockViewController.storyboard */; };
+		171B92B4214764E900583B37 /* PAWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B92B3214764E900583B37 /* PAWebViewViewController.swift */; };
+		171B92B6214764F500583B37 /* PAWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171B92B5214764F500583B37 /* PAWebViewViewController.storyboard */; };
+		171B92EF214794DE00583B37 /* PAWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92EE214794BE00583B37 /* PAWebView.m */; };
+		171B92F02147955E00583B37 /* PreviewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92D8214794BE00583B37 /* PreviewVc.m */; };
+		171B92F12147957D00583B37 /* TYSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92DA214794BE00583B37 /* TYSnapshot.m */; };
+		171B92F2214795A700583B37 /* PAWebViewMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92BD214794BE00583B37 /* PAWebViewMenu.m */; };
+		171B92F3214795C900583B37 /* WKBaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92C8214794BE00583B37 /* WKBaseWebView.m */; };
+		171B92F4214795FE00583B37 /* registerURLSchemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92C1214794BE00583B37 /* registerURLSchemes.m */; };
+		171B92F52147A79E00583B37 /* WKWebView+LongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92BF214794BE00583B37 /* WKWebView+LongPress.m */; };
+		171B92F62147A7A600583B37 /* WKWebView+POST.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92C0214794BE00583B37 /* WKWebView+POST.m */; };
+		171B92F72147A7AC00583B37 /* WKWebView+TYSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92DC214794BE00583B37 /* WKWebView+TYSnapshot.m */; };
+		171B92F82147A7B200583B37 /* WKWebView+PAWebCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92E8214794BE00583B37 /* WKWebView+PAWebCookie.m */; };
+		171B92F92147A7B800583B37 /* WKWebView+PAWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92E9214794BE00583B37 /* WKWebView+PAWebCache.m */; };
+		171B92FA2147A82D00583B37 /* WKJSFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B92D3214794BE00583B37 /* WKJSFunction.m */; };
 		172078A41FCFE6FE00DBC647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172078A31FCFE6FE00DBC647 /* AppDelegate.swift */; };
 		172078A61FCFE6FE00DBC647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172078A51FCFE6FE00DBC647 /* ViewController.swift */; };
 		172078A91FCFE6FE00DBC647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172078A71FCFE6FE00DBC647 /* Main.storyboard */; };
@@ -238,6 +252,56 @@
 		170597002060B65900486D0D /* guide_2_iphone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide_2_iphone6@2x.png"; sourceTree = "<group>"; };
 		171B2E24206B8A2600E9CE5F /* YZXUnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZXUnlockViewController.swift; sourceTree = "<group>"; };
 		171B2E26206B8A3A00E9CE5F /* YZXUnlockViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YZXUnlockViewController.storyboard; sourceTree = "<group>"; };
+		171B92B3214764E900583B37 /* PAWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWebViewViewController.swift; sourceTree = "<group>"; };
+		171B92B5214764F500583B37 /* PAWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PAWebViewViewController.storyboard; sourceTree = "<group>"; };
+		171B92B9214794BE00583B37 /* WKWebView+LongPress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+LongPress.h"; sourceTree = "<group>"; };
+		171B92BA214794BE00583B37 /* registerURLSchemes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = registerURLSchemes.h; sourceTree = "<group>"; };
+		171B92BB214794BE00583B37 /* WKWebView+POST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+POST.h"; sourceTree = "<group>"; };
+		171B92BC214794BE00583B37 /* urlschemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urlschemeModel.h; sourceTree = "<group>"; };
+		171B92BD214794BE00583B37 /* PAWebViewMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAWebViewMenu.m; sourceTree = "<group>"; };
+		171B92BE214794BE00583B37 /* NSURL+PATool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+PATool.m"; sourceTree = "<group>"; };
+		171B92BF214794BE00583B37 /* WKWebView+LongPress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+LongPress.m"; sourceTree = "<group>"; };
+		171B92C0214794BE00583B37 /* WKWebView+POST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+POST.m"; sourceTree = "<group>"; };
+		171B92C1214794BE00583B37 /* registerURLSchemes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = registerURLSchemes.m; sourceTree = "<group>"; };
+		171B92C2214794BE00583B37 /* PAWebViewMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAWebViewMenu.h; sourceTree = "<group>"; };
+		171B92C3214794BE00583B37 /* urlschemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = urlschemeModel.m; sourceTree = "<group>"; };
+		171B92C4214794BE00583B37 /* NSURL+PATool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+PATool.h"; sourceTree = "<group>"; };
+		171B92C5214794BE00583B37 /* PAWebView+UIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PAWebView+UIDelegate.m"; sourceTree = "<group>"; };
+		171B92C7214794BE00583B37 /* PAWKPanGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAWKPanGestureRecognizer.h; sourceTree = "<group>"; };
+		171B92C8214794BE00583B37 /* WKBaseWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBaseWebView.m; sourceTree = "<group>"; };
+		171B92C9214794BE00583B37 /* PAWebNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAWebNavigationController.h; sourceTree = "<group>"; };
+		171B92CA214794BE00583B37 /* PAWebNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAWebNavigationController.m; sourceTree = "<group>"; };
+		171B92CB214794BE00583B37 /* WKBaseWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBaseWebView.h; sourceTree = "<group>"; };
+		171B92CC214794BE00583B37 /* PAWKPanGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAWKPanGestureRecognizer.m; sourceTree = "<group>"; };
+		171B92CE214794BE00583B37 /* UIAlertController+WKWebAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+WKWebAlert.h"; sourceTree = "<group>"; };
+		171B92CF214794BE00583B37 /* navigationbar_more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_more@3x.png"; sourceTree = "<group>"; };
+		171B92D0214794BE00583B37 /* navigationbar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_more@2x.png"; sourceTree = "<group>"; };
+		171B92D1214794BE00583B37 /* UIAlertController+WKWebAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+WKWebAlert.m"; sourceTree = "<group>"; };
+		171B92D2214794BE00583B37 /* PAWebBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PAWebBack.png; sourceTree = "<group>"; };
+		171B92D3214794BE00583B37 /* WKJSFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKJSFunction.m; sourceTree = "<group>"; };
+		171B92D4214794BE00583B37 /* PAWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAWebView.h; sourceTree = "<group>"; };
+		171B92D5214794BE00583B37 /* PAWebView+UIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAWebView+UIDelegate.h"; sourceTree = "<group>"; };
+		171B92D8214794BE00583B37 /* PreviewVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewVc.m; sourceTree = "<group>"; };
+		171B92D9214794BE00583B37 /* UIImage+TYSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYSnapshot.h"; sourceTree = "<group>"; };
+		171B92DA214794BE00583B37 /* TYSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSnapshot.m; sourceTree = "<group>"; };
+		171B92DB214794BE00583B37 /* UITableView+TYSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+TYSnapshot.h"; sourceTree = "<group>"; };
+		171B92DC214794BE00583B37 /* WKWebView+TYSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+TYSnapshot.m"; sourceTree = "<group>"; };
+		171B92DD214794BE00583B37 /* UIScrollView+TYSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TYSnapshot.m"; sourceTree = "<group>"; };
+		171B92DE214794BE00583B37 /* PreviewVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewVc.h; sourceTree = "<group>"; };
+		171B92DF214794BE00583B37 /* TYSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSnapshot.h; sourceTree = "<group>"; };
+		171B92E0214794BE00583B37 /* UITableView+TYSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TYSnapshot.m"; sourceTree = "<group>"; };
+		171B92E1214794BE00583B37 /* UIImage+TYSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYSnapshot.m"; sourceTree = "<group>"; };
+		171B92E2214794BE00583B37 /* UIScrollView+TYSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TYSnapshot.h"; sourceTree = "<group>"; };
+		171B92E3214794BE00583B37 /* WKWebView+TYSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+TYSnapshot.h"; sourceTree = "<group>"; };
+		171B92E5214794BE00583B37 /* PAPhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAPhotoBrowser.h; sourceTree = "<group>"; };
+		171B92E6214794BE00583B37 /* PAPhotoBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAPhotoBrowser.m; sourceTree = "<group>"; };
+		171B92E8214794BE00583B37 /* WKWebView+PAWebCookie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+PAWebCookie.m"; sourceTree = "<group>"; };
+		171B92E9214794BE00583B37 /* WKWebView+PAWebCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+PAWebCache.m"; sourceTree = "<group>"; };
+		171B92EA214794BE00583B37 /* NSObject+PARuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PARuntime.m"; sourceTree = "<group>"; };
+		171B92EB214794BE00583B37 /* WKWebView+PAWebCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+PAWebCache.h"; sourceTree = "<group>"; };
+		171B92EC214794BE00583B37 /* WKWebView+PAWebCookie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+PAWebCookie.h"; sourceTree = "<group>"; };
+		171B92ED214794BE00583B37 /* NSObject+PARuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PARuntime.h"; sourceTree = "<group>"; };
+		171B92EE214794BE00583B37 /* PAWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAWebView.m; sourceTree = "<group>"; };
 		172078A01FCFE6FE00DBC647 /* ExampleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172078A31FCFE6FE00DBC647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172078A51FCFE6FE00DBC647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -651,8 +715,122 @@
 		171B92B22147645900583B37 /* PAWebView */ = {
 			isa = PBXGroup;
 			children = (
+				171B92B7214794BE00583B37 /* PAWebView */,
+				171B92B3214764E900583B37 /* PAWebViewViewController.swift */,
+				171B92B5214764F500583B37 /* PAWebViewViewController.storyboard */,
 			);
 			path = PAWebView;
+			sourceTree = "<group>";
+		};
+		171B92B7214794BE00583B37 /* PAWebView */ = {
+			isa = PBXGroup;
+			children = (
+				171B92B8214794BE00583B37 /* PAWebViewTool */,
+				171B92C5214794BE00583B37 /* PAWebView+UIDelegate.m */,
+				171B92C6214794BE00583B37 /* PAWKNative */,
+				171B92D3214794BE00583B37 /* WKJSFunction.m */,
+				171B92D4214794BE00583B37 /* PAWebView.h */,
+				171B92D5214794BE00583B37 /* PAWebView+UIDelegate.h */,
+				171B92D6214794BE00583B37 /* PAWebViewExtern */,
+				171B92E7214794BE00583B37 /* PAWebViewCache */,
+				171B92EE214794BE00583B37 /* PAWebView.m */,
+			);
+			path = PAWebView;
+			sourceTree = "<group>";
+		};
+		171B92B8214794BE00583B37 /* PAWebViewTool */ = {
+			isa = PBXGroup;
+			children = (
+				171B92B9214794BE00583B37 /* WKWebView+LongPress.h */,
+				171B92BA214794BE00583B37 /* registerURLSchemes.h */,
+				171B92BB214794BE00583B37 /* WKWebView+POST.h */,
+				171B92BC214794BE00583B37 /* urlschemeModel.h */,
+				171B92BD214794BE00583B37 /* PAWebViewMenu.m */,
+				171B92BE214794BE00583B37 /* NSURL+PATool.m */,
+				171B92BF214794BE00583B37 /* WKWebView+LongPress.m */,
+				171B92C0214794BE00583B37 /* WKWebView+POST.m */,
+				171B92C1214794BE00583B37 /* registerURLSchemes.m */,
+				171B92C2214794BE00583B37 /* PAWebViewMenu.h */,
+				171B92C3214794BE00583B37 /* urlschemeModel.m */,
+				171B92C4214794BE00583B37 /* NSURL+PATool.h */,
+			);
+			path = PAWebViewTool;
+			sourceTree = "<group>";
+		};
+		171B92C6214794BE00583B37 /* PAWKNative */ = {
+			isa = PBXGroup;
+			children = (
+				171B92C7214794BE00583B37 /* PAWKPanGestureRecognizer.h */,
+				171B92C8214794BE00583B37 /* WKBaseWebView.m */,
+				171B92C9214794BE00583B37 /* PAWebNavigationController.h */,
+				171B92CA214794BE00583B37 /* PAWebNavigationController.m */,
+				171B92CB214794BE00583B37 /* WKBaseWebView.h */,
+				171B92CC214794BE00583B37 /* PAWKPanGestureRecognizer.m */,
+				171B92CD214794BE00583B37 /* views */,
+			);
+			path = PAWKNative;
+			sourceTree = "<group>";
+		};
+		171B92CD214794BE00583B37 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				171B92CE214794BE00583B37 /* UIAlertController+WKWebAlert.h */,
+				171B92CF214794BE00583B37 /* navigationbar_more@3x.png */,
+				171B92D0214794BE00583B37 /* navigationbar_more@2x.png */,
+				171B92D1214794BE00583B37 /* UIAlertController+WKWebAlert.m */,
+				171B92D2214794BE00583B37 /* PAWebBack.png */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		171B92D6214794BE00583B37 /* PAWebViewExtern */ = {
+			isa = PBXGroup;
+			children = (
+				171B92D7214794BE00583B37 /* TYSnapshot */,
+				171B92E4214794BE00583B37 /* PAPhotoBrowser */,
+			);
+			path = PAWebViewExtern;
+			sourceTree = "<group>";
+		};
+		171B92D7214794BE00583B37 /* TYSnapshot */ = {
+			isa = PBXGroup;
+			children = (
+				171B92D8214794BE00583B37 /* PreviewVc.m */,
+				171B92D9214794BE00583B37 /* UIImage+TYSnapshot.h */,
+				171B92DA214794BE00583B37 /* TYSnapshot.m */,
+				171B92DB214794BE00583B37 /* UITableView+TYSnapshot.h */,
+				171B92DC214794BE00583B37 /* WKWebView+TYSnapshot.m */,
+				171B92DD214794BE00583B37 /* UIScrollView+TYSnapshot.m */,
+				171B92DE214794BE00583B37 /* PreviewVc.h */,
+				171B92DF214794BE00583B37 /* TYSnapshot.h */,
+				171B92E0214794BE00583B37 /* UITableView+TYSnapshot.m */,
+				171B92E1214794BE00583B37 /* UIImage+TYSnapshot.m */,
+				171B92E2214794BE00583B37 /* UIScrollView+TYSnapshot.h */,
+				171B92E3214794BE00583B37 /* WKWebView+TYSnapshot.h */,
+			);
+			path = TYSnapshot;
+			sourceTree = "<group>";
+		};
+		171B92E4214794BE00583B37 /* PAPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				171B92E5214794BE00583B37 /* PAPhotoBrowser.h */,
+				171B92E6214794BE00583B37 /* PAPhotoBrowser.m */,
+			);
+			path = PAPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		171B92E7214794BE00583B37 /* PAWebViewCache */ = {
+			isa = PBXGroup;
+			children = (
+				171B92E8214794BE00583B37 /* WKWebView+PAWebCookie.m */,
+				171B92E9214794BE00583B37 /* WKWebView+PAWebCache.m */,
+				171B92EA214794BE00583B37 /* NSObject+PARuntime.m */,
+				171B92EB214794BE00583B37 /* WKWebView+PAWebCache.h */,
+				171B92EC214794BE00583B37 /* WKWebView+PAWebCookie.h */,
+				171B92ED214794BE00583B37 /* NSObject+PARuntime.h */,
+			);
+			path = PAWebViewCache;
 			sourceTree = "<group>";
 		};
 		172078971FCFE6FE00DBC647 = {
@@ -1726,6 +1904,7 @@
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
 				17E09F6C2112D943008CAEDB /* SectorChartViewController.storyboard in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
+				171B92B6214764F500583B37 /* PAWebViewViewController.storyboard in Resources */,
 				177ECCBA2071BFF800E9FFB1 /* UITextFieldViewController.storyboard in Resources */,
 				170597092060B7AF00486D0D /* guide_1_iphone6@2x.png in Resources */,
 				1705970A2060B7AF00486D0D /* guide_2_iphone4@2x.png in Resources */,
@@ -1963,6 +2142,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171B92FA2147A82D00583B37 /* WKJSFunction.m in Sources */,
+				171B92F92147A7B800583B37 /* WKWebView+PAWebCache.m in Sources */,
+				171B92F82147A7B200583B37 /* WKWebView+PAWebCookie.m in Sources */,
+				171B92F72147A7AC00583B37 /* WKWebView+TYSnapshot.m in Sources */,
+				171B92F62147A7A600583B37 /* WKWebView+POST.m in Sources */,
+				171B92F52147A79E00583B37 /* WKWebView+LongPress.m in Sources */,
+				171B92F4214795FE00583B37 /* registerURLSchemes.m in Sources */,
+				171B92F3214795C900583B37 /* WKBaseWebView.m in Sources */,
+				171B92F2214795A700583B37 /* PAWebViewMenu.m in Sources */,
+				171B92F12147957D00583B37 /* TYSnapshot.m in Sources */,
+				171B92F02147955E00583B37 /* PreviewVc.m in Sources */,
+				171B92EF214794DE00583B37 /* PAWebView.m in Sources */,
 				17BE7433213535FB00855B1A /* AccountInfo.swift in Sources */,
 				17EAF6B42133F814001A2C61 /* UIView+GMGridViewAdditions.m in Sources */,
 				17E09F762112DD1D008CAEDB /* DVFoodPieModel.m in Sources */,
@@ -2028,6 +2219,7 @@
 				170597012060B65900486D0D /* DefineConfig.swift in Sources */,
 				17EDCB86208071CE00BD66DF /* UIImage+Extension.swift in Sources */,
 				17EFC5C51FD53F3700A1C3BF /* UITextField+HTPlaceholderColor.m in Sources */,
+				171B92B4214764E900583B37 /* PAWebViewViewController.swift in Sources */,
 				17E85B551FD4F105003E6487 /* FGDBHelper.m in Sources */,
 				17EFC5D11FD555A100A1C3BF /* HomeViewController.swift in Sources */,
 				1757FE641FD13935004B3D8E /* AccountInfoOC.m in Sources */,
