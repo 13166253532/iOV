@@ -7,9 +7,12 @@
 //
 
 import UIKit
+protocol  LKDBHelperViewControllerDelegate{
+    func setStr(str:String)->String
+}
 
 class LKDBHelperViewController: BaseViewController {
-
+    var delegate: LKDBHelperViewControllerDelegate?
     class func createViewController(createArgs:AnyObject?) ->AnyObject{
         let storyboard:UIStoryboard=UIStoryboard(name: "LKDBHelperViewController", bundle: nil)
         let vc:LKDBHelperViewController=storyboard.instantiateViewController(withIdentifier: "LKDBHelperViewController") as! LKDBHelperViewController
@@ -53,6 +56,7 @@ class LKDBHelperViewController: BaseViewController {
         for index in 0..<dataArray.count {
             let messageInfo:HTMessageInfo = dataArray[index] as! HTMessageInfo
             print(messageInfo.accountId,messageInfo.messageId,messageInfo.isRead)
+            self.delegate?.setStr(str: messageInfo.accountId)
         }
     }
     

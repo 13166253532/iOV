@@ -144,6 +144,8 @@
 		177ECCC62072059100E9FFB1 /* IrregularLabelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ECCC52072059100E9FFB1 /* IrregularLabelViewController.storyboard */; };
 		178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178160822058FB1000F95DBA /* SnapKitViewController.swift */; };
 		178160852058FB2200F95DBA /* SnapKitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178160842058FB2200F95DBA /* SnapKitViewController.storyboard */; };
+		179A49CA214F3F2B00AB8261 /* BlockchainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A49C9214F3F2B00AB8261 /* BlockchainViewController.swift */; };
+		179A49CC214F3F3800AB8261 /* BlockchainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179A49CB214F3F3800AB8261 /* BlockchainViewController.storyboard */; };
 		17A21CA22028562400B529EC /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A21CA12028562400B529EC /* DownloadViewController.m */; };
 		17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5DC361FDE642B00D9F535 /* HttpViewController.swift */; };
 		17A5DC391FDE658100D9F535 /* HttpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5DC381FDE658100D9F535 /* HttpViewController.storyboard */; };
@@ -465,6 +467,8 @@
 		177ECCC52072059100E9FFB1 /* IrregularLabelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IrregularLabelViewController.storyboard; sourceTree = "<group>"; };
 		178160822058FB1000F95DBA /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 		178160842058FB2200F95DBA /* SnapKitViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnapKitViewController.storyboard; sourceTree = "<group>"; };
+		179A49C9214F3F2B00AB8261 /* BlockchainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewController.swift; sourceTree = "<group>"; };
+		179A49CB214F3F3800AB8261 /* BlockchainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlockchainViewController.storyboard; sourceTree = "<group>"; };
 		17A21CA02028562400B529EC /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
 		17A21CA12028562400B529EC /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		17A5DC0B1FDE62F000D9F535 /* SNHttpBaseGetCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNHttpBaseGetCmd.m; sourceTree = "<group>"; };
@@ -962,6 +966,7 @@
 		172078D61FD00CDF00DBC647 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				179A49C8214F3F0F00AB8261 /* Blockchain */,
 				171B92B22147645900583B37 /* PAWebView */,
 				17EAF6AF2133DBD2001A2C61 /* CalendarDate */,
 				17E09F682112D8DE008CAEDB /* SectorChart */,
@@ -1373,6 +1378,15 @@
 				17A21CA12028562400B529EC /* DownloadViewController.m */,
 			);
 			path = Download;
+			sourceTree = "<group>";
+		};
+		179A49C8214F3F0F00AB8261 /* Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				179A49C9214F3F2B00AB8261 /* BlockchainViewController.swift */,
+				179A49CB214F3F3800AB8261 /* BlockchainViewController.storyboard */,
+			);
+			path = Blockchain;
 			sourceTree = "<group>";
 		};
 		17A5DC0A1FDE62F000D9F535 /* BaseHttp */ = {
@@ -1902,6 +1916,7 @@
 				170597062060B7AF00486D0D /* guide_2_iphone5@2x.png in Resources */,
 				17EAF6B32133DC02001A2C61 /* CalendarDateViewController.storyboard in Resources */,
 				170597072060B7AF00486D0D /* guide_1_iphone4@2x.png in Resources */,
+				179A49CC214F3F3800AB8261 /* BlockchainViewController.storyboard in Resources */,
 				17E09F6C2112D943008CAEDB /* SectorChartViewController.storyboard in Resources */,
 				170597082060B7AF00486D0D /* guide_2_iphone6p@2x.png in Resources */,
 				171B92B6214764F500583B37 /* PAWebViewViewController.storyboard in Resources */,
@@ -2249,6 +2264,7 @@
 				178160832058FB1000F95DBA /* SnapKitViewController.swift in Sources */,
 				172079011FD015A000DBC647 /* ConfigMacro.swift in Sources */,
 				17303C7220071112007B32FC /* SmallBallViewController.swift in Sources */,
+				179A49CA214F3F2B00AB8261 /* BlockchainViewController.swift in Sources */,
 				172079001FD0159900DBC647 /* ConfigColor.swift in Sources */,
 				17A5DC371FDE642B00D9F535 /* HttpViewController.swift in Sources */,
 				172078E81FD0151E00DBC647 /* BaseViewController.swift in Sources */,
@@ -2466,8 +2482,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekingwin.SYMP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ff3c5698-7605-49ce-adc7-b702779a573a";
-				PROVISIONING_PROFILE_SPECIFIER = com.ekingwin.SYMP_dev1;
+				PROVISIONING_PROFILE = "999190ea-6c42-40ea-8fe8-6e34ba5dedc0";
+				PROVISIONING_PROFILE_SPECIFIER = com.ekingwin.SYMP_dev4;
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2511,8 +2527,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekingwin.SYMP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ff3c5698-7605-49ce-adc7-b702779a573a";
-				PROVISIONING_PROFILE_SPECIFIER = com.ekingwin.SYMP_dev1;
+				PROVISIONING_PROFILE = "999190ea-6c42-40ea-8fe8-6e34ba5dedc0";
+				PROVISIONING_PROFILE_SPECIFIER = com.ekingwin.SYMP_dev4;
 				SWIFT_OBJC_BRIDGING_HEADER = "ExampleDemo/ExampleDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
